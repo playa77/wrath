@@ -118,10 +118,32 @@ No other runtime dependencies (stdlib only beyond tcod) — C-7/SC-1 auditabilit
 
 Common row: `{id, family, value, prereq:{str,dex,twostr_plus_dex}, cost, flags:["elder"], unique}` — cost ladder `[P]: cost = 25 × value × (value+1)` dollars. Prereq rules (BR-9): shields/armor `str = value`; fire `str = 4+⌈4v/5⌉, dex = same`; melee `twostr_plus_dex = 10 + value`; elder-work rows multiply all prereqs by `⌈⅔⌉` (BR-9 discount, Doc 1 §5.5).
 
-- **shields (1–20, value = rung):** Hide Target, Wicker Shield, Rawhide Targe, Bark Shield, Hide Buckler, Copper-Rim Targe, Bronzed Hide Shield, Cane Pavise, Leather Pavise, Studded Targe, Boiler-Plate Buckler, Iron Targe, Riveted Pavise, Steel Buckler, Boiler-Plate Pavise, Chromed Targe, Club-Issue Shield, Expedition Pavise, Sun-Metal Buckler, Elder Aegis`[elder]`.
-- **field armor (1–20; values 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,11):** Canvas Jacket, Hide Jerkin, Padded Gambeson, Leather Coat, Studded Leather, Ring-Mail Vest, Scale Shirt, Chain Shirt, Bronzed Cuirass, Boiler-Plate Cuirass, Riveted Mail, Double Chain, Expedition Mail, Chrome Cuirass, Sun-Metal Scale, Club Plate, Masterwork Mail, Meteoric Mail, Sun-Metal Cuirass, **Elder Lamellar**`[elder — god-tier REQ anchor]`.
-- **fire pieces (20 rungs; each = one identity with `bow_name`/`rifle_name`; outfitter subchoice (B)/(R) on buy — RS-1 one value per rung):** 1 Self Bow / Single-Shot .22 · 2 Short Bow / Rimfire Carbine · 3 Reed Bow / Farm Rifle · 4 Hunting Bow / Hunting Rifle · 5 Recurve Bow / Sporter Rifle · 6 Longbow / Bolt-Action Express · 7 Composite Bow / Express .303 · 8 Yew Longbow / Safari Express · 9 Flight Bow / Double Express · 10 Master Hunting Bow / Master Express .350 · 11 Laminated Bow / Nitro Express .400 · 12 War Bow / Big-Bore .450 · 13 Great Bow / Elephant Gun .500 · 14 Club Bow / Club Express .505 · 15 Master Longbow +1 / Master Express +1 · 16 +2 / +2 · 17 +3 / +3 · 18 Sun-Metal Bow / Sun-Metal Express · 19 Sun-Metal Greatbow / Sun-Metal Double Express · 20 **Elder Bow / Elder Express** `[elder]`. (The **Old Master-Bow** is the quest unique, mechanism = fire rung 19 bow-skin; registry entry in valuables cross-linked — §5.3.)
-- **melee (40; values 1–25):** Cosh 1, Pocket Knife 1, Work Hammer 2, Machete 2, Hatchet 3, Club 3, Hunting Knife 4, Cudgel 4, Short Sword 5, Hand Axe 5, Machete +1 6, Spear 6, Cutlass 7, War Hammer 7, Hunting Knife +1 8, Cudgel +1 8, Flail 9, Broadsword 9, Hunting Spear 10, Cavalry Sabre 10, Hunting Knife +2 11, Flail +1 11, Battle Axe 12, Hunting Spear +1 12, Cavalry Sabre +1 13, Pole-axe 13, Cudgel +2 14, Flail +2 14, Hunting Spear +2 15, Cavalry Sabre +2 15, Hunting Knife +3 16, Pole-axe +1 16, Great Axe 17, Flail +3 18, Pole-axe +2 19, Cavalry Sabre +3 20, Sun-Metal Knife 21, Sun-Metal Mace 22, Sun-Metal Sabre 23, Elder Falchion 24`[elder]`, **Elder Warbrand** 25`[elder]`.
+- **shields (1–20, value = rung):** Hide Target, Wicker Shield, Rawhide Targe, Bark Shield, Hide Buckler, Copper-Rim Targe, Bronzed Hide Shield, Cane Pavise, Leather Pavise, Studded Targe, Boiler-Plate Buckler, Iron Targe, Riveted Pavise, Steel Buckler, Boiler-Plate Pavise, Chromed Targe, Club-Issue Shield, Expedition Pavise, Sun-Metal Buckler, Elder Aegis `[elder]`.
+- **field armor (1–20; values 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,10,10,11):** Canvas Jacket, Hide Jerkin, Padded Gambeson, Leather Coat, Studded Leather, Ring-Mail Vest, Scale Shirt, Chain Shirt, Bronzed Cuirass, Boiler-Plate Cuirass, Riveted Mail, Double Chain, Expedition Mail, Chrome Cuirass, Sun-Metal Scale, Club Plate, Masterwork Mail, Meteoric Mail, Sun-Metal Cuirass, **Elder Lamellar** `[elder — god-tier REQ anchor]`.
+- **fire pieces (20 rungs; each = one identity with `bow_name`/`rifle_name`; outfitter subchoice (B)/(R) on buy — RS-1 one value per rung):**
+  1. Self Bow / Single-Shot .22
+  2. Short Bow / Rimfire Carbine
+  3. Reed Bow / Farm Rifle
+  4. Hunting Bow / Hunting Rifle
+  5. Recurve Bow / Sporter Rifle
+  6. Longbow / Bolt-Action Express
+  7. Composite Bow / Express .303
+  8. Yew Longbow / Safari Express
+  9. Flight Bow / Double Express
+  10. Master Hunting Bow / Master Express .350
+  11. Laminated Bow / Nitro Express .400
+  12. War Bow / Big-Bore .450
+  13. Great Bow / Elephant Gun .500
+  14. Club Bow / Club Express .505
+  15. Master Longbow +1 / Master Express +1
+  16. +2 / +2
+  17. +3 / +3
+  18. Sun-Metal Bow / Sun-Metal Express
+  19. Sun-Metal Greatbow / Sun-Metal Double Express
+  20. **Elder Bow / Elder Express** `[elder]`
+
+  (The **Old Master-Bow** is the quest unique, mechanism = fire rung 19 bow-skin; registry entry in valuables cross-linked — §5.3.)
+- **melee (40; values 1–25):** Cosh 1, Pocket Knife 1, Work Hammer 2, Machete 2, Hatchet 3, Club 3, Hunting Knife 4, Cudgel 4, Short Sword 5, Hand Axe 5, Machete +1 6, Spear 6, Cutlass 7, War Hammer 7, Hunting Knife +1 8, Cudgel +1 8, Flail 9, Broadsword 9, Hunting Spear 10, Cavalry Sabre 10, Hunting Knife +2 11, Flail +1 11, Battle Axe 12, Hunting Spear +1 12, Cavalry Sabre +1 13, Pole-axe 13, Cudgel +2 14, Flail +2 14, Hunting Spear +2 15, Cavalry Sabre +2 15, Hunting Knife +3 16, Pole-axe +1 16, Great Axe 17, Flail +3 18, Pole-axe +2 19, Cavalry Sabre +3 20, Sun-Metal Knife 21, Sun-Metal Mace 22, Sun-Metal Sabre 23, Elder Falchion 24 `[elder]`, **Elder Warbrand** 25 `[elder]`.
 
 *Audit: 20+20+20+40 = 100 combat identities ✓ (180 total with §5.3).*
 
@@ -138,12 +160,102 @@ Common row: `{id, family, value, prereq:{str,dex,twostr_plus_dex}, cost, flags:[
 
 `feat_matrix.json` (OQ-5 generation; every learnable feat appears ≥1 list; `start_feat` = the profession's first list entry — the "profession starting feat" of the FRD, retained on the now-removed transfer, D-1 note only):
 
-- **antiquarian_mesmerist** (rate 2): L1 [5,13] ← REQ anchor · L2 [1,9] · L3 [16,18] · L4 [2,19] · L5 [26,27] · L6 [10,29] · L7 [14,22] · L8 [6,17] · L9 [28,33] · L10 [20,52] · L11 [7,30] · L12 [34,46] · L13 [11,23] · L14 [41,43] · L15 [36,44,48,54]
-- **expedition_doctor** (rate 2): L1 [1,22] · L2 [2,51] · L3 [23,52] · L4 [3,29] · L5 [41,24] · L6 [30,25] · L7 [42,49] · L8 [4,27] · L9 [31,44] · L10 [45,43] · L11 [26,54] · L12 [32,9] · L13 [46,10] · L14 [33,47] · L15 [11,28]
-- **scout** (rate 1): L1 [52] · 2 [18] · 3 [16] · 4 [1] · 5 [19] · 6 [13] · 7 [22] · 8 [51] · 9 [20] · 10 [43] · 11 [15] · 12 [2] · 13 [17] · 14 [21] · 15 [54]
-- **pugilist** (rate 1): L1 [55] · 2 [18] · 3 [22] · 4 [56] · 5 [1] · 6 [19] · 7 [23] · 8 [51] · 9 [20] · 10 [2] · 11 [46] · 12 [24] · 13 [21] · 14 [27] · 15 [54]
-- **cat_burglar** (rate 1): L1 [26] · 2 [27] · 3 [43] · 4 [29] · 5 [28] · 6 [30] · 7 [37] · 8 [46] · 9 [16] · 10 [31] · 11 [47] · 12 [1] · 13 [32] · 14 [13] · 15 [54]
-- **white_hunter** (rate 1): L1 [5] · 2 [18] · 3 [13] · 4 [22] · 5 [1] · 6 [16] · 7 [19] · 8 [6] · 9 [23] · 10 [15] · 11 [2] · 12 [20] · 13 [9] · 14 [21] · 15 [54]
+- **antiquarian_mesmerist** (rate 2):
+  - L1 [5,13] ← REQ anchor
+  - L2 [1,9]
+  - L3 [16,18]
+  - L4 [2,19]
+  - L5 [26,27]
+  - L6 [10,29]
+  - L7 [14,22]
+  - L8 [6,17,8]
+  - L9 [28,33]
+  - L10 [20,52]
+  - L11 [7,30]
+  - L12 [34,46]
+  - L13 [11,23,12]
+  - L14 [41,43]
+  - L15 [36,44,48,54]
+- **expedition_doctor** (rate 2):
+  - L1 [1,22]
+  - L2 [2,51]
+  - L3 [23,52]
+  - L4 [3,29]
+  - L5 [41,24]
+  - L6 [30,25]
+  - L7 [42,49]
+  - L8 [4,27]
+  - L9 [31,44]
+  - L10 [45,43]
+  - L11 [26,54]
+  - L12 [32,9]
+  - L13 [46,10]
+  - L14 [33,47,50]
+  - L15 [11,28]
+- **scout** (rate 1):
+  - L1 [52]
+  - 2 [18]
+  - 3 [16]
+  - 4 [1]
+  - 5 [19]
+  - 6 [13]
+  - 7 [22]
+  - 8 [51]
+  - 9 [20]
+  - 10 [43]
+  - 11 [15]
+  - 12 [2]
+  - 13 [17]
+  - 14 [21]
+  - 15 [54]
+- **pugilist** (rate 1):
+  - L1 [55]
+  - 2 [18]
+  - 3 [22]
+  - 4 [56]
+  - 5 [1]
+  - 6 [19]
+  - 7 [23]
+  - 8 [51]
+  - 9 [20]
+  - 10 [2]
+  - 11 [46]
+  - 12 [24]
+  - 13 [21]
+  - 14 [27]
+  - 15 [54]
+- **cat_burglar** (rate 1):
+  - L1 [26]
+  - 2 [27]
+  - 3 [43]
+  - 4 [29]
+  - 5 [28]
+  - 6 [30]
+  - 7 [37]
+  - 8 [46]
+  - 9 [16]
+  - 10 [31]
+  - 11 [47]
+  - 12 [1]
+  - 13 [32]
+  - 14 [13]
+  - 15 [54]
+- **white_hunter** (rate 1):
+  - L1 [5]
+  - 2 [18]
+  - 3 [13]
+  - 4 [22]
+  - 5 [1]
+  - 6 [16]
+  - 7 [19]
+  - 8 [6]
+  - 9 [23]
+  - 10 [15]
+  - 11 [2]
+  - 12 [20]
+  - 13 [9]
+  - 14 [21]
+  - 15 [54]
 
 *Audit: union = feats 1–2,4–7,9–11,13–32 (incl. 37), 41–47,49 not covered!* — check: 49 appears (doctor L7 ✓); 50 absent, 48 only AM. Fix row: AM L15 = [36,44,48,54] ✓48; add **50** to doctor L14 → [33,47,50]; add **3** to scout? present via doctor L4 ✓. 8 absent → AM L8 has 6; add 8 → AM L8 [6,8,17]? AM rate 2 allows ≤3 listed (list length ≠ slot rate; matrix lists *offerings*). Sets L8 [6,17,8]. 12 absent → AM L13 [11,23,12]. 17 already. **Result: union covers 1–52 minus 53 ✓ plus 55,56 ✓.** Final matrix = the lists above with these four amended rows.
 
@@ -151,14 +263,118 @@ Common row: `{id, family, value, prereq:{str,dex,twostr_plus_dex}, cost, flags:[
 
 Row schema: `{id, name, glyph_symbol_id, tier L|M|H|VH, disp P|W|S, pack_max, hp, dmg, xp, band_min (1–5 sector distance from Terminus), flags:["M"=mummified,"C"=caster,"unique","tall"], feats?, cast_budget?, treasure: t1–t8}`. Caster rule (OQ-8): `feats` = one offense line + one control; cast-instead-of-melee 50%/round while budget > 0.
 
-**Band 1 (low, dispositions P/W/S):** 01 marsh scuttler L W 8 6hp 1d3 12xp · 02 cave viper L S 4 8 1d4 15 · 03 leech swarm L W 6 10 1d3 18 · 04 bile slime L W 3 14 1d4 22p · 05 dune scorpion L S 5 12 1d6 25 · 06 ratling reavers L S 6 15 1d6 30 W-t2 · 07 hyena-man reavers L S 5 18 1d8 35 t2 · 08 feral ape-man L S 6 20 1d8 40 t2 · 09 drifter cutthroat L S 4 16 1d8 35 t2 · 10 drake pup L W 4 22 1d10 45 t1.
-**Band 2 (low→med):** 11 ripper jackal M S 6 24 1d10 60 · 12 carrion kite M W 5 20 1d8 50 · 13 albino tunnel-folk reavers M S 5 28 2d6 80 t2 · 14 fen-man reavers M W 5 30 2d6 85 t2 · 15 sauroid hunters M S 4 34 2d8 100 t3 · 16 glider-folk swoopers M S 5 26 2d6 75 t2 · 17 wing-folk talons M S 4 30 2d8 95 t3 · 18 long-man reavers M S 4 38 2d8 110 t3 tall · 19 basalt brute M S 3 44 2d10 130 t3 · 20 bull ape M S 3 50 3d6 140 t3 tall · 21 yearling drake M W 3 46 2d10 125 t4 · 22 giant viper-moth M S 6 22 1d10+poison 90 · 23 mire lurker M S 2 42 2d10 120 · 24 banks croc M S 3 40 2d10 115 · 25 desiccated sentinel M S 8 30 1d12 85 M,t2 · 26 mummified acolyte M S 5 26 1d8 75 M · 27 renegade medium M S 3 24 — 120 C: feats[33,sleep 27] casts 2 t3 · 28 fen constrictor M S 2 48 2d12 135 · 29 bloatfly swarm M W 6 18 1d6 55 · 30 giant crayfish M W 3 36 2d8 105.
-**Band 3 (high):** 31 bull drake H W 2 60 3d8 260 t5 · 32 storm brute H S 2 66 3d10 300 t5 tall (Map Room west cap set) · 33 basalt colossus H S 2 72 3d10 340 t5 tall · 34 enclave mesmerist H S 3 40 — 320 C: feats[34, dread 28] casts 3 t4 · 35 cult hierophant H S 2 44 — 350 C: feats[9, confusion 29] casts 3 t4 · 36 crag-fanatic H S 4 46 2d10 240 t3 · 37 renegade prelate H S 2 42 — 260 C: feats[33, enervation 41] casts 3 t4 · 38 hooded illusionist H S 3 38 — 290 C: feats[27, confusion 30] casts 3 t4 · 39 ether-wraith H S 3 50 2d12 330 M · 40 frost-wolf H S 5 44 2d10 230 · 41 deep one H S 4 52 2d12 310 tall,t4 · 42 pit ape H S 4 54 3d8 280 t3 tall · 43 bull saurian H W 2 62 3d8 265 t4 · 44 pen horror ripper H S 1 58 3d10 300 (lever set only) · 45 pen horror mauler H S 1 58 3d10 300 (lever set only) · 46 stonehorn H P 3 70 3d8 250 tall · 47 cliff sloth H P 2 64 2d12 220 tall · 48 plains terror-bird H S 4 48 2d12 240 · 49 sabre-tooth H S 3 50 3d8 255 t3 · 50 ridge raptor H S 4 46 2d10 235.
-**Bands 4–5 (high→very high):** 51 tyrant drake VH W 1 90 4d10 1200 t7 · 52 high fiend VH S 2 80 4d8 1100 t6 · 53 deeps fiend VH S 3 75 4d8 1000 t6 · 54 blood-wraith VH S 2 70 3d12 1050 M,t6 · 55 high warden VH S 3 68 3d10 950 M?,t5 → flags M ✓ (hollow wardens) · 56 hadal cultist VH S 4 60 — 900 C: feats[34, enervation 42] casts 4 t5 · 57 hadal cult-warden VH S 2 66 3d10 980 C?: no → C: feats[35, paralysis 46] casts 4 t6 · 58 great beast VH S 1 95 4d10 1500 t6 tall (Enclave pen unique) · 59 ancient bull ape VH S 1 85 4d8 1400 unique,tall (wrestling set: no feats — §5.7 scripted) · 60 great bull ape VH S 1 88 4d8 1450 unique,tall · 61 tyrant-king saurid VH S 1 100 4d12 4000 t8 tall (D11 apex) · 62 magma newt H W 4 55 2d10 500 · 63 ember bat H S 6 30 1d10 420 · 64 soot serpent H S 4 50 2d10 470 · 65 ash crawler H S 5 42 2d8 440 · 66 obsidian crawler VH S 3 62 3d8 720 · 67 grotto crab H W 3 58 2d10 460 · 68 titan toad H W 2 66 3d8 480 tall · 69 viper swarm H S 8 26 1d8 400 · 70 glass scorpion VH S 3 56 3d8 690 · 71 fumarole wisp H W 6 24 1d8 410 · 72 sun priestess VH P 1 200 5d10 20000 unique (non-hostile; attackable — FR-QST-015) · 73 boo boo kitty VH S 1 90 4d10 5000 unique (D11 vault) · 74 lord wood VH W 1 120 5d10 30000 unique (endgame choice target) · 75 doctor voss (mortal) VH S 1 110 5d10 30000 unique · 76 doctor voss (hollowed) VH S 1 110 5d10 30000 unique, M-flag set by #57 (FR-QST-022) · 77 warden librarian M S 4 40 2d8 260 M (Map Room keeper set) · 78 mad librarian M S 5 22 1d8 130.
+**Band 1 (low, dispositions P/W/S):**
+
+| # | name | tier | disp | pack | hp | dmg | xp | notes |
+|---|---|---|---|---|---|---|---|---|
+| 01 | marsh scuttler | L | W | 8 | 6 | 1d3 | 12 | |
+| 02 | cave viper | L | S | 4 | 8 | 1d4 | 15 | |
+| 03 | leech swarm | L | W | 6 | 10 | 1d3 | 18 | |
+| 04 | bile slime | L | W | 3 | 14 | 1d4 | 22 | |
+| 05 | dune scorpion | L | S | 5 | 12 | 1d6 | 25 | |
+| 06 | ratling reavers | L | S | 6 | 15 | 1d6 | 30 | W-t2 |
+| 07 | hyena-man reavers | L | S | 5 | 18 | 1d8 | 35 | t2 |
+| 08 | feral ape-man | L | S | 6 | 20 | 1d8 | 40 | t2 |
+| 09 | drifter cutthroat | L | S | 4 | 16 | 1d8 | 35 | t2 |
+| 10 | drake pup | L | W | 4 | 22 | 1d10 | 45 | t1 |
+
+**Band 2 (low→med):**
+
+| # | name | tier | disp | pack | hp | dmg | xp | notes |
+|---|---|---|---|---|---|---|---|---|
+| 11 | ripper jackal | M | S | 6 | 24 | 1d10 | 60 | |
+| 12 | carrion kite | M | W | 5 | 20 | 1d8 | 50 | |
+| 13 | albino tunnel-folk reavers | M | S | 5 | 28 | 2d6 | 80 | t2 |
+| 14 | fen-man reavers | M | W | 5 | 30 | 2d6 | 85 | t2 |
+| 15 | sauroid hunters | M | S | 4 | 34 | 2d8 | 100 | t3 |
+| 16 | glider-folk swoopers | M | S | 5 | 26 | 2d6 | 75 | t2 |
+| 17 | wing-folk talons | M | S | 4 | 30 | 2d8 | 95 | t3 |
+| 18 | long-man reavers | M | S | 4 | 38 | 2d8 | 110 | t3, tall |
+| 19 | basalt brute | M | S | 3 | 44 | 2d10 | 130 | t3 |
+| 20 | bull ape | M | S | 3 | 50 | 3d6 | 140 | t3, tall |
+| 21 | yearling drake | M | W | 3 | 46 | 2d10 | 125 | t4 |
+| 22 | giant viper-moth | M | S | 6 | 22 | 1d10+poison | 90 | |
+| 23 | mire lurker | M | S | 2 | 42 | 2d10 | 120 | |
+| 24 | banks croc | M | S | 3 | 40 | 2d10 | 115 | |
+| 25 | desiccated sentinel | M | S | 8 | 30 | 1d12 | 85 | M, t2 |
+| 26 | mummified acolyte | M | S | 5 | 26 | 1d8 | 75 | M |
+| 27 | renegade medium | M | S | 3 | 24 | — | 120 | C: feats[33, sleep 27] casts 2, t3 |
+| 28 | fen constrictor | M | S | 2 | 48 | 2d12 | 135 | |
+| 29 | bloatfly swarm | M | W | 6 | 18 | 1d6 | 55 | |
+| 30 | giant crayfish | M | W | 3 | 36 | 2d8 | 105 | |
+
+**Band 3 (high):**
+
+| # | name | tier | disp | pack | hp | dmg | xp | notes |
+|---|---|---|---|---|---|---|---|---|
+| 31 | bull drake | H | W | 2 | 60 | 3d8 | 260 | t5 |
+| 32 | storm brute | H | S | 2 | 66 | 3d10 | 300 | t5, tall (Map Room west cap set) |
+| 33 | basalt colossus | H | S | 2 | 72 | 3d10 | 340 | t5, tall |
+| 34 | enclave mesmerist | H | S | 3 | 40 | — | 320 | C: feats[34, dread 28] casts 3, t4 |
+| 35 | cult hierophant | H | S | 2 | 44 | — | 350 | C: feats[9, confusion 29] casts 3, t4 |
+| 36 | crag-fanatic | H | S | 4 | 46 | 2d10 | 240 | t3 |
+| 37 | renegade prelate | H | S | 2 | 42 | — | 260 | C: feats[33, enervation 41] casts 3, t4 |
+| 38 | hooded illusionist | H | S | 3 | 38 | — | 290 | C: feats[27, confusion 30] casts 3, t4 |
+| 39 | ether-wraith | H | S | 3 | 50 | 2d12 | 330 | M |
+| 40 | frost-wolf | H | S | 5 | 44 | 2d10 | 230 | |
+| 41 | deep one | H | S | 4 | 52 | 2d12 | 310 | tall, t4 |
+| 42 | pit ape | H | S | 4 | 54 | 3d8 | 280 | t3, tall |
+| 43 | bull saurian | H | W | 2 | 62 | 3d8 | 265 | t4 |
+| 44 | pen horror ripper | H | S | 1 | 58 | 3d10 | 300 | (lever set only) |
+| 45 | pen horror mauler | H | S | 1 | 58 | 3d10 | 300 | (lever set only) |
+| 46 | stonehorn | H | P | 3 | 70 | 3d8 | 250 | tall |
+| 47 | cliff sloth | H | P | 2 | 64 | 2d12 | 220 | tall |
+| 48 | plains terror-bird | H | S | 4 | 48 | 2d12 | 240 | |
+| 49 | sabre-tooth | H | S | 3 | 50 | 3d8 | 255 | t3 |
+| 50 | ridge raptor | H | S | 4 | 46 | 2d10 | 235 | |
+
+**Bands 4–5 (high→very high):**
+
+| # | name | tier | disp | pack | hp | dmg | xp | notes |
+|---|---|---|---|---|---|---|---|---|
+| 51 | tyrant drake | VH | W | 1 | 90 | 4d10 | 1200 | t7 |
+| 52 | high fiend | VH | S | 2 | 80 | 4d8 | 1100 | t6 |
+| 53 | deeps fiend | VH | S | 3 | 75 | 4d8 | 1000 | t6 |
+| 54 | blood-wraith | VH | S | 2 | 70 | 3d12 | 1050 | M, t6 |
+| 55 | high warden | VH | S | 3 | 68 | 3d10 | 950 | M?,t5 → flags M ✓ (hollow wardens) |
+| 56 | hadal cultist | VH | S | 4 | 60 | — | 900 | C: feats[34, enervation 42] casts 4, t5 |
+| 57 | hadal cult-warden | VH | S | 2 | 66 | 3d10 | 980 | C?: no → C: feats[35, paralysis 46] casts 4, t6 |
+| 58 | great beast | VH | S | 1 | 95 | 4d10 | 1500 | t6, tall (Enclave pen unique) |
+| 59 | ancient bull ape | VH | S | 1 | 85 | 4d8 | 1400 | unique, tall (wrestling set: no feats — §5.7 scripted) |
+| 60 | great bull ape | VH | S | 1 | 88 | 4d8 | 1450 | unique, tall |
+| 61 | tyrant-king saurid | VH | S | 1 | 100 | 4d12 | 4000 | t8, tall (D11 apex) |
+| 62 | magma newt | H | W | 4 | 55 | 2d10 | 500 | |
+| 63 | ember bat | H | S | 6 | 30 | 1d10 | 420 | |
+| 64 | soot serpent | H | S | 4 | 50 | 2d10 | 470 | |
+| 65 | ash crawler | H | S | 5 | 42 | 2d8 | 440 | |
+| 66 | obsidian crawler | VH | S | 3 | 62 | 3d8 | 720 | |
+| 67 | grotto crab | H | W | 3 | 58 | 2d10 | 460 | |
+| 68 | titan toad | H | W | 2 | 66 | 3d8 | 480 | tall |
+| 69 | viper swarm | H | S | 8 | 26 | 1d8 | 400 | |
+| 70 | glass scorpion | VH | S | 3 | 56 | 3d8 | 690 | |
+| 71 | fumarole wisp | H | W | 6 | 24 | 1d8 | 410 | |
+| 72 | sun priestess | VH | P | 1 | 200 | 5d10 | 20000 | unique (non-hostile; attackable — FR-QST-015) |
+| 73 | boo boo kitty | VH | S | 1 | 90 | 4d10 | 5000 | unique (D11 vault) |
+| 74 | lord wood | VH | W | 1 | 120 | 5d10 | 30000 | unique (endgame choice target) |
+| 75 | doctor voss (mortal) | VH | S | 1 | 110 | 5d10 | 30000 | unique |
+| 76 | doctor voss (hollowed) | VH | S | 1 | 110 | 5d10 | 30000 | unique, M-flag set by #57 (FR-QST-022) |
+| 77 | warden librarian | M | S | 4 | 40 | 2d8 | 260 | M (Map Room keeper set) |
+| 78 | mad librarian | M | S | 5 | 22 | 1d8 | 130 | |
 
 *Audit: rows = 78 ✓; unique bosses per BR-32 present ✓; all caster types from FR-CMB-008 present ✓ (27,34,35,37,38,56,57); mummified flag rows: 25,26,39,54,55,72?,76,77 — align: M flags on 25,26,39,54,55,76,77,78 ✓.*
 
-**Treasure tables t1–t8** `(dollars range, item-roll chance/tier)`: t1 5–40, 10%/v1–3 · t2 20–120, 15%/v2–6 · t3 50–250, 20%/v4–9 · t4 100–500, 25%/v6–12 · t5 200–900, 30%/v8–15 · t6 400–1600, 35%/v10–18 · t7 800–4000, 40%/v12–20 · t8 1500–8000, 50%/v15–25 (+valuable roll 25%).
+**Treasure tables t1–t8** `(dollars range, item-roll chance/tier)`:
+
+| tier | dollars | item-roll |
+|---|---|---|
+| t1 | 5–40 | 10% / v1–3 |
+| t2 | 20–120 | 15% / v2–6 |
+| t3 | 50–250 | 20% / v4–9 |
+| t4 | 100–500 | 25% / v6–12 |
+| t5 | 200–900 | 30% / v8–15 |
+| t6 | 400–1600 | 35% / v10–18 |
+| t7 | 800–4000 | 40% / v12–20 |
+| t8 | 1500–8000 | 50% / v15–25 (+valuable roll 25%) |
 
 ## 5.6 R-7 — Geography
 
@@ -199,7 +415,14 @@ Band rule (encounters filter, §5.8): band = 1 + max(|secCol−C|, |secRow−III
 
 ### 5.6.2 Ziggurat planes (18×9 each) & Deeps (30×15)
 
-`ziggurat_sun`: perpetual golden-day terraces; entry/exit plaza (9,8); Sun-Terrace Station (9,6); D6 citadel gate (9,1); decorative lens pylons (2,4)(16,4). `ziggurat_drowned`: mirror layout; Lake-Bottom Post (9,6); D7 gate (9,1); gloom-water shading. `deeps`: Fumarole Camp (4,7); glyph-circle **arrival** (15,7); D9 entrance (26,7); lava course rects — crossing any lava cell = party burn (FR-QST-018; resting on non-lava safe): `(8,5,11,5) (8,10,11,10) (13,3,13,14) (16,2,18,4) (16,11,18,13) (20,6,20,8) (22,2,25,3) (22,12,25,13)`. Navigation: safe lanes exist between rects; direct routes cost 2–4 crossings.
+`ziggurat_sun`: perpetual golden-day terraces; entry/exit plaza (9,8); Sun-Terrace Station (9,6); D6 citadel gate (9,1); decorative lens pylons (2,4)(16,4). `ziggurat_drowned`: mirror layout; Lake-Bottom Post (9,6); D7 gate (9,1); gloom-water shading. `deeps`: Fumarole Camp (4,7); glyph-circle **arrival** (15,7); D9 entrance (26,7); lava course rects — crossing any lava cell = party burn (FR-QST-018; resting on non-lava safe):
+
+```
+(8,5,11,5) (8,10,11,10) (13,3,13,14) (16,2,18,4)
+(16,11,18,13) (20,6,20,8) (22,2,25,3) (22,12,25,13)
+```
+
+Navigation: safe lanes exist between rects; direct routes cost 2–4 crossings.
 
 ---
 
@@ -367,7 +590,16 @@ every stash square → msg "You have found a drake's trove."
 
 ### 5.8 `encounters_tables.json` (OQ-19)
 
-Per-cell terrain: `trail {rate 1/12, pool: 06,07,08,09,11,48 weighted by band}`, `badlands {1/10, pool: 05,06,07,13,18,19,33}`, `swamp {1/8, pool: 01,03,14,23,24,28,29,30}`, `escarpment {1/6, pool: 19,21,31,43,46,47,50,61}`, `river {0}`; `site_interior {1/12, pool per site §5.7}`; night camp: every 10th trail move, ambush 1/3 from terrain pool, sentry Listen (FR-WLD-003). Menace selection filters by `band_min ≤ current band` (grind-mitigation §VI-7); `unique` rows never random. Surrender threshold: 50% of starting pack count dead (FR-ENC-003/OQ-19); morale: menaces flee-check at 60% losses, P(flee)=40% (Savage never → 10%).
+| terrain | rate | pool |
+|---|---|---|
+| trail | 1/12 | 06,07,08,09,11,48 weighted by band |
+| badlands | 1/10 | 05,06,07,13,18,19,33 |
+| swamp | 1/8 | 01,03,14,23,24,28,29,30 |
+| escarpment | 1/6 | 19,21,31,43,46,47,50,61 |
+| river | 0 | — |
+| site_interior | 1/12 | pool per site §5.7 |
+
+Night camp: every 10th trail move, ambush 1/3 from terrain pool, sentry Listen (FR-WLD-003). Menace selection filters by `band_min ≤ current band` (grind-mitigation §VI-7); `unique` rows never random. Surrender threshold: 50% of starting pack count dead (FR-ENC-003/OQ-19); morale: menaces flee-check at 60% losses, P(flee)=40% (Savage never → 10%).
 
 ## 5.9 Text registries
 
@@ -392,11 +624,63 @@ Per-cell terrain: `trail {rate 1/12, pool: 06,07,08,09,11,48 weighted by band}`,
 | XV | The Man Who Heard the Drowned Mind | XIII heretic's confession | Schatika Post outfitter |
 | XVI | Sealed Folio | — illegible (OQ-12) | curio stock |
 
-Full payload texts (eng: 40–90 words each; shortened here to payload + key beats, final prose authored in WP content pass per these beats — beats ARE normative): **I** Kilmor's defeat, capture, the Pens, mesmerist attempts to Hollow him, his refusal. **II** the Province, out islands (Geldern Reach, Ferrona Keys, Pogney Shoals), the northern host, Voss's landfall and conquest of the north. **III** the pattern's journey to the Séance Tribunal; recall by rite; judgement by the Bench; the Hollowed as patterns returned enthralled. **IV** the resonator: wrought by elder drowned artificers; given to Voss; corruptive bond; useless in clean hands — he would always find it. **V** the elder sun-cult's armorer-saint taught the mesa bowyers; elder masters endow true virtues; given to the proven. **VI** the five tiers: Province, Sun-Ziggurat, Drowned Ziggurat, Ember Deeps, Séance Tribunal; elder transit the only door. **VII** V as above + twin cities' mirrored splendor and exile. **VIII** Mr. Filmon's domain; mad librarians; the sealed west vaults ("so well guarded a small army would be needed"). **IX** the wrestling tribe (Colossi pens), the oubliette cells, visitors left to starve. **X** the honor of attendance at a crag-folk burial. **XI** Rockfell and the peaceable hills; the meditation warrens of the bowyer-elders. **XII** Old Chronos, older than any save the elder minds; his moving station; records in unreadable elder script; he aids worthy causes. **XIII** the Great Lens; chosen pure-hearted wardens; the Sun-Ziggurat's treasures; the Sun Priestess. **XIV** Voss's fastness in the Deeps' far tier, a "gift" of the Drowned Mind; officer-councils; the Hollowed garrison; Deeps level 3 flavor note (lore only). **XV** Voss's origin: the drowning city's pooled will *made themselves an emperor*; the gate he opened; the exodus for vengeance. **XVI** illegible.
+Full payload texts (eng: 40–90 words each; shortened here to payload + key beats, final prose authored in WP content pass per these beats — beats ARE normative):
+
+- **I** Kilmor's defeat, capture, the Pens, mesmerist attempts to Hollow him, his refusal.
+- **II** the Province, out islands (Geldern Reach, Ferrona Keys, Pogney Shoals), the northern host, Voss's landfall and conquest of the north.
+- **III** the pattern's journey to the Séance Tribunal; recall by rite; judgement by the Bench; the Hollowed as patterns returned enthralled.
+- **IV** the resonator: wrought by elder drowned artificers; given to Voss; corruptive bond; useless in clean hands — he would always find it.
+- **V** the elder sun-cult's armorer-saint taught the mesa bowyers; elder masters endow true virtues; given to the proven.
+- **VI** the five tiers: Province, Sun-Ziggurat, Drowned Ziggurat, Ember Deeps, Séance Tribunal; elder transit the only door.
+- **VII** V as above + twin cities' mirrored splendor and exile.
+- **VIII** Mr. Filmon's domain; mad librarians; the sealed west vaults ("so well guarded a small army would be needed").
+- **IX** the wrestling tribe (Colossi pens), the oubliette cells, visitors left to starve.
+- **X** the honor of attendance at a crag-folk burial.
+- **XI** Rockfell and the peaceable hills; the meditation warrens of the bowyer-elders.
+- **XII** Old Chronos, older than any save the elder minds; his moving station; records in unreadable elder script; he aids worthy causes.
+- **XIII** the Great Lens; chosen pure-hearted wardens; the Sun-Ziggurat's treasures; the Sun Priestess.
+- **XIV** Voss's fastness in the Deeps' far tier, a "gift" of the Drowned Mind; officer-councils; the Hollowed garrison; Deeps level 3 flavor note (lore only).
+- **XV** Voss's origin: the drowning city's pooled will *made themselves an emperor*; the gate he opened; the exodus for vengeance.
+- **XVI** illegible.
 
 ### 5.9.2 `text/dialogue.json` — IDs (exact strings where `[REQ]`/preserved; `≈` = authored to beats)
 
-DLG-001 filmon greeting: "I choose you because Doctor Voss would never suspect you." [REQ/D-1 single path] · DLG-002 prefix: "Listen to Mr. Filmon of Terminus Post." · DLG-010…015 the six briefs (Doc 1 §2.2 FR-QST-020 texts 1–6, verbatim) · DLG-020 "The Resonator is bound to you now. You cannot put it down." · DLG-021 shrine voice grant · DLG-030 usher: "Welcome to Kilmor's burial. You may greet the guests; the rite begins when you take your seat." · DLG-031…035 ceremony (phantasm appears; barrages; Voss: "I am Doctor Voss. What I have done today is small work. Only those who take my cause will thrive in the world I am making. I will burn out every last spark of decency on this plateau — but those who join me will be rewarded."; laughter; fade) [REQ beats, canon nouns] · DLG-040/041 warrens door welcome/refuse · DLG-042 challenge: "Take an egg from my great viper without striking her — and without being struck." · DLG-043 congratulate+reward · DLG-044 "The air is bad. Come back later." · DLG-045 attractant wrong-note · DLG-046 "For all the dollars you carry, and a measure of your memories of blood and victory, I will teach you the fifty-seventh rite — the Calling." · DLG-047 "You hold the Calling. You will know its hour." · DLG-048 huntress warning · DLG-050 wallcard · DLG-051…054 Chronos set · DLG-055 purrings (6 variants) + nap hint · DLG-060 sun-gate refuses · DLG-061 priestess: "Old Chronos said you would come… go to the Drowned Ziggurat, the mirror of this one, beneath the crater lake. Its gate answers only to great infamy — or to the Drowned Key, which lies in the Halls of the Colossi. Do the opposite of all you did here, and remember your steps." · DLG-062…065 gate voices · DLG-066 decoded invitation: "WELCOME PILGRIMS TO MY CITY. TAKE MY CAUSE AND SLAY LORD WOOD, AND GREAT SHALL BE YOUR REWARD. TO FIND ME, BREAK THE RESONATOR UPON THE GLYPH-CIRCLE IN MY SANCTUM." (27 words; cipher per §5.7.7) · DLG-067 overriding take · DLG-070 Wood plan: "…We must find Voss in the Ember Deeps and destroy him there. If I lock him in a duel of wills while you strike, we may prevail. Go to his fastness; when you stand before him, perform the fifty-seventh rite. It will open a path through which I will come." · DLG-071 Enclave pointer · DLG-072 repeat · DLG-080 "You are too pure and good for my purposes. Prepare to die, fools." · DLG-081 "You have shown some appetite for the dark. Prove yourselves truly mine — destroy Lord Wood." · DLG-082 "You have proven your nature utterly. One test remains: destroy Lord Wood, and kneel to me." · DLG-083/084 feat refusals · DLG-085 climax set (gate, "Strike now!", "No — destroy Lord Wood, and I will raise you beside me.", blue arc/smoke/charring) [RS-8] · DLG-086 good ending: Sun-Mind: "You kept faith with the Light. The Plateau remembers its friends." · DLG-087 evil ending: Drowned Mind: "You have the makings of an apostle of the Deep. Go out, and teach others your ways." · DLG-090 hermit reveal: "I am Doctor Voss. You would not like to see what it costs. Join me — and you never will." · SYS strings: "MENACE APPROACHES" [REQ], "You can't afford that", "can learn no new feats at this time", "It will not leave your hand.", "There is no one here.", "The lock will not yield to any pick.", "Unusable", plus menu titles per §5.10.3. **STR-C1** cipher filler: SHADOW, BRASS, EMBER, SALT, GLASS, WORM, LAMP, TIDE, CROWN, DUST, WIRE, MOTH, VEIL, ROOT, IRON, BELL, FOAM, GLOAM, SPAR, QUILL, ASH, REED, VAULT, HUM.
+- **DLG-001** filmon greeting: "I choose you because Doctor Voss would never suspect you." [REQ/D-1 single path]
+- **DLG-002** prefix: "Listen to Mr. Filmon of Terminus Post."
+- **DLG-010…015** the six briefs (Doc 1 §2.2 FR-QST-020 texts 1–6, verbatim)
+- **DLG-020** "The Resonator is bound to you now. You cannot put it down."
+- **DLG-021** shrine voice grant
+- **DLG-030** usher: "Welcome to Kilmor's burial. You may greet the guests; the rite begins when you take your seat."
+- **DLG-031…035** ceremony (phantasm appears; barrages; Voss: "I am Doctor Voss. What I have done today is small work. Only those who take my cause will thrive in the world I am making. I will burn out every last spark of decency on this plateau — but those who join me will be rewarded."; laughter; fade) [REQ beats, canon nouns]
+- **DLG-040/041** warrens door welcome/refuse
+- **DLG-042** challenge: "Take an egg from my great viper without striking her — and without being struck."
+- **DLG-043** congratulate+reward
+- **DLG-044** "The air is bad. Come back later."
+- **DLG-045** attractant wrong-note
+- **DLG-046** "For all the dollars you carry, and a measure of your memories of blood and victory, I will teach you the fifty-seventh rite — the Calling."
+- **DLG-047** "You hold the Calling. You will know its hour."
+- **DLG-048** huntress warning
+- **DLG-050** wallcard
+- **DLG-051…054** Chronos set
+- **DLG-055** purrings (6 variants) + nap hint
+- **DLG-060** sun-gate refuses
+- **DLG-061** priestess: "Old Chronos said you would come… go to the Drowned Ziggurat, the mirror of this one, beneath the crater lake. Its gate answers only to great infamy — or to the Drowned Key, which lies in the Halls of the Colossi. Do the opposite of all you did here, and remember your steps."
+- **DLG-062…065** gate voices
+- **DLG-066** decoded invitation: "WELCOME PILGRIMS TO MY CITY. TAKE MY CAUSE AND SLAY LORD WOOD, AND GREAT SHALL BE YOUR REWARD. TO FIND ME, BREAK THE RESONATOR UPON THE GLYPH-CIRCLE IN MY SANCTUM." (27 words; cipher per §5.7.7)
+- **DLG-067** overriding take
+- **DLG-070** Wood plan: "…We must find Voss in the Ember Deeps and destroy him there. If I lock him in a duel of wills while you strike, we may prevail. Go to his fastness; when you stand before him, perform the fifty-seventh rite. It will open a path through which I will come."
+- **DLG-071** Enclave pointer
+- **DLG-072** repeat
+- **DLG-080** "You are too pure and good for my purposes. Prepare to die, fools."
+- **DLG-081** "You have shown some appetite for the dark. Prove yourselves truly mine — destroy Lord Wood."
+- **DLG-082** "You have proven your nature utterly. One test remains: destroy Lord Wood, and kneel to me."
+- **DLG-083/084** feat refusals
+- **DLG-085** climax set (gate, "Strike now!", "No — destroy Lord Wood, and I will raise you beside me.", blue arc/smoke/charring) [RS-8]
+- **DLG-086** good ending: Sun-Mind: "You kept faith with the Light. The Plateau remembers its friends."
+- **DLG-087** evil ending: Drowned Mind: "You have the makings of an apostle of the Deep. Go out, and teach others your ways."
+- **DLG-090** hermit reveal: "I am Doctor Voss. You would not like to see what it costs. Join me — and you never will."
+- **SYS strings:** "MENACE APPROACHES" [REQ], "You can't afford that", "can learn no new feats at this time", "It will not leave your hand.", "There is no one here.", "The lock will not yield to any pick.", "Unusable", plus menu titles per §5.10.3.
+- **STR-C1** cipher filler: SHADOW, BRASS, EMBER, SALT, GLASS, WORM, LAMP, TIDE, CROWN, DUST, WIRE, MOTH, VEIL, ROOT, IRON, BELL, FOAM, GLOAM, SPAR, QUILL, ASH, REED, VAULT, HUM.
 
 ### 5.9.3 Color-text registry (Doc 1 §11 note 4 → string rows)
 
@@ -408,23 +692,187 @@ port-and-cheese · waste-paper pit · weapon cupboard · both Colossi signs · "
 
 ### 5.10.1 `text/color_tokens.json` (semantic → default RGB; restyleable, C-6)
 
-`parchment #C8B88A · ink #2B2118 · brass #B08D57 · gunmetal #5D6466 · blood #8B0000 · gore #5A0E0E · ash #9C9C9C · stone #8A8D8F · stone_dark #555A5C · jungle #3F6B3A · fen #4E5D3A · basalt #4A4440 · trail #9A7B4F · water #2E5E7E · ember #C1440E · lava #E25822 · sun_gold #D4A017 · gloom #3A3F58 · lens_glow #F2E3B3 · hide #A08050 · ui_frame #8A8D8F · ok #7FB069 · warn #D4A017 · bad #B22222 · sleep #7A7FA8 · hollow #B0B7BB · rare #7E57C2`.
+| token | RGB | token | RGB |
+|---|---|---|---|
+| parchment | #C8B88A | ink | #2B2118 |
+| brass | #B08D57 | gunmetal | #5D6466 |
+| blood | #8B0000 | gore | #5A0E0E |
+| ash | #9C9C9C | stone | #8A8D8F |
+| stone_dark | #555A5C | jungle | #3F6B3A |
+| fen | #4E5D3A | basalt | #4A4440 |
+| trail | #9A7B4F | water | #2E5E7E |
+| ember | #C1440E | lava | #E25822 |
+| sun_gold | #D4A017 | gloom | #3A3F58 |
+| lens_glow | #F2E3B3 | hide | #A08050 |
+| ui_frame | #8A8D8F | ok | #7FB069 |
+| warn | #D4A017 | bad | #B22222 |
+| sleep | #7A7FA8 | hollow | #B0B7BB |
+| rare | #7E57C2 | | |
 
 ### 5.10.2 `presentation/symbols.json` — dictionary (glyph space: 0–255 CP437 literal for text/borders; entities 256+)
 
-Members: `256 white_hunter "@" trail · 257 pugilist "@" brass · 258 exp_doctor "@" ok · 259 scout "@" jungle · 260 cat_burglar "@" ash · 261 antiquarian "@" rare` — states: `{sleeping:{fg:sleep}, down:{fg:warn}, unconscious:{fg:bad}, dead:{glyph:"%",fg:gore}, hollowed:{fg:hollow}}`. Automata: `262 mud "Ω" basalt · 263 mist "≈" ash · 264 air "π" stone`.
-Terrain/features: `300 trail "." jungle · 301 badlands ":" basalt · 302 swamp "≈" fen · 303 escarpment "▲" stone_dark · 304 river "≈" water · 305 water "≈" water · 306 lava "≈" lava · 307 floor "." stone · 308 wall "█" stone_dark · 309 door "+" brass · 310 panel "█" stone_dark · 311 stairs/funicular ">" sun_gold · 312 altar/shrine "_" lens_glow · 313 plinth "_" gloom · 314 lever "/" gunmetal · 315 statue "&" lens_glow · 316 chest/cache "=" brass · 317 sign "!" parchment · 318 trap "^" bad (revealed) · 319 corpse "%" gore · 320 item_drop "]" parchment · 321 post "£" trail · 322 resthouse "≡" brass · 323 site_entrance "⌂" gunmetal · 324 glyph_circle "○" gloom`.
-Menaces (78 rows; `+M` rows carry `states.mummified.fg=ash`): 325 scuttler"s"fen · 326 viper"s"jungle · 327 leech"~·"→"s"water ≈ — assign: 327 leech_swarm "s" water · 328 slime "b" fen · 329 scorpion "s" badlands · 330 ratling "r" hide · 331 hyena_man "h" hide +M · 332 ape_feral "a" hide · 333 cutthroat "c" gunmetal · 334 drake_pup "d" jungle · 335 jackal "j" · 336 kite "k" · 337 tunnel_folk "t" ash · 338 fen_man "f" fen · 339 sauroid "S" jungle · 340 glider "g" · 341 wing_folk "w" · 342 long_man "l" hide · 343 basalt_brute "B" basalt · 344 bull_ape "A" hide · 345 yearling "D" · 346 vipermoth "m" · 347 lurker "L" water · 348 croc "C" water · 349 sentinel "Z" ash +M · 350 acolyte_m "z" ash +M · 351 medium "e" rare · 352 constrictor "s" fen · 353 bloatfly "·→x" fen → "x" · 354 crayfish "c" water · 355 bull_drake "D" basalt · 356 storm_brute "B" lava · 357 colossus "G" basalt · 358 mesmerist "e" rare · 359 hierophant "E" gloom · 360 fanatic "c" basalt · 361 prelate "p" gloom · 362 illusionist "i" rare · 363 ether_wraith "W" gloom +M · 364 frostwolf "w" stone · 365 deep_one "D" water · 366 pit_ape "A" basalt · 367 bull_saurian "S" basalt · 368 ripper "R" · 369 mauler "M" · 370 stonehorn "H" basalt · 371 sloth "H" jungle · 372 terrorbird "T" trail · 393 sabretooth "c" gore · 373 raptor "r" stone · 374 tyrant_drake "D" gore · 375 high_fiend "&" gore · 376 deeps_fiend "&" lava · 377 blood_wraith "W" blood +M · 378 high_warden "W" ash +M · 379 hadal_cultist "h" water · 380 cult_warden "H" water · 381 great_beast "B" gore · 382 ancient_ape "A" gore · 383 great_ape "A" gore · 384 tyrant_king "K" gore · 385 magma_newt "n" lava · 386 ember_bat "b" lava · 387 soot_serpent "s" lava · 388 ash_crawler "x" ash · 389 obsidian_crawler "x" gloom · 390 grotto_crab "c" gloom · 391 titan_toad "T" fen · 392 viper_swarm "s" bad · 394 glass_scorpion "s" lens_glow · 395 wisp "·"→"o" ember · 396 sun_priestess "P" sun_gold · 397 boo_boo_kitty "c" sun_gold · 398 lord_wood "L" trail · 399 voss "V" gunmetal · 400 voss_hollowed "V" hollow +M · 401 warden_librarian "l" ash +M · 402 mad_librarian "l" gore +M.
+**Members:**
+
+| id | name | glyph | fg |
+|---|---|---|---|
+| 256 | white_hunter | @ | trail |
+| 257 | pugilist | @ | brass |
+| 258 | exp_doctor | @ | ok |
+| 259 | scout | @ | jungle |
+| 260 | cat_burglar | @ | ash |
+| 261 | antiquarian | @ | rare |
+
+States: `{sleeping:{fg:sleep}, down:{fg:warn}, unconscious:{fg:bad}, dead:{glyph:"%",fg:gore}, hollowed:{fg:hollow}}`.
+
+**Automata:**
+
+| id | name | glyph | fg |
+|---|---|---|---|
+| 262 | mud | Ω | basalt |
+| 263 | mist | ≈ | ash |
+| 264 | air | π | stone |
+
+**Terrain/features:**
+
+| id | name | glyph | fg |
+|---|---|---|---|
+| 300 | trail | . | jungle |
+| 301 | badlands | : | basalt |
+| 302 | swamp | ≈ | fen |
+| 303 | escarpment | ▲ | stone_dark |
+| 304 | river | ≈ | water |
+| 305 | water | ≈ | water |
+| 306 | lava | ≈ | lava |
+| 307 | floor | . | stone |
+| 308 | wall | █ | stone_dark |
+| 309 | door | + | brass |
+| 310 | panel | █ | stone_dark |
+| 311 | stairs/funicular | > | sun_gold |
+| 312 | altar/shrine | _ | lens_glow |
+| 313 | plinth | _ | gloom |
+| 314 | lever | / | gunmetal |
+| 315 | statue | & | lens_glow |
+| 316 | chest/cache | = | brass |
+| 317 | sign | ! | parchment |
+| 318 | trap | ^ | bad (revealed) |
+| 319 | corpse | % | gore |
+| 320 | item_drop | ] | parchment |
+| 321 | post | £ | trail |
+| 322 | resthouse | ≡ | brass |
+| 323 | site_entrance | ⌂ | gunmetal |
+| 324 | glyph_circle | ○ | gloom |
+
+**Menaces** (78 rows; `+M` rows carry `states.mummified.fg=ash`):
+
+| id | name | glyph | fg | notes |
+|---|---|---|---|---|
+| 325 | scuttler | s | fen | |
+| 326 | viper | s | jungle | |
+| 327 | leech_swarm | s | water | (was "~·"→"s"; assign: 327 leech_swarm "s" water) |
+| 328 | slime | b | fen | |
+| 329 | scorpion | s | badlands | |
+| 330 | ratling | r | hide | |
+| 331 | hyena_man | h | hide | +M |
+| 332 | ape_feral | a | hide | |
+| 333 | cutthroat | c | gunmetal | |
+| 334 | drake_pup | d | jungle | |
+| 335 | jackal | j | | |
+| 336 | kite | k | | |
+| 337 | tunnel_folk | t | ash | |
+| 338 | fen_man | f | fen | |
+| 339 | sauroid | S | jungle | |
+| 340 | glider | g | | |
+| 341 | wing_folk | w | | |
+| 342 | long_man | l | hide | |
+| 343 | basalt_brute | B | basalt | |
+| 344 | bull_ape | A | hide | |
+| 345 | yearling | D | | |
+| 346 | vipermoth | m | | |
+| 347 | lurker | L | water | |
+| 348 | croc | C | water | |
+| 349 | sentinel | Z | ash | +M |
+| 350 | acolyte_m | z | ash | +M |
+| 351 | medium | e | rare | |
+| 352 | constrictor | s | fen | |
+| 353 | bloatfly | x | fen | ("·→x" → "x") |
+| 354 | crayfish | c | water | |
+| 355 | bull_drake | D | basalt | |
+| 356 | storm_brute | B | lava | |
+| 357 | colossus | G | basalt | |
+| 358 | mesmerist | e | rare | |
+| 359 | hierophant | E | gloom | |
+| 360 | fanatic | c | basalt | |
+| 361 | prelate | p | gloom | |
+| 362 | illusionist | i | rare | |
+| 363 | ether_wraith | W | gloom | +M |
+| 364 | frostwolf | w | stone | |
+| 365 | deep_one | D | water | |
+| 366 | pit_ape | A | basalt | |
+| 367 | bull_saurian | S | basalt | |
+| 368 | ripper | R | | |
+| 369 | mauler | M | | |
+| 370 | stonehorn | H | basalt | |
+| 371 | sloth | H | jungle | |
+| 372 | terrorbird | T | trail | |
+| 393 | sabretooth | c | gore | |
+| 373 | raptor | r | stone | |
+| 374 | tyrant_drake | D | gore | |
+| 375 | high_fiend | & | gore | |
+| 376 | deeps_fiend | & | lava | |
+| 377 | blood_wraith | W | blood | +M |
+| 378 | high_warden | W | ash | +M |
+| 379 | hadal_cultist | h | water | |
+| 380 | cult_warden | H | water | |
+| 381 | great_beast | B | gore | |
+| 382 | ancient_ape | A | gore | |
+| 383 | great_ape | A | gore | |
+| 384 | tyrant_king | K | gore | |
+| 385 | magma_newt | n | lava | |
+| 386 | ember_bat | b | lava | |
+| 387 | soot_serpent | s | lava | |
+| 388 | ash_crawler | x | ash | |
+| 389 | obsidian_crawler | x | gloom | |
+| 390 | grotto_crab | c | gloom | |
+| 391 | titan_toad | T | fen | |
+| 392 | viper_swarm | s | bad | |
+| 394 | glass_scorpion | s | lens_glow | |
+| 395 | wisp | o | ember | ("·"→"o") |
+| 396 | sun_priestess | P | sun_gold | |
+| 397 | boo_boo_kitty | c | sun_gold | |
+| 398 | lord_wood | L | trail | |
+| 399 | voss | V | gunmetal | |
+| 400 | voss_hollowed | V | hollow | +M |
+| 401 | warden_librarian | l | ash | +M |
+| 402 | mad_librarian | l | gore | +M |
+
 *(IDs unique 325–402 ✓ = 78 entries; each maps to §5.5 row order.)*
 
 ### 5.10.3 `presentation/menus.json` — static descriptors (scripted-square menus come from R-8, §5.7)
 
-Format `{id, title, region:"bottom_center", options:[{key,label,verb,args}]}`. Descriptors: `boot`[1 Start at Terminus→session.new · 2 Continue→menu save_slots · 3 Demonstration→session.demo · 4 Utilities→menu utilities] · `utilities`[1 Backup member→util.backup · 2 Restore member→util.restore · 3 New game (ERASES)→util.new_game_erase confirm submenu] · `post`[1 Explorers' Club chapter→menu chapter · 2 Letter-of-credit→menu credit · 3 Outfitter→menu outfitter · 4 Debrief officer→post.debrief · 5 Infirmary→post.infirmary · 6 Perform a feat→post.use_feat · 7 Use an item→post.use_item · 8 Distribute & sell→post.distribute · 9 Trade→post.trade · I Inspect member→post.inspect · S Save game→menu save_slots · L Leave Post→post.leave] · `chapter`[N New member · L List · A Add to expedition · D Drop · R Rename · P Purge · T Training · F Learn feats · Q Leave] (+ designate-automaton implicit via Add, FR-CHR-008) · recruit flow: `strain`[1–5 charter, 6 Strange] → `profession`[1–6; strange→1 White Hunter, 5 Cat Burglar only] → `accept`[A accept / R reject] · `credit`[W Withdraw / D Deposit] · `outfitter`[L list · C continue · # buy · T trade-sell · Q] · `trail`[P Perform · I Inspect · U Use tonic · R Rest/camp · G Time-lag & sound → menu config] · `encounter`[1 Fight · 2 Accept Menace's Surrender · 3 Parley · 4 Beg for Mercy · 5 Flee] · `tactic`[1 Thrust · 2 Attack · 3 Slash · 4 Lunge · 5 Aim · 6 Feat · 7 Parry · 8 Fire · 9 Other→menu tactic_other] · `tactic_other`[R Rank (F/M/B) · T Time lag · S Sound · D Redo] · `site`[L Look · menu-driven contextual options emitted by scripts] · `config`[T 0–9 · S on/off] · `save_slots`[1–4 + 0 show autosave note]. Every option resolves to a §6.1 verb — **lint rule**: no descriptor may name a verb not in the registry.
+Format `{id, title, region:"bottom_center", options:[{key,label,verb,args}]}`. Descriptors:
+
+- `boot` [1 Start at Terminus→session.new · 2 Continue→menu save_slots · 3 Demonstration→session.demo · 4 Utilities→menu utilities]
+- `utilities` [1 Backup member→util.backup · 2 Restore member→util.restore · 3 New game (ERASES)→util.new_game_erase confirm submenu]
+- `post` [1 Explorers' Club chapter→menu chapter · 2 Letter-of-credit→menu credit · 3 Outfitter→menu outfitter · 4 Debrief officer→post.debrief · 5 Infirmary→post.infirmary · 6 Perform a feat→post.use_feat · 7 Use an item→post.use_item · 8 Distribute & sell→post.distribute · 9 Trade→post.trade · I Inspect member→post.inspect · S Save game→menu save_slots · L Leave Post→post.leave]
+- `chapter` [N New member · L List · A Add to expedition · D Drop · R Rename · P Purge · T Training · F Learn feats · Q Leave] (+ designate-automaton implicit via Add, FR-CHR-008)
+- recruit flow: `strain` [1–5 charter, 6 Strange] → `profession` [1–6; strange→1 White Hunter, 5 Cat Burglar only] → `accept` [A accept / R reject]
+- `credit` [W Withdraw / D Deposit]
+- `outfitter` [L list · C continue · # buy · T trade-sell · Q]
+- `trail` [P Perform · I Inspect · U Use tonic · R Rest/camp · G Time-lag & sound → menu config]
+- `encounter` [1 Fight · 2 Accept Menace's Surrender · 3 Parley · 4 Beg for Mercy · 5 Flee]
+- `tactic` [1 Thrust · 2 Attack · 3 Slash · 4 Lunge · 5 Aim · 6 Feat · 7 Parry · 8 Fire · 9 Other→menu tactic_other]
+- `tactic_other` [R Rank (F/M/B) · T Time lag · S Sound · D Redo]
+- `site` [L Look · menu-driven contextual options emitted by scripts]
+- `config` [T 0–9 · S on/off]
+- `save_slots` [1–4 + 0 show autosave note]
+
+Every option resolves to a §6.1 verb — **lint rule**: no descriptor may name a verb not in the registry.
 
 ### 5.10.4 `presentation/demo_script.json` (ADR-6; fixed seed 7)
 
 `session.new` → accept starter six (FR-CHR-002) → `shop.buy` folio_II → `post.use_item` read → `post.leave` (autosave) → trail walk S×6 → seeded encounter [06] → 3 rounds (thrust/attack/fire scripted) → victory → `trail.move` N×6 → post → `session.save` slot1 → `session.quit_to_menu`. Runs unattended through the normal display path; any DomainError aborts demo silently to menu.
 
+---
 
 ## 6. API Specification
 
@@ -473,6 +921,143 @@ Symbol ids 0–255 = literal CP437 for UI text/borders; ≥256 = entities throug
 
 None exists and none is added (C-7; single-player local). Two authorization-shaped concerns land elsewhere: **game-rule gates** (BR-34/infamy/Enclave strain gate) are engine logic in `quests.py`/`sites.py`, not security; **file trust boundaries** are handled by §6.4 validation — a malformed save is hostile input and is rejected without state mutation. No credentials, no secrets, no PII.
 
+## 8. Module Specifications
+
+Conventions: each module block lists **Provides** (public surface; signatures in Python type syntax — interface specification, not implementation code), **Called by** (caller-existence gate), **Mutates** (state-residence note). No module constructs infrastructure except `main` (composition root, §15.1). `Id`=int; money=int dollars; percentages=int 0–250 unless noted. All engine modules receive `regs` (frozen `Registries`, §8.2 `contentload`) at construction; `Regs` lookup is read-only. §2 structure addendum **A1** `[P]`: module `platform/contentload.py` added (registry loading needed a named owner outside data-only `content/`).
+
+### 8.1 Type Dictionary
+
+Every type referenced by any signature in §8 is defined here or in §6.3/§6.4.
+
+```python
+# Enums (string-literal sets)
+Strain    = Literal[15 ids per §5.1 strains.json]          # e.g. "club_stock"…"long_man"
+Profession= Literal["white_hunter","pugilist","expedition_doctor",
+                    "scout","cat_burglar","antiquarian_mesmerist"]
+Standing  = Literal["urchin","stoker","artisan","patrician"]
+BodyArea  = Literal["head","torso","arm_l","arm_r","leg_l","leg_r"]
+Severity  = Literal["ok","injured","broken","gone"]
+Vital     = Literal["okay","sleeping","down","unconscious","dead","hollowed"]
+Skill     = Literal["attack","parry","swim","listen","spot_trap","disarm_trap",
+                    "find_item","pick_lock","marksman"]
+Domain    = Literal["everywhere","post","field","site","combat"]
+FeatClass = Literal["passive","active"]
+Terrain   = Literal["trail","badlands","swamp","escarpment","river",
+                    "water","floor","lava","solid"]
+MapId     = Literal["province","ziggurat_sun","ziggurat_drowned","deeps",
+                    "site01","site02","site03","site04","site05",
+                    "site06","site07","site08","site09","site10","site11"]
+Phase     = Literal["boot","post","trail","site","encounter","combat",
+                    "tribunal","demo"]
+Rank      = Literal["front","middle","back"]               # member ranks
+Dir       = Literal["N","S","E","W"]
+
+# DTOs (field-complete)
+ItemInst      = { item_id: Id, skin: "bow"|"rifle"|None, bound: bool }
+BodyState     = { area: BodyArea → { sev: Severity, dmg_taken: int } }
+MemberDTO     = { id: Id, name: str, strain: Strain, profession: Profession,
+                  standing: Standing, attrs: dict[str,int],            # STR/INT/DEX/CON/CHA
+                  luck: int, age_days: int, level: int, xp: int,
+                  hp_cur: int, hp_max: int, mp_cur: int, mp_max: int, spent_mp: bool,
+                  skills: dict[Skill,int], feats: list[Id], slots_left: int,
+                  items: list[ItemInst],                               # ≤9 (BR-8)
+                  in_use: dict,                                        # weapon/shield/armor/fire
+                  credit: int, trainings_taken: int, resident_post: Id,
+                  body: BodyState, vital: Vital, frozen: bool }        # hollowed freeze
+ExpeditionDTO = { members: list[Id],                                   # 1–6
+                  treasury: int, found_items: list[ItemInst],          # ≤90
+                  infamy: int, leg_xp: int, leg_dollars: int, leg_items: int,
+                  time_out_days: int, automaton: Id|None, sentry: Id,
+                  ranks: dict[Id,Rank] }
+SiteState     = { visited: bool, explored: set[tuple[int,int]],
+                  flags: dict[str,bool|int], dead_sets: list[str],
+                  original_snapshot: dict|None }
+WorldDTO      = { map_id: MapId, pos: tuple[int,int],
+                  plane_return: tuple[MapId,int,int]|None,
+                  sites: dict[MapId,SiteState],
+                  funicular: tuple[str,int,str]|None,
+                  visited_posts: set[Id] }
+GameState     = { schema_version: 1, tick: int, clock_days: int, phase: Phase,
+                  roster: list[MemberDTO],                             # ≤27
+                  automata: list[MemberDTO],                           # exactly 3 (Mud/Mist/Air)
+                  expedition: ExpeditionDTO|None, world: WorldDTO,
+                  quest_score: int, milestone: int,
+                  flags: dict[str,bool|int],                           # one-time flags (BR-36)
+                  post_context: Id, combat: CombatState|None,
+                  script_ctx: dict|None }
+Combatant     = { ref: Literal["member","automaton","foe"], id: Id,
+                  rank: Rank|int, body: BodyState, status: Vital,
+                  casts_left: int, hp_cur: int, hp_max: int }
+CombatState   = { round: int, foes: list[Combatant], allies: list[Combatant],
+                  assign: dict[Id,dict], redo_open: bool, sleep_start: bool,
+                  treasure: dict, fields: list[dict] }                 # active feat effects
+ActiveFeatFx  = { feat: Id, family: str, tier: int, stacks: int, side: str }
+```
+
+### 8.2 Platform Modules
+
+**`platform/contentload.py`** — Provides `load_all(root: Path) -> Registries` (§5.0 load order; anchor validation from §5.0/§12(c); raises `ContentError(file, row, why)`); `lint_strings(regs: Registries) -> None`. Called by: `main`, `cradle-content-check`, tests. Mutates: nothing.
+**`platform/config.py`** — Provides `load_config(path: Path) -> Config{window_scale:int, time_lag:int, sound:bool, debug:bool}`; `save_config(cfg: Config) -> None`. Called by: `main`, `app` (config verb path). Mutates: `config.json` only.
+**`platform/clock.py`** — Provides `pace(cfg: Config, n_msgs: int) -> None` (hold = `cfg.time_lag × 150ms × n_msgs`; §9 rule — no state access). Called by: `app`. Mutates: wall clock only.
+**`platform/saveio.py`** — *sole game-data filewriter.* Provides `write_slot(slot: int, doc: SaveDoc) -> Path`; `read_slot(slot: int) -> SaveDoc` (§6.4 validation, else `SaveError`); `list_slots() -> list[SlotInfo{slot:int, exists:bool, label:str}]`; `backup_member(m: MemberDTO) -> Path`; `restore_member(name: str) -> MemberDTO`; `erase_all(confirm: True) -> None`. Called by: `main` (as injected sinks), `app`. Mutates: save files.
+**`platform/app.py`** — Provides `class GameApp: run() -> int` — boot-menu loop; 60 s idle ⇒ `session.demo` (ADR-6); per cycle: `poll → inputmap.translate → menusession.handle_key → engine.dispatch → collect events → composer.compose → renderer.render → clock.pace`; owns `MenuSession`, demo playback, quit-to-menu. Called by: `main`. Mutates: nothing directly; all game state via `engine.dispatch`.
+**`simcli.py`** — Provides `run_script(path: Path, seed: int, hash_only: bool=False) -> tuple[Summary, str]` — replays a command script (one verb per line) against a fresh `Engine` with no renderer; returns `(state_summary, sha256_of_rng_draw_log)` (C-3; golden harness entry, §12). Called by: CLI, tests. Mutates: temp save dir only.
+
+### 8.3 Engine Modules
+
+**`engine/rng.py`** — Provides `class SeededRng: d100() -> int; dice(n: int, d: int) -> int; chance(pct: int) -> bool; pick(seq: list) -> T; state() -> dict; restore(d: dict) -> None; log: list[DrawRec{tick:int, caller:str, dist:str, result:int}]`. All randomness funnels through these four draws. Called by: every engine module (injected); constructed by `main`. Mutates: PRNG + log (in-engine; serialized into SaveDoc via `state()`).
+**`engine/errors.py`** — Provides `DomainError(verb:str, reason:str)`, `ContentError`, `SaveError`, `InvariantBreach`. Called by: all. Mutates: nothing.
+**`engine/events.py`** — Pure constructors → `msg(txt_id:str, **fmt) -> Event`; `menu(menu_id:str, ctx:dict, slots:list) -> Event`; `state(delta:dict) -> Event`; `map_update(cells:list) -> Event`; `combat(rec:dict) -> Event`; `sfx_flag(name:str) -> Event` (inert at presentation, D-2); `save_written(path:str) -> Event`; `ending(kind:str) -> Event`; `error(e:DomainError) -> Event`. Called by: all engine modules. Mutates: nothing.
+**`engine/state.py`** — Provides `new_game(seed: int) -> GameState` (FR-SES-001: empty expedition, Terminus post phase); `check_invariants(s: GameState) -> None` (BR-7 ceilings, BR-8 caps, BR-36 flag monotonicity; dev builds only, §11); `project(s: GameState) -> StateProjection` — read-only view handed to composer. Called by: `core` handlers, `simcli`, tests. Mutates: constructs state only.
+**`engine/commands.py`** — Provides `VERBS: dict[str, tuple[frozenset[Phase], str]]` — routing table for all §6.1 verbs (verb → phases legal in → handler path); `validate(cmd: Command, phase: Phase) -> None|DomainError`. Called by: `core.dispatch`. Mutates: nothing.
+**`engine/core.py`** — Provides `class Engine: __init__(state: GameState, rng: SeededRng, regs: Registries, save_sink: Callable[[int, SaveDoc], Path], backup_sink: Callable[[MemberDTO], Path])`; `dispatch(cmd: Command) -> list[Event]` (validate → route → handler → `check_invariants` (dev) → events); `autosave() -> list[Event]` — only autosave chain; invoked by `post.leave` and any arrival into a post (FR-TWN-005, C-10). Called by: `app`, `simcli`, tests. Mutates: GameState via handlers; triggers sinks.
+**`engine/roster.py`** — Provides `list_members(s) -> list[MemberSummary]`; `add_to_expedition(s, mid: Id) -> None|DomainError` (FR-CHR-005: resident-in-post, <6); `drop(s, mid)`; `rename(s, mid, name)`; `purge(s, mid)` (FR-CHR-004); `designate_automaton(s, aid: Id)` (FR-CHR-008). Called by: core routing. Mutates: roster/expedition.
+**`engine/creation.py`** — Provides `begin_recruit(s) -> Event`; `roll_member(s, strain: Strain|"strange", prof: Profession, rng) -> MemberDTO` (BR-3 mods+caps; standing roll — charter {urchin 10, stoker 40, artisan 35, patrician 15}, strange {30/45/20/5} `[P]`; luck 8–13; starting credit/skills §5.1; FR-CHR-001); `apply_strange_penalties(m: MemberDTO) -> MemberDTO` (fee ×1.5, first-impression CHA −2, annex lodging — C-9); `accept(s, name) -> list[Event]` / `reject(s)`; `starter_six(s, rng) -> None` (FR-CHR-002 fixed six). Called by: core. Mutates: roster.
+**`engine/training.py`** — Provides `train(s, mid) -> list[Event]` (OQ-3 threshold check; cost `200×L×((21−CHA)/10)×(1+0.05×trainings_taken)` floor-to-dollar from treasury; level+1: `hp_max` BR-1(+extension) with CON adjustment; award `100×L×shares`; sets `trainings_taken += 3` after skill phase); `train_skill(s, mid, skill: Skill) -> Event` (exactly 3 per level session; repeats diminishing `+8/+4/+2` `[P]`; cap 250); `learn_feat(s, mid, feat: Id) -> list[Event]` (matrix §5.4, slots `rate×level + max(0, INT−10)` (BR-6/OQ-5); cost `150×mp_cost×((21−CHA)/10)`); `mp_growth(s, mid, rng) -> Event|None` (FR-ADV-004: 25% chance +1 max if `spent_mp`, ≤ BR-2 interpolated ceiling); `divide_xp(s) -> list[Event]` (FR-ADV-005 on post arrival: `leg_xp ÷ living members`, floor, remainder discarded `[P]`). Called by: core, `infirmary`, `trail`. Mutates: members, treasury.
+**`engine/credit.py`** — Provides `withdraw(s, mid, amount) -> list[Event]` (≤ member credit; treasury result ≤ $65,000 else DomainError overflow; FR-TWN-001); `deposit(s, amount) -> list[Event]` (≤ treasury; fee = **$1 per expedition member, flat** `[P, illustrative of preserved exemplar $6,000/6 ⇒ $999]`; remainder apportioned 1/2/3 shares by standing (OQ-9); each share-lot floored; per-member credit line ≤ $65,000 — overflow rejected). Called by: core. Mutates: treasury, credit lines.
+**`engine/outfitter.py`** — Provides `open_stock(s, post: Id, rng) -> None` (stock regenerated per post visit from band tier; folio/curio rows persist once stocked — FR-TWN-002); `list_page(s, shopper: Id, page: int) -> Event` (12 rows: no, name, cost, point value, `unusable` per BR-9); `buy(s, shopper, row: int) -> list[Event]` (cost ≤ treasury; kit <9; else DomainError "You can't afford that" / kit-full); `sell(s, shopper, item: ItemInst) -> list[Event]` (price `⌊cost/2⌋` `[P]`). Called by: core. Mutates: treasury, kit, stock.
+**`engine/infirmary.py`** — Provides `stay(s, resthouse: bool=False) -> list[Event]` (FR-TWN-004/FR-WLD-004: resthouse debits $250 + $25 tax `[P "plus tax"]`, refuse if unaffordable; all members hp/mp → max; cure **1 Broken or 2 Injured** per stay in vital order (§8.6); calls `training.mp_growth` for `spent_mp` members; `timekeep.advance(s, 7)`). Called by: core. Mutates: members, treasury, clock.
+**`engine/timekeep.py`** — Provides `advance(s, days: int) -> list[Event]` (clock; per-member aging: `age_years = age_days ÷ 360`; at 50/70/90% strain lifespan apply decline per Doc 1 OQ-6 — cumulative −1/−2/−3 STR/DEX/CON; INT/CHA −1 at 90%; each mark once, flagged); `move_cost(t: Terrain) -> int` (trail 1, badlands 1, swamp 2, escarpment 3, river +1, floor 0 — site leg billed separately: 1 day per 10 site moves, min 1/leg, OQ-6); `CAMP_COST = 1`; `STAY_COST = 7`. Called by: `trail`, `sites`, `infirmary`. Mutates: clock, member ages/attrs.
+**`engine/trail.py`** — Provides `step(s, d: Dir) -> list[Event]` (bounds/terrain gate: escarpment & open water blocked; crater-lake water blocked; river square → per-member Swim roll, fail → `2d10` drowning damage (may kill, FR-WLD-002); `timekeep.advance(move_cost)`; menace roll per §5.8 table → `encounters.begin_random`; move counter %10 == 0 → night camp: sentry Listen roll → rouse or ambush (`encounters.begin_ambush` with `sleep_start`); site square → enter prompt; post square → arrival: `training.divide_xp`, phase=post, `core.autosave`); `camp_rest(s) -> list[Event]` (voluntary camp, same night sequence, `[P]`); `perform(s, mid, feat, target)` — delegates `feats.perform` (Field/Everywhere domain); `use_tonic(s, mid, tonic, target)` (BR-10); `inspect(s) -> Event` (FR-WLD-006 summary). Called by: core. Mutates: world position, clock, members, encounter spawns.
+**`engine/sites.py`** — Provides `enter(s, site: MapId, mode: "saved"|"original"|None) -> list[Event]` (FR-DGN-006 choice; original restore never revives one-time flags, BR-36); `move(s, d: Dir) -> list[Event]` (solid → thud; **hidden panel**: square in `panels` fixture → reveal + traverse, FR-DGN-003; door: auto-Listen → success warns + retreat option; locked door blocks until picked; trap square: if revealed → step triggers unless disarmed; script squares → `scripts.run_square`; menace roll 1/12 per move, §5.8); `look(s) -> Event` (reveal by ray-LOS radius 3, walls block; FR-DGN-001); `spot_trap(s) -> Event` (best Spot-Trap member rolls; reveals within 3 ahead); `disarm(s, mid) -> list[Event]` (exactly one member attempts; failure → trap effect §8.6 `TRAP_FX`); `pick_lock(s, mid) -> list[Event]` (roll Pick Lock; `up` doors refuse with FR-DGN-002 strings); `exit(s, save_state: bool) -> list[Event]` (offer then `persistence.site_snapshot` if yes; return to province pos); `bill_time(s, moves:int)` → `timekeep` per §8.3 rule. Called by: core. Mutates: SiteState, members, clock.
+**`engine/scripts.py`** — Provides `run_square(s, site: MapId, x: int, y: int) -> list[Event]` (match ScriptSquare rows §5.7; evaluate `if` gates: flags, item-held, infamy tier (`quests.infamy_tier`), strain-present, once-flags; execute `then` action list §6.5 verbs; `menu` actions suspend into `s.script_ctx` and emit MENU event); `choose(s, option_idx: int) -> list[Event]` (resume suspended script menu: `site.choose`); internal action map: `combat → encounters.begin_set`, `damage → body.apply_damage` party-wide, `transport → world position/plane`, `mp_zero`, `award_con`, `award_xp`, `infamy → quests.add_infamy`, `give_item/take_item`, `ending → quests.end_game`, `journal_hint`, `set_flag`. Called by: `sites.move`, core `site.choose`. Mutates: flags, items, world, combat spawns.
+**`engine/encounters.py`** — Provides `begin_set(s, set_def: dict) -> list[Event]` (scripted set: build foes from §5.5 rows; approach sequence "MENACE APPROACHES" + identity/ranks/status; encounter menu §5.10.3); `begin_random(s, terrain: Terrain, band: int, rng) -> list[Event]` (§5.8 table filtered `band_min ≤ band`); `begin_ambush(s, table, rng)` (sets `sleep_start`); `fight(s) -> list[Event]` → `combat.start`; `accept_surrender(s)` — foes killed ≥ 50% of start (OQ-19) → transfer all their items+$; else refusal msg; `parley(s)` — disposition-based (Placid 50% / Wary 25% / Savage 0% `[P]`) end-as-avoided else battle; `beg_mercy(s)` — accept P = 60% if Σparty_hp ≤ Σfoes_hp else 25% `[P]` → menaces take **all treasury + up to 3 found_items** (FR-ENC-005); `flee(s)` — P 50%, success avoids (also exits melee), failure → `combat.foes_free_attacks`; `morale_check(s)` — at round end: ≥60% losses → flee P 40% (Savage 10%) (§5.8). Called by: core, `trail`, `sites`, `scripts`, `combat`. Mutates: combat state, treasury/found_items.
+**`engine/combat.py`** — Provides `start(s, sleep_start: bool) -> list[Event]` (CombatState build; member ranks from `expedition.ranks`); `tactic_prompt(s, mid) -> Event` (tactic menu; options disabled by FR-BOD-002: broken arm/leg ⇒ no Fire; right arm broken/gone ⇒ **Parry only**); `assign(s, mid, tactic: dict) -> list[Event]` (legality: feat known/domain (feats.can_perform), Lunge ⇒ White Hunter ∧ rank-2 foe exists, Fire ⇒ usable fire item; fallbacks FR-CMB-002: insufficient skill→documented substitutes, non-hunter lunge → Thrust); `redo(s)` (clears assignments; available after all assigned, FR-CMB-001); `run_round(s, rng) -> list[Event]` (order: allies front→back, foes rank 1→n; per-actor: swings per §8.6 `RESOLUTION`; feats via `feats.perform_combat`; foe cast-vs-melee 50% within `casts_left` (OQ-8), mesmerist cast ⇒ `feats.counter_passive`; end-of-round `encounters.morale_check`; on side-defeat → `aftermath`); `foes_free_attacks(s)`; `aftermath(s, outcome) -> list[Event]` — victory: XP Σ→`leg_xp`, dollars→treasury (cap-overflow forfeit msg), treasure per t-tables: trail auto-add to found_items (≤90, discard choice; **unusable until distributed** FR-CMB-007); in sites the stash path uses Find Item rolls; defeat (all dead) → `tribunal.judge`; surrender/mercy/flee per encounters flags. Called by: `encounters`, `scripts`, core routing. Mutates: combat state, members, ledger.
+**`engine/feats.py`** — Provides `can_perform(s, mid, feat: Id, phase: Phase) -> bool|DomainError` (domain map: post feats only in post phase etc. (FR-MAG-001), MP cost, right-arm rule); `perform(s, mid, feat, target) -> list[Event]` — field/post/site use: MP debit; effect router; `perform_combat(s, mid, feat, target) -> list[Event]` — combat use; effect families (parameters §8.6 `FEAT_FX`): cures (Suture #1-4, Boon #58: HP + BR-30 cure most-vital-first); damage (#5-8 lancet one area; #9-12 sweep every foe armor-mitigated; #33-36 assault HP-only; #37-40 vitriol area, armor-ignoring); passives (#13-17 loads/trance self-or-party; #18-21 surge; #22-25 hardening; #55/56 pugilist's trance — counters opposing active per BR-37 family map); controls (#26 charm end-encounter-friendly; #27 sleep; #28 dread stacks; #29-32 confusion fizzle; #41/42/45 enervation; #46/47/50 paralysis; progressive supersede / dread stacks per BR-37); specials (#43 egress → flee-safe end; #44 revivification 75%: CON −1..2 on success; #48 dispatch → summon automaton (§8.6 `AUTOMATA`); #49 counter-talisman → mummified foes 60% flee / 40% destroyed; #51 awaken (clears sleep incl. ambush); #52 field assessment (tier+HP band, 15% wrong → adjacent tier); #54 recall → menu of 17 posts → transport cross-planar; #57 → script-domain only (fastness climax); #58 boon). `counter_passive(s, caster) -> Event` (OQ-8: cancels one active column passive). Called by: core, `combat`, `trail`, `sites`, `scripts`. Mutates: MP, combat fields, members, world.
+**`engine/body.py`** — Provides `apply_damage(s, ref: Combatant|MemberDTO, hp_loss: int, area: BodyArea, rng) -> list[Event]` (hp_cur −; `dmg_taken[area] +=`; severity escalation per §8.6 thresholds incl. death at hp 0 **or** head/torso Gone (BR-31); status derivation: down ≤25% max, unconscious menace ≤5% max `[P]`); `cure(s, mid, potency: "I"|"II"|"III"|"IV") -> list[Event]` (BR-30 tiers, most-vital-first order §8.6); `heal_hp(s, mid, n)`; `vital_status(m) -> Vital`. Called by: `combat`, `feats`, `scripts`, `sites` traps, `infirmary`. Mutates: body/HP/status.
+**`engine/quests.py`** — Provides `filmon_consult(s) -> list[Event]` (FR-QST-020 spine: next unmet brief 1→6 by flags; DLG-002 prefix; DLG-001 greeting; sets `milestone`); `add_infamy(s, n: int) -> list[Event]` (counter += n; tier recompute: 0/1–2/≥3, OQ-7); `infamy_tier(s) -> int`; `update_score(s) -> int` (weights §8.6 `SCORE_W`; stored `quest_score`); `rating(score: int) -> str` (bands §8.6); `end_game(s, kind: "good"|"evil") -> list[Event]` (FR-QST-023 + OQ-18 award table; sets ending flag; **play continues** — province unchanged). Called by: `scripts`, `combat.aftermath`, `sites`, core (debrief). Mutates: infamy, score, flags, treasury, XP.
+**`engine/tribunal.py`** — Provides `judge(s, rng) -> list[Event]` (FR-BOD-005/OQ-11: per dead member `p = clamp(0.5 + (luck−10)×0.02 + quest_score×0.002, 0.10, 0.90)`; Returned ⇒ revive at 50% hp_max `[P]`, treasury → 0 (carried dollars lost), CON −1; Hollowed ⇒ `vital=hollowed`, `level=20`, `frozen=True` (no train/improve ever, irreversible); after all judged ⇒ transport to `post_context`, phase=post). Called by: `combat.aftermath` only. Mutates: members, treasury, world.
+**`engine/persistence.py`** — Provides `snapshot(s: GameState, rng: SeededRng) -> SaveDoc` (pure DTO, §6.4); `restore(doc: SaveDoc) -> tuple[GameState, dict]` (rng_state separate for `SeededRng.restore`); `site_snapshot(s, site: MapId) -> None` / `site_restore(s, site, mode)` (§8.3 `sites.enter` support); `validate(doc: SaveDoc) -> None|SaveError` (schema + range checks §6.4). Called by: `core` (autosave/save/continue), `sites`. Mutates: nothing itself — **no file access**.
+
+### 8.4 UI Modules
+
+**`ui/frame.py`** — Types per §6.3 (`Layer`, `Cell`, `Frame`) + `blank_frame()`. Called by: composer, renderer, tests. Mutates: nothing.
+**`ui/symbolmap.py`** — Provides `resolve(symbol_id: int, states: set[str], regs) -> tuple[glyph:int, fg:str, bg:str]` (dictionary lookup; state variants override; ids <256 pass through as CP437 literal). Called by: `composer`, `text_renderer`. Mutates: nothing.
+**`ui/colors.py`** — Provides `rgb(token: str) -> tuple[int,int,int]` from `color_tokens.json`; unknown token ⇒ `ContentError` at load. Called by: `text_renderer`. Mutates: nothing.
+**`ui/composer.py`** — Provides `REGIONS` region constants (120×40 per FR-UIX-001): `member_panel (rows 0–11, cols 0–119)` · `messages (12–23, 0–59)` · `menace_ranks (12–23, 60–119)` · `area_map (24–39, 0–55)` · `menu (24–39, 56–87)` · `figures (24–39, 88–119)`; `compose(proj: StateProjection, pending: list[Event], ctx: MenuSession) -> Frame` — member panel: 6 rows (name, profession glyph+label, HP cur/max, MP cur/max, 6-glyph body diagram, status letter); messages: last ≤12 MSG, time-lag batching markers; menace panel: foe ranks with K/S/U/D (in encounter/combat); area_map: province viewport centered on pos (always fully mapped, FR-WLD-001) or site explored cells only (FR-DGN-001); menu: `ctx.render_rows()`; figures: rank-grouped ally/foe glyphs in combat, party column glyphs otherwise. **Never calls engine mutators (C-6); consumes `StateProjection` + events only.** Called by: `app`. Mutates: nothing.
+**`ui/menukit.py`** — Provides `class MenuSession: open(descriptor: MenuDescriptor, ctx: dict, data_rows: list) -> None`; `handle_key(tok: InputToken) -> Command|None` — digits → numbered options, bracket letters → letter options, first-letter for two-choice, Y/N, ENTER ⇒ return-continue, ESC ⇒ Leave where offered (FR-UIX-002); dynamic list paging (shop/stock, menu.more); `render_rows() -> list[str]`. Descriptors from `menus.json` + scripted MENU events (§8.3 scripts). Called by: `app`; emits `Command` to `engine.dispatch`. Mutates: menu session only.
+**`ui/inputmap.py`** — Provides `translate(k: KeyEvent) -> InputToken{kind, value}` — arrows + **numpad 8/6/2/4 + 3/E/S/W diamond fallback** for direction (FR-UIX-002 `[P numeric interpretation]`), digits, letters, ENTER, ESC. Called by: `app`. Mutates: nothing.
+
+### 8.5 Render Modules
+
+**`render/text_renderer.py`** — Provides `class TextRenderer: __init__(cfg: Config)` (tcod window 120×40, CP437 font, integer scale `cfg.window_scale` → 960×640 base, C-1); `render(frame: Frame, colors, symbols) -> None` (blit layers top→bottom per cell; flush); `poll() -> KeyEvent|None` (keyboard only, C-2); `close()`. Called by: `main` (construction), `app`. Mutates: window only.
+**`render/tile_iface.py`** — Provides `class RendererProtocol(Protocol): render(frame) -> None; poll() -> KeyEvent|None; close() -> None` — the swap contract (ADR-1): a future tile renderer implements exactly this against the same `Frame`/dictionary data; simulation untouched. Contains **no implementation** (out of scope, §1). Called by: `main` typing only.
+
+### 8.6 Formula & Parameter Annex
+
+Closure for every number used by §8.3 behavior that is not already `[REQ]`-verbatim in Doc 1/§5. All rows `[P]` unless tagged.
+
+**RESOLUTION (combat swings, BR-13 honored):** to-hit % = `clamp(skill + pos_mod + tac_acc + side_fx, 1, 250)`; success iff `d100 ≤ value`. Tactics: Thrust `+15 acc, +1–2 dmg, 1 swing` · Attack `+0, 2 swings` · Slash `−15 acc, −1–2 dmg, 3–4 swings (50/50)` · Aim `−10 acc, aim row of BALLISTICS` · Lunge `= single Attack swing, target rank ≤ 2` · Fire = Marksman skill + feat fields, body via fire row.
+**pos_mod (FR-CMB-003):** ranks F=0/M=1/B=2; `mod = clamp(round((mean(others) − own) × 15), −15, +15)`; uniform column ⇒ 0 (`[REQ]`); `pos_mod` added to own accuracy and to foes' accuracy vs that member. Fire unaffected (`[REQ]`).
+**DAMAGE:** swings `= weapon_pv + STR//4 + tac_dmg`; reduction per swing `= armor_pv + (shield_pv if Parry else 0) + hardening_bonus`, min 1; Parry additionally `−15` to foe hit chance. Menace damage = §5.5 `dmg` dice; **menace armor (nonzero rows) `[P]`:** 33=4, 357=4, 389=6, 374=3, 384=5, 375/376=2, others 0.
+**BALLISTICS (R-6b, FR-CMB-006 shapes preserved):** fire row `head 15 / torso 35 / arm 12.5×2 / leg 12.5×2` · feats row `uniform 1/6 each` · hand row `head 5 / torso 20 / arms 15×2 / legs 22.5×2` · hand-vs-`tall` `head 2 / torso 15 / arms 12×2 / legs 29.5×2` · aim row `head 25 / torso 30 / arms 10×2 / legs 12.5×2`.
+**BODY thresholds `[P]`:** per-area `dmg_taken` vs member max HP: `≥1 Injured · ≥25% Broken · ≥50% Gone`; head/torso Gone ⇒ death; `hp_cur ≤ 0` ⇒ death (BR-31). Statuses: `down ≤ 25% max`; `unconscious (menaces) ≤ 5% max` (no actions). Sleeping: can't act, auto-hit (`[REQ]`), wakes on taking damage (50%) or 1d4 rounds or #51. Vital cure order: head, torso, arm_r, arm_l, leg_r, leg_l.
+**TRAP_FX (FR-DGN-004 payloads):** dart `2d6 to 1–2 members, arm area` · pitch `2d10 front rank, torso` · slab `3d10 rearmost member, torso` · spear `2d8 one member, leg` · fume `1d12 all, HP only` · deadfall `3d8 to 2 members, head/torso`.
+**FEAT_FX parameters:** #26 charm ⇒ foes stand down (encounter ends avoided; attacking later voids); #27 sleep ⇒ one foe rank, 80% each, no deepening (`[REQ]`); #28 dread ⇒ flee threshold +15% and foe acc −5 per stack (stacks `[REQ]`); confusion fizzle 25/50/75/95%; enervation swing-damage −2/−4/−8; paralysis ⇒ foes −(15/25/40) acc and +(same) to-be-hit; #49 60% flee / 40% destroyed (mummified only); #52 15% misreport; #44 75% success, CON −1..2; surge ⇒ foe acc vs surged −(10/25/45/70)% **and** counters enemy Slow-family active (BR-37); incendiary/trance per `[REQ]`; #55 trance-1 `acc +80, dmg +8, foe acc −30`; #56 trance-2 `acc +120, dmg +12, foe acc −50` (stronger at lower MP `[REQ]`).
+**AUTOMATA `[P]`:** Mud `hp 80, dmg 3d10, armor 10` · Mist `hp 50, dmg 2d10, +25 evasion` · Air `hp 60, dmg 2d12, acts first`; summoned by #48 to a reserved ally slot; depart at combat end; no XP share.
+**SCORE_W (quest_score 0–100, `update_score`):** kilmor_found 8 · funeral_done 8 · met_priestess 8 · drowned_gate_entered 8 · wood_met 8 · fastness_reached 8 · ending_good|evil 20 · shrine_boon 2 · resonator_held 4 · sun_key 4 · drowned_key 4 · sun_gem 4 · sun_seen 4 · hermit_done 6 · drake_apex 6 · rite57_held 6 · wrestled 4 **= 100 ✓**. **Rating bands:** 0–19 "raw volunteers" · 20–39 "promising column" · 40–59 "average — an adequate column, so far" (`[REQ exemplar 43]`) · 60–79 "seasoned explorers" · 80–99 "plateau-famous" · 100 "legend of the Cradle".
+**Economy recap (single home):** OQ-3 XP formula (§8.3 training), OQ-4 costs, OQ-20 starts, BR-7 ceilings + deposit fee `$1/member` (§8.3 credit), sellback `⌊cost/2⌋`, item cost `25×v×(v+1)` (§5.2), rest-house `$250+$25 tax`, shop restock per visit (§8.3 outfitter).
+
 ## 9. Background Jobs
 
 None. Turn-based dispatch only; no threads, no timers, no async I/O anywhere (protects determinism, C-3). The three "ambient" behaviors are synchronous: autosave executes inline inside `post.leave` handling (FR-TWN-005); night-camp checks execute inline inside `trail.move` every 10th step (OQ-19); the attract reel is `app.py` idling at the boot menu for 60 s [ADR-6] then dispatching `session.demo`. `clock.py` implements time-lag (0–9 × 150 ms message hold) as render-loop pacing only; it cannot touch state.
@@ -510,3 +1095,241 @@ A build is accepted when **all** hold (mirrors Doc 1 §2; each cites its anchor)
 - **AC-Presentation:** boot at 120×40; six-region layout present (FR-UIX-001) via composer snapshot; every glyph resolves via dictionary (no raw chars in code — lint rule); time-lag 0 vs 9 measurably changes pacing; demo reel plays without input.
 - **AC-Campaign:** headless completion of both endings from fresh seed (GOLDEN scripts) with zero hand-built state (§12 rule a).
 - **Traces:** all `TRACE-01…12` in §15 execute as scripted tests.
+
+## 15. Seam Register & Call Traces
+
+### 15.1 Composition Root
+
+**Single constructor of infrastructure: `main.py` → `main()`**, executing exactly this sequence and nothing else anywhere in the codebase constructs these objects:
+
+1. `paths = resolve_paths(env)` — `CRADLE_HOME` → OS user dir → `./userdata` (§4)
+2. `cfg = config.load_config(paths.config)` — seam P1
+3. `regs = contentload.load_all(paths.content)` + `contentload.lint_strings(regs)` — seam P2; failure ⇒ `ContentError`, exit non-zero (§11)
+4. `rng = SeededRng(seed)` — seam P3 (boot seed recorded; `session.new`/`continue` derive or restore run seeds)
+5. Inject sinks, all bound by `main` and passed into `Engine.__init__`:
+   - `save_sink = saveio.write_slot` · `read_sink = saveio.read_slot` · `backup_sink = saveio.backup_member` · `restore_sink = saveio.restore_member` · `erase_sink = saveio.erase_all` — seam P4
+6. `engine = Engine(state_placeholder, rng, regs, save_sink, read_sink, backup_sink, restore_sink, erase_sink)` — see **addendum A2** below
+7. `composer = Composer(regs.presentation)`; `colors/symbolmap` bound read-only — seam P6
+8. `renderer = TextRenderer(cfg)` — seam P7
+9. `app = GameApp(engine, composer, renderer, cfg, clock)`; `app.run()` — seam P8; return code to OS
+
+**§8 addendum A2 `[P]` (spec fix, binding):** `Engine.__init__` signature extends §8.3 with `read_sink: Callable[[int], SaveDoc]`, `restore_sink: Callable[[str], MemberDTO]`, `erase_sink: Callable[[bool], None]`. Session-verbs ownership (not listed in §8.3): `engine/core.py` handles `session.new` (→ `state.new_game` + `creation.starter_six`), `session.continue{slot}` (→ `read_sink` → `persistence.validate` → `persistence.restore`), `session.save{slot}` (→ `persistence.snapshot` → `save_sink(slot)`), `session.quit_to_menu` (app-level; engine untouched), `util.backup/restore/new_game_erase` (→ respective sinks). `simcli` constructs `Engine` with sinks pointing at a temp directory — identical object graph, no renderer (C-3).
+
+**State residence boundary:** everything lives in the in-process `GameState` (+ `SeededRng` state). The only process-external crossings are the five sinks above (JSON files), the read-only content pack, `config.json`, and the opt-in debug log. The renderer seam is in-process (API boundary, not process boundary).
+
+### 15.2 Call Traces (primary runtime paths; each is a scripted test per §14)
+
+Notation: `→` call; `⇒` committed state change; `[B]` = process-external (file) boundary.
+
+**TRACE-01 — Boot → new game at Terminus (FR-SES-001/002, FR-CHR-002; C-1/C-3/C-10)**
+`main()` steps 1–9 (§15.1) → `renderer.render(boot frame)` → loop: `renderer.poll` → `inputmap.translate` → `MenuSession.handle_key("1")` ⇒ `Command(session.new)` → `engine.dispatch` → `commands.validate` → `core` session handler: `state.new_game(seed)` → `creation.starter_six(s, rng)` ⇒ roster slots 1–6 populated, `phase=post`, `post_context=1`, expedition empty → `save_sink(0, persistence.snapshot(...))` `[B]` ⇒ autosave slot 0 → events(MSG "Post Menu…") → `state.project` → `composer.compose` → `renderer.render` → `clock.pace`. **Commit:** fresh GameState in-process; slot0.json on disk.
+
+**TRACE-02 — Recruit (FR-CHR-001, C-9)**
+menu `chapter` → `chr.begin_recruit` → `creation.begin_recruit` (MENU strain) → `chr.pick_strain{"strange"}` → `rng.pick(strange_strains)` ⇒ roll → MENU profession (allowed list enforced) → `chr.pick_profession` → `creation.roll_member` (`rng.d100` chain: attrs→cap BR-3, standing weights §8.3, luck 8–13, credit/skills §5.1) → `apply_strange_penalties` ⇒ candidate shown (full sheet) → `chr.accept{name}` ⇒ roster append (slot ≤27) + events → `composer` re-render. Reject branch: `chr.reject` ⇒ roster unchanged.
+
+**TRACE-03 — Muster & automaton designation (FR-CHR-003/005/006/008)**
+`chr.list` → `roster.list_members` ⇒ MENU rows (resident posts; automata slots 28–30, "post 0") · `chr.add{mid}` → `roster.add_to_expedition` (gate: resident here ∧ <6) ⇒ `expedition.members +=` · `chr.drop{mid}` ⇒ reverse · `chr.add{mud}` ⇒ `roster.designate_automaton` ⇒ `expedition.automaton = mud_slot` (no member slot consumed).
+
+**TRACE-04 — Credit desk (FR-TWN-001; BR-7; OQ-9)**
+`credit.withdraw{mid, 500}` → `credit.withdraw` (≤line; treasury ≤65,000) ⇒ `credit−500`, `treasury+500` · `credit.deposit{6000}` → fee `$1×6 members` ⇒ 5,994 apportioned by standing shares `1/2/2/3…` floored ⇒ each member `+999` (exemplar holds) + overflow-rejection path tested above ceiling. **Commit:** treasury/credit lines.
+
+**TRACE-05 — Outfitter (FR-TWN-002; BR-8/9)**
+`post` → `shop.list{0}` → `outfitter.open_stock(regen per visit)` → `list_page` 12 rows (unusable flags by prereq eval) → `shop.buy{row}` ⇒ kit append (≤9), `treasury−cost` · "can't afford"/kit-full DomainErrors consumed as ERROR events · `shop.sell{item}` ⇒ `treasury += ⌊cost/2⌋`.
+
+**TRACE-06 — Leave post → trail hazards (FR-TWN-005, FR-WLD-001/002/003/006; C-10)**
+`post.leave` → `core.autosave` ⇒ slot0 `[B]`; `phase=trail`, pos adjacent → `trail.move{S}` ×n: `timekeep.advance(cost)` ⇒ clock/age; river square → per-member `rng.d100 ≤ swim` ⇒ fail: `body.apply_damage(2d10, torso)`; move %10 ⇒ camp: `rng` sentry Listen ⇒ ambush path `encounters.begin_ambush(sleep_start=True)` (→ TRACE-07 with Sleeping statuses) or quiet; `trail.camp_rest` same sequence voluntary; `trail.inspect` ⇒ summary event.
+
+**TRACE-07 — Encounter → melee → spoils (FR-ENC-001…008, FR-CMB-001…008; AC-CMB)**
+`encounters.begin_random(trail, band=1, rng)` ⇒ foe build (§5.5 rows) → MENU encounter → `enc.fight` → `combat.start` ⇒ CombatState → per member: `cmb.assign` (`feats.can_perform`; fallbacks FR-CMB-002 logged) → all assigned ⇒ `redo` available (tested) → `combat.run_round`: swings via §8.6 RESOLUTION (`rng.d100` vs clamped %, pos_mod formula, BALLISTICS row picks, `body.apply_damage` severity/death), foe AI melee-vs-cast 50% (`casts_left−−`; mesmerist ⇒ `feats.counter_passive`), end `encounters.morale_check` → rounds until victory ⇒ `aftermath`: XP Σ→`leg_xp`, dollars→treasury, treasure→found_items (≤90; undistributed ⇒ unusable) · alternate exits tested: `enc.flee` fail ⇒ `foes_free_attacks`; `enc.beg_mercy` accept ⇒ treasury→0 + ≤3 found_items taken.
+
+**TRACE-08 — Site D1: look/doors/traps/scripts/persist (FR-DGN-001…006; FR-QST-004; BR-36)**
+`sites.enter(site01, mode=None)` → `move`s: `look` ⇒ explored ⊆ LOS r3 (walls block); door ⇒ auto-Listen success ⇒ warn+retreat option; `pick_lock` on `lk(4,3)` ok, `up` doors refuse; `spot_trap` reveal; `disarm` (one member; failure ⇒ TRAP_FX); wall step into `pn(19,3)` ⇒ secret revealed (FR-DGN-003); script square `(15,15)` ⇒ `scripts.run_square`: shrine MENU → Pray ⇒ `feats` grant #58 once (`flags[site01.shrine.boon]`), again ⇒ +$; `site.exit{save_state=True}` ⇒ `persistence.site_snapshot` → return province ⇒ autosave `[B]`; re-entry offers saved/original; original restores spawns but shrine flag untouched (BR-36 assert).
+
+**TRACE-09 — Rest, train, learn (FR-TWN-004, FR-ADV-001/003/004; OQ-3/4/5)**
+`post.infirmary` ⇒ hp/mp=max, cure 1 Broken (vital order), `mp_growth` if `spent_mp`, `timekeep.advance(7)`; `adv.train` (XP threshold OQ-3 ⇒ else "XP still needed…"; cost formula OQ-4 ⇒ else cannot proceed) ⇒ level+1, hp per BR-1(+CON), award `100×L×shares` → `adv.train_skill` ×3 (`+8/+4/+2`) ⇒ trainings=3; `adv.learn_feat` (matrix row exists ∧ `slots_left>0` ∧ treasury cost) ⇒ feats append, `slots_left−1`; "can learn no new feats…" branch covered.
+
+**TRACE-10 — Total wipe → Tribunal (FR-BOD-005; OQ-11)**
+forced combat defeat ⇒ `aftermath` detects Σallies=0 ⇒ `tribunal.judge`: per member `rng.d100 ≤ clamp(0.5+(luck−10)×0.02+score×0.002,.10,.90)` ⇒ Returned: vital=okay, hp=50% max, CON−1 ∧ treasury→0 · Hollowed: vital=hollowed, level=20, frozen ⇒ transport `post_context`, `phase=post`, autosave `[B]`. Assert: Hollowed later rejected by `adv.train`/feat learn; individual death path (`#44`, CON −1..2) tested separately.
+
+**TRACE-11 — Campaign spine TRACE through both endings (FR-QST-001…025; BR-34/35/36; OQ-7; golden_good/golden_evil)**
+Sequenced assertions (full command files in `tests/golden/`): orientation folios → `filmon_consult` brief1 ⇒ milestone=1 → D1 `filmon_consult` again → D2: chute once-only ⇒ flags; Kilmor body ⇒ `folio_I`, `kilmor_found`; wrestling `mp_zero` + CON award once; dark chamber blocked ⇒ later allowed with `sun_key` ⇒ `drowned_key` → funeral gated on flag: ceremony once ⇒ rows flip; infamy assertions: 3× statue breaks ⇒ tier 3 (Drowned open w/o key; Wood absent≥1 check: separate branch run) → Enclave strain gate refuse/allow; brood success w/ `foul_phial` ⇒ `old_master_bow`; Old Mesmerist price ⇒ feat 57 granted → Funicular C2+ ⇒ `ziggurat_sun` (`sun_seen`), priestess talk ⇒ `met_priestess`; C2− ⇒ Drowned (`drowned_seen`): gate matrix pure/stained/blackened × key; plinth cipher decode ⇒ invitation; circle option 4 ⇒ `deeps(15,7)` + resonator consumed → lava crossings burn, heal-between safe; camp Wood ⇒ folios V/XIV + plan (clean run) → fastness panel-route avoids all 5 sets (movement trace asserts zero combat) → sanctum: Talk tiers 0/1–2/≥3; Perform wrong ⇒ DLG-084; #57 ⇒ climax ⇒ **branch A:** fight Voss ⇒ #49 effective (hollowed flag) ⇒ `quests.end_game("good")` ⇒ ENDING event + OQ-18 awards; **branch B:** fight Wood ⇒ `end_game("evil")` ⇒ both: play continues, province unchanged (post-victory invariants asserted). **Commit:** flags/milestones as listed; score reaches 100 at end.
+
+**TRACE-12 — Persistence & platform (FR-SAV-001…004; OD-5/6; D-2; A-1)**
+`session.save{1}` ⇒ slot1 `[B]` (+ `rng.state()` inside doc) → quit mid-field → `session.continue{1}` ⇒ `validate`→`restore` ⇒ resume at **last post** (not field pos) — site deltas restored; corrupt doc ⇒ `SaveError`, menu, untouched slots · `util.backup{mid}` `[B]` → new game → `util.restore{file}` ⇒ member restored · `util.new_game_erase{confirm:false}` aborts · demo: 60 s idle ⇒ `session.demo` ⇒ `demo_script` commands run unattended to menu · determinism: `simcli.run_script(golden_good, seed, hash)` ×3 ⇒ identical SHA-256; config `sound:false` ⇒ zero SFX_FLAG rendering difference (D-2: flags emitted, inert).
+
+### 15.3 Seam Register (derived from §15.2 — every handoff that a trace exercises; constructor/invoker named)
+
+| Seam | Producer → Consumer | Payload | Boundary | Constructor / invoker | Traces |
+|---|---|---|---|---|---|
+| P1 | main → config.load_config | path → Config | `[B]` read | main §15.1-2 | 01 |
+| P2 | main → contentload.load_all / lint_strings | path → Registries | `[B]` read-only | main §15.1-3 | 01 |
+| P3 | main → SeededRng(seed) | seed → PRNG+log | in-proc | main §15.1-4 | all |
+| P4 | main → saveio.{write_slot, read_slot, backup_member, restore_member, erase_all} | SaveDoc/MemberDTO ↔ files | `[B]` | main §15.1-5 (sink bindings) | 01,06,08,10,12 |
+| P5 | main → state.new_game | seed → GameState | in-proc | main §15.1-6 (placeholder) | 01 |
+| P6 | main → Composer(regs.presentation) | symbol/color/menu data (frozen views) | in-proc | main §15.1-7 | 01+loop |
+| P7 | main → TextRenderer(cfg) | cfg → window 120×40 | in-proc (SDL) | main §15.1-8 | loop |
+| P8 | main → GameApp(engine, composer, renderer, cfg, clock).run() | object graph | in-proc | main §15.1-9 | loop |
+| A1 | app → renderer.poll | void → KeyEvent | in-proc | app.run loop | loop |
+| A2 | app → inputmap.translate | KeyEvent → InputToken | in-proc | app.run loop | loop |
+| A3 | app → MenuSession.handle_key | InputToken → Command\|None | in-proc | app-owned session (UI state) | loop |
+| A4 | menukit/app → engine.dispatch | Command → list[Event] | in-proc | app.run loop | 01–12 |
+| A5 | app → state.project → composer.compose | projection+events → Frame | in-proc | app.run loop | loop |
+| A6 | composer → symbolmap.resolve | (id, states) → glyph/fg/bg | data-only | composer interior | loop |
+| A7 | app → renderer.render (+colors.rgb) | Frame → screen | in-proc | app.run loop | loop |
+| A8 | app → clock.pace | cfg, n_msgs → sleep | wall-clock | app.run loop | loop |
+| A9 | app (demo) → demo_script.json → A4 | recorded commands | data-only | app demo mode | 12 |
+| E1 | core.dispatch → commands.validate/VERBS | cmd → handler fn | in-proc | core interior | all |
+| E2 | core → state.new_game + creation.starter_six | seed → roster 1–6 | ⇒rost | core session handler (A2) | 01 |
+| E3 | core → read_sink → persistence.validate/restore (+SeededRng.restore) | slot → GameState | `[B]` | core session handler | 12 |
+| E4 | core → persistence.snapshot → save_sink(slot) | state → file | `[B]` | core.autosave / session.save | 01,06,08,10,12 |
+| E5 | core → creation.{begin_recruit, roll_member, apply_strange_penalties, accept/reject} | strain/prof/rng → MemberDTO | ⇒rost | core routing | 02 |
+| E6 | core → roster.{list, add_to_expedition, drop, rename, purge, designate_automaton} | mid/aid | ⇒rost/exp | core routing | 03 |
+| E7 | core → credit.{withdraw, deposit} | amounts | ⇒$ | core routing | 04 |
+| E8 | core → outfitter.{open_stock, list_page, buy, sell} | post/shopper/row | ⇒kit,$ | core routing | 05 |
+| E9 | core → infirmary.stay → training.mp_growth → timekeep.advance | flags, +7d | ⇒mem,clk | core routing → chained | 07,09 |
+| E10 | core → trail.step → timekeep.advance → encounters.begin_random/begin_ambush | dir, table | ⇒wld,clk,combat | core routing → chained | 06,07,11 |
+| E11 | trail (post arrival) → training.divide_xp → core.autosave (E4) | leg_xp, slot0 | ⇒xp,`[B]` | trail.step interior | 06,11 |
+| E12 | trail → feats.perform (Field/Everywhere) / body via tonics | feat/tonic | ⇒mem | trail interior | 11 |
+| E13 | core → sites.{enter, move, look, spot_trap, disarm, pick_lock, exit} → timekeep (leg billing) | site ops | ⇒sites,mem,clk | core routing | 08,11 |
+| E14 | sites.move → scripts.run_square → {encounters.begin_set, feats.*, body.apply_damage, quests.add_infamy / update_score / end_game, give/take, world transport, scripts.choose via core site.choose} | square ctx | ⇒flags,combat,world,$,endings | sites interior | 08,11 |
+| E15 | encounters.{fight} → combat.start / combat.assign → feats.can_perform / combat.run_round → {feats.perform_combat, body.apply_damage, encounters.morale_check} / combat.aftermath → encounters treasure rules or tribunal.judge | CombatState | ⇒combat,mem,$,posts | encounters/combat chain | 07,10,11 |
+| E16 | feats (#48) → combat summon (AUTOMATA) · (#54) → world transport · (#44) → body revive | target refs | ⇒combat,world,mem | feats router | 11 |
+| E17 | sites.exit → persistence.site_snapshot · sites.enter → site_restore | SiteState deltas | in-proc | sites interior | 08 |
+| E18 | quests.filmon_consult / rating / update_score ← core (debrief) & scripts | flags → text/score | ⇒milestones,score | scripts/core | 11 |
+| E19 | rng.* draws | (dist) → rolls | in-proc log | every engine caller above | all |
+
+## 16. Final Consistency Checklist
+
+### 16.1 Constraint Honoring (Doc 1 v1.0.0 §2.1)
+
+| Constraint | Requirement | Honored in (Doc 2) | Verified by |
+|---|---|---|---|
+| C-1 | Python 3.12 + python-tcod, 120×40 virtual console, 960×640 × integer scale | §2 structure, §3 dependencies, §8.5 text_renderer, §13 build | AC-Presentation; §13 smoke |
+| C-2 | Keyboard-only input v1 | §8.4 inputmap (no pointer path exists), §5.10.3 descriptors | AC-Presentation |
+| C-3 | Single seeded PRNG; headless completable; replay hashes | §6.2 events, §8.3 rng/core, §9 no-threads rule, §12 test stack, simcli | AC-Determinism; TRACE-12 |
+| C-4 | Save = single JSON per slot, schema-versioned | §6.4 SaveDoc, §8.3 persistence, §4 slots | AC-Persist; TRACE-12 |
+| C-5 | Sound toggle functional, zero audio output (D-2) | §4 config, §6.2 SFX_FLAG (emitted, inert), §8.5 (no audio device anywhere) | AC-FR item D-2; TRACE-12 |
+| C-6 | Logic never reads grid; glyphs only via dictionary; menus as data | §6.3 frame contract, §8.4/8.5 Called-by rules, §5.10 registries | AC lint rule; §15.3 register audit |
+| C-7 | Single-process, no network/telemetry/accounts | §3 (stdlib+tcod only), §7, §10 | AC-Persist; dependency audit |
+| C-8 | Magic ban in all strings | §5.0 lint lexicon, §5.9 text registries | §12 content tests |
+| C-9 | Modern-care clause | §5.1 strange-strain flags, §8.3 creation framing, §5.0 lint | §12 content tests |
+| C-10 | Sessions begin/end in posts; autosave on exit; resume at post | §4 slot layout, §8.3 core.autosave/trail arrival, §15 TRACE-01/06/12 | AC-Persist |
+
+**Capability check:** no section assumes a capability a constraint excludes — threads (§9 forbids), network (§3/§7 forbid), audio device (absent from §8.5), pointer device (absent from §8.4), migration layer (§1 excludes).
+
+### 16.2 Operator Decisions (interview record)
+
+| Decision | Honored in |
+|---|---|
+| OD-1 canonical nouns + narrative-reauthoring rule | §5.6–§5.10 all names/strings; §5.9.1 topic-match table |
+| OD-2 stack (Python 3.12 + python-tcod; 120×40; keyboard) | §3, §8.5, §8.4 |
+| OD-3 veteran transfer removed (D-1) | §6.1 verb registry (no transfer verb exists), §15.1 addendum A2, AC-FR absence check |
+| OD-4 OQ authority | §16.5 (all 20 realized) |
+| OD-5 determinism | per C-3 row above |
+| OD-6 save policy | per C-4 row above |
+| OD-7 sound/input/grid | per C-2/C-5 rows above |
+| OD-8 self-containment (SC-1) | §16.7 audit |
+
+### 16.3 FR Coverage (95/95 as amended by D-1)
+
+| Family | Verbs (§6.1) | Modules (§8.3) | Traces |
+|---|---|---|---|
+| FR-SES (4) | session.*, util.* | core (+A2), state, persistence, saveio | T01, T12 |
+| FR-CHR (8) | chr.* | creation, roster | T02, T03 |
+| FR-ADV (5) | adv.* | training (+ divide_xp on arrival, mp_growth) | T09 |
+| FR-TWN (7) | credit.*, shop.*, post.* | credit, outfitter, infirmary, quests (debrief score/rating) | T04, T05, T09 |
+| FR-WLD (6) | trail.* | trail, timekeep, encounters (warden/night camp) | T06 |
+| FR-DGN (6) | site.* | sites, scripts, persistence (site snapshots) | T08 |
+| FR-ENC (8) | enc.* | encounters (+combat aftermath handoffs) | T07 |
+| FR-CMB (8) | cmb.* | combat, feats, body (+§8.6 RESOLUTION/BALLISTICS) | T07 |
+| FR-BOD (6) | (via combat/post verbs) | body, infirmary, timekeep, tribunal, feats (#44) | T09, T10 |
+| FR-MAG (5) | (via cmb.feat, post/trail perform) | feats (+§5.4 registry, §8.6 FEAT_FX, BR-37 fields engine) | T07, T11 |
+| FR-QST (25) | site.choose + scripted menus | §5.7 site scripts, quests, scripts | T11 |
+| FR-SAV (4) | session.save/continue, util.* | persistence, saveio, sites (site-state) | T12 |
+| FR-UIX (3) | menu envelope, cmb.config | §6.3 frame, §8.4 composer/menukit/inputmap, §8.5, §5.10.3 | AC-Presentation |
+
+Every FR-ID is keyed to ≥1 test in §14 AC-FR; D-1 removals verified *absent* (no transfer verb, single Filmon greeting); D-2 verified functional-silent.
+
+### 16.4 Business Rules
+
+| Rule(s) | Location |
+|---|---|
+| BR-1/BR-2 (+extensions/interpolation) | §5.1 professions.json rows; §8.3 training |
+| BR-3 (mods, caps, luck) | §5.1 strains.json; §8.3 creation |
+| BR-4/BR-5/BR-6 (thresholds, 3-skill, slots) | §8.3 training (OQ-3/4/5 rules) |
+| BR-7 (ceilings, fee, apportion exemplar) | §8.3 credit; TRACE-04 asserts $6,000/6 ⇒ $999 |
+| BR-8 (kit/found-item/in-use caps) | §8.3 state.check_invariants |
+| BR-9 (prerequisites, elder discount) | §5.2 prereq rules; §8.3 outfitter unusable; combat equip gates |
+| BR-10/BR-11 (tonic formulae; pricing) | §5.3 tonics; §8.3 trail.use_tonic, infirmary ($250 + $25 tax) |
+| BR-12 (per-kill XP ≤ 65,535) | §5.5 xp column (all rows compliant); content test |
+| BR-13 (tactic math) | §8.6 RESOLUTION |
+| BR-30/BR-31 (heal tiers; death/CON costs) | §8.3 body.cure/apply_damage; §8.6 thresholds |
+| BR-32 (78 types, uniques) | §5.5 audit line |
+| BR-33 (world metrics) | §5.6 dimensions; content tests |
+| BR-34 (hard gates) | §5.7 gate scripts; TRACE-11 asserts order |
+| BR-35 (resonator binding/reissue/consume) | §5.2 bound flag; §5.7.2, §5.7.7; TRACE-11 |
+| BR-36 (one-time persistence) | invariant assert; TRACE-08 (site reset), TRACE-11 |
+| BR-37 (feat interaction axioms) | §8.3 feats (family map, supersede, stacks, counters) |
+
+### 16.5 OQ Realization (Doc 1 §10 → Doc 2 locus)
+
+| OQ | Resolved at |
+|---|---|
+| 1 elder rites | §5.4 rows 57/58 (MP 4; #58 Site-domain full-party cure); §8.3 feats |
+| 2 level cap 20 | §5.1 hp/mp tables (frozen/extension); §8.3 training |
+| 3 XP thresholds | §5.1 xp_tables constants; §8.3 training.formula |
+| 4 cost curves | §8.3 training + learn_feat (spot values tested: §14 AC-Economy) |
+| 5 availability matrix | §5.4 feat_matrix.json (with union-coverage audit); §8.3 slots rule |
+| 6 aging calendar | §8.3 timekeep (move_cost, marks, decline deltas) |
+| 7 infamy | §8.3 quests.add_infamy/tier; §5.7 gate scripts; TRACE-11 matrix |
+| 8 menace repertoires | §5.5 caster rows (feats, cast budgets); §8.3 combat (50%) + feats.counter_passive |
+| 9 credit shares | §5.1 share_by_standing; §8.3 credit.deposit |
+| 10 hermit broth | §5.7.10 script (+1 per bowl, caps respected, once-ever) |
+| 11 tribunal | §8.3 tribunal.judge formula; TRACE-10 both outcomes |
+| 12 folio XVI | §5.3 sealed item + §5.9.1 row |
+| 13 #53 vacant | §5.4 `{vacant:true}` |
+| 14 rest-house name | §5.1 Royal Rest; §5.6 coordinates |
+| 15 starter six | §8.3 creation.starter_six; TRACE-01 |
+| 16 quirks fixed | §5.7 inline fixes (lever edge, separate maps, dedup, corrected rows) |
+| 17 #49 cost 1 | §5.4 row 49 |
+| 18 ending rewards | §8.3 quests.end_game award table; TRACE-11 asserts + continue-play |
+| 19 rates/surrender | §5.8 tables; §8.3 encounters (rates, 50% surrender, morale) |
+| 20 starting tables | §5.1 starting_skills/credit_by_standing (+anchors CB +30, Lake-Folk +15) |
+
+### 16.6 ADR Honoring (Doc 1 §10)
+
+| ADR | Honored in |
+|---|---|
+| 1 three-layer split | §6.3 contract; §8.4/8.5 boundaries; §15.3 audit (no engine→ui edges) |
+| 2 determinism | rng/core/seam E19; golden hash rule §12/§14 |
+| 3 content-as-data | §5 registries (zero content constants in engine; lint-enforced counts) |
+| 4 canonical save model | §6.4; TRACE-12 round-trip |
+| 5 constrained money model | §8.3 credit ceilings |
+| 6 demo as playback | §5.10.4 script; seam A9; TRACE-12 |
+| 7 roster 30 (27+3) | §8.1 GameState bounds; FR-CHR-003 rows |
+| 8 feat closure arithmetic | §5.4 note + union audit |
+| 9 D-1 removal | §16.2 OD-3 row |
+| 10 D-2 silent toggle | §16.1 C-5 row |
+
+### 16.7 SC-1 Completeness Audit (counts asserted by §12 content tests)
+
+- Items **180** ✓ — §5.2 (20 shields + 20 armor + 20 fire rungs + 40 melee = 100) + §5.3 (20 tonics + 20 folio identities + 40 valuables = 80).
+- Folio payloads **I–XV + XVI sealed** ✓ — §5.9.1 with canonical locations and companion-topic match.
+- Menaces **78** ✓ — §5.5 (unique-boss set per BR-32 present; all FR-CMB-008 caster types present; mummified flags enumerated).
+- Feats **56 slots (#53 vacant) + rites 57/58** ✓ — §5.4, every `[REQ]` figure verbatim.
+- Posts **17** · rest-houses **8** (Royal Rest canonical) · sites **11** (full §5.7 square scripts) ✓.
+- Maps: province 75×50 + ziggurats 18×9 ×2 + deeps 30×15 with lava course ✓ — §5.6.
+- Strains **15** · professions **6** · skills **9** · standings **4** ✓ — §5.1.
+- Menu descriptors: every option resolves to a §6.1 verb (lint rule, §5.10.3).
+- Symbol dictionary ids 256–402 unique ✓ — §5.10.2; menace rows 325–402 map 1:1 to §5.5 order.
+- All `[REQ]` verbatim strings present in §5.9 (MENACE APPROACHES, gate voices, Filmon briefs, ending voices, RS-8 duel wording).
+
+### 16.8 Executability Gates (self-attested)
+
+- **Type closure:** every type used in §8.3–8.5 signatures is defined in §6.3, §6.4, or §8.1. No signature-only orphans (CombatState, ActiveFeatFx, MenuSession, InputToken, KeyEvent all defined; SaveDoc per §6.4).
+- **Caller existence:** every module lists Called-by in §8; §15.3 register (P/A/E seams) covers every module ≥ once; every verb in §6.1 routes through §8.3 commands.VERBS; every script action maps to a handler (§8.3 scripts action map).
+- **Traces:** TRACE-01…12 each give entry point → callee chain → committed state → process-boundary notes; both endings reachable headlessly (TRACE-11; golden scripts on disk).
+- **Test-construction rule:** §12(a) binding — state only via dispatched production commands; golden scripts are dispatch-only.
+- **No placeholders** anywhere in Docs 1–2 (no TBD/TBS/"see source"); deviations D-1/D-2 logged and tested-as-such; the sole post-delivery patch is §15.1 **addendum A2**, recorded in place.
+
+---
