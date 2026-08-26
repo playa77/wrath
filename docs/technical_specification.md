@@ -376,9 +376,9 @@ Row schema: `{id, name, glyph_symbol_id, tier L|M|H|VH, disp P|W|S, pack_max, hp
 | t7 | 800–4000 | 40% / v12–20 |
 | t8 | 1500–8000 | 50% / v15–25 (+valuable roll 25%) |
 
-## 5.6 R-7 — Geography
+### 5.6 R-7 — Geography
 
-### 5.6.1 Province (`world/province.json`, 75×50; default terrain `trail`)
+#### 5.6.1 Province (`world/province.json`, 75×50; default terrain `trail`)
 
 Sectors: columns A–E = 15 cols each (A:0–14 … E:60–74), rows I–V = 10 rows each (I:0–9 … V:40–49). Border ring is `escarpment` (impassable cliffs — sink rule). **Terrain overlay rects** (applied in order):
 
@@ -413,7 +413,7 @@ crater_lake (water): (56,20,62,24)   # Drowned Ziggurat sinks here (lore; plane 
 
 Band rule (encounters filter, §5.8): band = 1 + max(|secCol−C|, |secRow−III|). Planar posts: Sun-Terrace Station `ziggurat_sun(9,6)`; Lake-Bottom Post `ziggurat_drowned(9,6)`; Fumarole Camp `deeps(4,7)`.
 
-### 5.6.2 Ziggurat planes (18×9 each) & Deeps (30×15)
+#### 5.6.2 Ziggurat planes (18×9 each) & Deeps (30×15)
 
 `ziggurat_sun`: perpetual golden-day terraces; entry/exit plaza (9,8); Sun-Terrace Station (9,6); D6 citadel gate (9,1); decorative lens pylons (2,4)(16,4). `ziggurat_drowned`: mirror layout; Lake-Bottom Post (9,6); D7 gate (9,1); gloom-water shading. `deeps`: Fumarole Camp (4,7); glyph-circle **arrival** (15,7); D9 entrance (26,7); lava course rects — crossing any lava cell = party burn (FR-QST-018; resting on non-lava safe):
 
@@ -424,11 +424,9 @@ Band rule (encounters filter, §5.8): band = 1 + max(|secCol−C|, |secRow−III
 
 Navigation: safe lanes exist between rects; direct routes cost 2–4 crossings.
 
----
+### 5.7 R-8 — Site scripts (11 sites; every square a floor rect unless listed)
 
-## 5.7 R-8 — Site scripts (11 sites; every square a floor rect unless listed)
-
-### 5.7.1 `site01_maproom` — "The Map Room" · pool 06,25,77,78 · entry/exit (15,22)
+#### 5.7.1 `site01_maproom` — "The Map Room" · pool 06,25,77,78 · entry/exit (15,22)
 
 ```
 rooms: entry(13,20,17,23) stacksA(22,16,28,20) stacksB(22,10,28,14)
@@ -448,7 +446,7 @@ sets: s01[06×2](5,18) s02[26,78×2](4,12) s03[77×2,27](4,7) s04[32,33](3,4)
 stash: secret(21,3) t4 + diamond ; st(26,18) folio_II ; st(25,12) folio_III
 ```
 
-### 5.7.2 `site02_colossi` — "The Halls of the Colossi" · pool 08,20,25,22 · entry (15,1)
+#### 5.7.2 `site02_colossi` — "The Halls of the Colossi" · pool 08,20,25,22 · entry (15,1)
 
 ```
 rooms: hall(4,2,26,16) pens1–6(y18–22, x: 3|8|13|18|23|28 wide 4) leverroom(24,3,28,8)
@@ -470,7 +468,7 @@ scripts:
 stash: st(15,2) t5
 ```
 
-### 5.7.3 `site03_craggvaults` — "The Crag-Folk Burial Vaults" · pool 25,26,36 · entry (15,1)
+#### 5.7.3 `site03_craggvaults` — "The Crag-Folk Burial Vaults" · pool 25,26,36 · entry (15,1)
 
 ```
 rooms: moundhall(8,4,22,10) aisles(4,12,10,18)(20,12,26,18) sarco(19,17,21,19)
@@ -485,7 +483,7 @@ sets: s01[36×2](4,14) s02[37,36](24,14)
 stash: st(12,18) t3 funerary goods
 ```
 
-### 5.7.4 `site04_enclave` — "The Hidden Enclave" · pool 13,19 · entry (15,23)
+#### 5.7.4 `site04_enclave` — "The Hidden Enclave" · pool 13,19 · entry (15,23)
 
 ```
 rooms: dining(10,4,20,9) brood(4,12,8,16) scents(24,13,27,17) records(18,13,22,16)
@@ -502,7 +500,7 @@ scripts:
 sets: s01[58] Great Beast (6,20) — behind: st(5,21) fire rung 18 bow-skin + t5
 ```
 
-### 5.7.5 `site05_funicular` — "The Funicular Station" · pool 27,39 · entry (15,23)
+#### 5.7.5 `site05_funicular` — "The Funicular Station" · pool 27,39 · entry (15,23)
 
 ```
 rooms: hall(4,8,26,18) shelfrow y4–6 (x4–26) quarters(20,2,24,8) keychamber(4,2,8,6)
@@ -519,7 +517,7 @@ scripts:
  (26,13) Engagement Lever: C2+ → transport ziggurat_sun(9,7) flag sun_seen · C2− → ziggurat_drowned(9,7) flag drowned_seen · any other → "a far-off thrumming… nothing more"
 ```
 
-### 5.7.6 `site06_sunziggurat` — gate script at (15,22): requires sun_key (unpickable) else DLG-060 · pool: none (safe zone) · entry (15,22)
+#### 5.7.6 `site06_sunziggurat` — gate script at (15,22): requires sun_key (unpickable) else DLG-060 · pool: none (safe zone) · entry (15,22)
 
 ```
 interior mirror-maze (rooms engineered; walls per rect list)
@@ -530,7 +528,7 @@ scripts:
  (15,5) glass table: give sun_gem (onetime)
 ```
 
-### 5.7.7 `site07_drownedziggurat` — entry (15,22); mirror floor plan of site06 · pool 54,55,56
+#### 5.7.7 `site07_drownedziggurat` — entry (15,22); mirror floor plan of site06 · pool 54,55,56
 
 ```
 (15,22) gate menu Leave/Knock/Try the lock [FR-QST-016]:
@@ -544,7 +542,7 @@ plinths (10,12) basalt vase · (15,12) pitch urn · (20,12) tar jar [ledger vari
 (15,8) msg "Voss is not here."
 ```
 
-### 5.7.8 `site08_warcamp` — "Lord Wood's War-Camp" · pool 48,50,52 · entry (15,23)
+#### 5.7.8 `site08_warcamp` — "Lord Wood's War-Camp" · pool 48,50,52 · entry (15,23)
 
 ```
 rooms: tent(13,2,17,5) larder(4,4,8,8) surgery(22,4,26,8) quarters(4,12,8,16) munitions(22,12,26,16) stockade(10,12,20,16)
@@ -556,7 +554,7 @@ scripts:
 stash: st(6,20) t8 matériel cache
 ```
 
-### 5.7.9 `site09_fastness` — "Voss's Basalt Fastness" · pool 39,52,53 · entry (2,12)
+#### 5.7.9 `site09_fastness` — "Voss's Basalt Fastness" · pool 39,52,53 · entry (2,12)
 
 ```
 panel route avoids every set (documented): pn seq (4,12)→(6,10)→(8,12)→(10,10)→(12,12)→(14,10)→(16,10)
@@ -572,14 +570,14 @@ sanctum (26,10,29,14): (27,12) Doctor Voss menu [FR-QST-021]:
      Fight Lord Wood → combat [74] → evil ENDING script (same structure, flag ending_evil)
 ```
 
-### 5.7.10 `site10_shack` — "The Hermit's Shack" · pool: none · entry (15,23)
+#### 5.7.10 `site10_shack` — "The Hermit's Shack" · pool: none · entry (15,23)
 
 ```
 shack(13,10,17,14)
 (15,12) hermit script [FR-QST-024/OQ-10]: menu Sit/Leave → Sit → broth menu (Brawn/ Wit/ Nerve/ Vigor/ Charm = STR/INT/DEX/CON/CHA): all present members +1 chosen attribute (respect caps), bowls_used +=1; prompt take second bowl now or later; when bowls_used≥1 and sitting completes → reveal msgs DLG-090 (towering shadow: "I am Doctor Voss — you have seen that my power can profit you…") + flag hermit_revealed (once-ever, BR-36); bowls_used max 2 ever
 ```
 
-### 5.7.11 `site11_drakehollows` — "The Drake Hollows" · pool 10,21,31 · entry (15,1)
+#### 5.7.11 `site11_drakehollows` — "The Drake Hollows" · pool 10,21,31 · entry (15,1)
 
 ```
 sulfur msgs along spine
@@ -601,9 +599,9 @@ every stash square → msg "You have found a drake's trove."
 
 Night camp: every 10th trail move, ambush 1/3 from terrain pool, sentry Listen (FR-WLD-003). Menace selection filters by `band_min ≤ current band` (grind-mitigation §VI-7); `unique` rows never random. Surrender threshold: 50% of starting pack count dead (FR-ENC-003/OQ-19); morale: menaces flee-check at 60% losses, P(flee)=40% (Savage never → 10%).
 
-## 5.9 Text registries
+### 5.9 Text registries
 
-### 5.9.1 `text/folios.json` — payload map (R-5 canon numbering; topic-match per Doc 1 §11 note 3)
+#### 5.9.1 `text/folios.json` — payload map (R-5 canon numbering; topic-match per Doc 1 §11 note 3)
 
 | # | Title | Payload topic (companion paper) | Location |
 |---|---|---|---|
@@ -643,7 +641,7 @@ Full payload texts (eng: 40–90 words each; shortened here to payload + key bea
 - **XV** Voss's origin: the drowning city's pooled will *made themselves an emperor*; the gate he opened; the exodus for vengeance.
 - **XVI** illegible.
 
-### 5.9.2 `text/dialogue.json` — IDs (exact strings where `[REQ]`/preserved; `≈` = authored to beats)
+#### 5.9.2 `text/dialogue.json` — IDs (exact strings where `[REQ]`/preserved; `≈` = authored to beats)
 
 - **DLG-001** filmon greeting: "I choose you because Doctor Voss would never suspect you." [REQ/D-1 single path]
 - **DLG-002** prefix: "Listen to Mr. Filmon of Terminus Post."
@@ -682,15 +680,13 @@ Full payload texts (eng: 40–90 words each; shortened here to payload + key bea
 - **SYS strings:** "MENACE APPROACHES" [REQ], "You can't afford that", "can learn no new feats at this time", "It will not leave your hand.", "There is no one here.", "The lock will not yield to any pick.", "Unusable", plus menu titles per §5.10.3.
 - **STR-C1** cipher filler: SHADOW, BRASS, EMBER, SALT, GLASS, WORM, LAMP, TIDE, CROWN, DUST, WIRE, MOTH, VEIL, ROOT, IRON, BELL, FOAM, GLOAM, SPAR, QUILL, ASH, REED, VAULT, HUM.
 
-### 5.9.3 Color-text registry (Doc 1 §11 note 4 → string rows)
+#### 5.9.3 Color-text registry (Doc 1 §11 note 4 → string rows)
 
 port-and-cheese · waste-paper pit · weapon cupboard · both Colossi signs · "The Sun-Mind is opposed by the Drowned Mind" · "Have courage, mighty travelers" · hideous laugh · lifeless chill · charred bodies/empty chairs · drake purring six-pack · "Warning — Danger lies beyond." · "KILMOR WAS HERE." · "a far-off thrumming." All pass the §5.0 lint (C-8/C-9).
 
----
+### 5.10 Presentation registries
 
-## 5.10 Presentation registries
-
-### 5.10.1 `text/color_tokens.json` (semantic → default RGB; restyleable, C-6)
+#### 5.10.1 `text/color_tokens.json` (semantic → default RGB; restyleable, C-6)
 
 | token | RGB | token | RGB |
 |---|---|---|---|
@@ -709,7 +705,7 @@ port-and-cheese · waste-paper pit · weapon cupboard · both Colossi signs · "
 | sleep | #7A7FA8 | hollow | #B0B7BB |
 | rare | #7E57C2 | | |
 
-### 5.10.2 `presentation/symbols.json` — dictionary (glyph space: 0–255 CP437 literal for text/borders; entities 256+)
+#### 5.10.2 `presentation/symbols.json` — dictionary (glyph space: 0–255 CP437 literal for text/borders; entities 256+)
 
 **Members:**
 
@@ -847,7 +843,7 @@ States: `{sleeping:{fg:sleep}, down:{fg:warn}, unconscious:{fg:bad}, dead:{glyph
 
 *(IDs unique 325–402 ✓ = 78 entries; each maps to §5.5 row order.)*
 
-### 5.10.3 `presentation/menus.json` — static descriptors (scripted-square menus come from R-8, §5.7)
+#### 5.10.3 `presentation/menus.json` — static descriptors (scripted-square menus come from R-8, §5.7)
 
 Format `{id, title, region:"bottom_center", options:[{key,label,verb,args}]}`. Descriptors:
 
@@ -868,7 +864,7 @@ Format `{id, title, region:"bottom_center", options:[{key,label,verb,args}]}`. D
 
 Every option resolves to a §6.1 verb — **lint rule**: no descriptor may name a verb not in the registry.
 
-### 5.10.4 `presentation/demo_script.json` (ADR-6; fixed seed 7)
+#### 5.10.4 `presentation/demo_script.json` (ADR-6; fixed seed 7)
 
 `session.new` → accept starter six (FR-CHR-002) → `shop.buy` folio_II → `post.use_item` read → `post.leave` (autosave) → trail walk S×6 → seeded encounter [06] → 3 rounds (thrust/attack/fire scripted) → victory → `trail.move` N×6 → post → `session.save` slot1 → `session.quit_to_menu`. Runs unattended through the normal display path; any DomainError aborts demo silently to menu.
 
