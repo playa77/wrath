@@ -24,7 +24,7 @@ three-OS packaging workflow. Final release sign-off is tracked separately below.
 | AC-Economy | `properties/test_economy.py`, `test_post_domain.py`, paid-learning campaign | Deposit exemplar, caps, costs, kit rules and transactional rejection. |
 | AC-QST | `test_campaigns.py`, `test_quest_gates.py`, `test_all_feats.py` | Both endings; key/infamy matrix; Wood absence; Voss tiers; Calling and counter-rites; encounter-free panel route. |
 | AC-Persist | `test_post_domain.py`, `test_sites_and_encounters.py`, reset campaign, `test_saveio.py` | Slot round trips, corruption, autosave, backup, original/saved site and once-ever flags. |
-| AC-Determinism | Four golden scripts, each replayed three times against RNG and event hashes | Local Linux evidence; two-OS requirement awaits CI. Host-specific save paths excluded from canonical event hash. |
+| AC-Determinism | Four golden scripts, each replayed three times against RNG and event hashes | Linux replay evidence; cross-OS status is reported by the linked CI runs. Host-specific save paths excluded from canonical event hash. |
 | AC-Presentation | `test_presentation.py`, bundled SDL smoke and exported frame | Layout, actual tcod key names, menu forms, legal feat lists, config and attract reel tested. Human window playthrough pending. |
 | AC-Campaign | `golden_good.txt`, `golden_evil.txt` | Fresh-seed dispatch-only completion, score 100, both rewards and continuing play. |
 
@@ -50,14 +50,25 @@ presented as a balance test of six untouched level-one starters.
 
 ## Measured checks and release sign-off
 
-Final local test/coverage results are recorded here after the frozen checks finish.
-Linux one-folder build and SDL dummy-driver boot/new/save/continue smoke passed.
+Measured Linux CI result at implementation commit `1422a42`: **692 tests passed**,
+**92.56% engine line coverage**, content audit, PyInstaller build and packaged SDL
+smoke all passed ([job](https://github.com/playa77/wrath/actions/runs/41466657218/job/125349217430)).
+Subsequent demo-persistence regression and portable-path/content checks passed
+locally. The added explicit D-1/D-2 audit brings the suite to 693 cases.
+
+A clean Python 3.12 environment installed only runtime/release dependencies;
+`pip check` passed, followed by a fresh Linux one-folder build and SDL dummy-driver
+boot/new/save/continue smoke.
 The logical 960×640 frame was exported and inspected for readable glyphs/layout.
 
 The CI workflow repeats tests, engine coverage ≥90%, build and packaged SDL smoke
 on Linux, Windows and macOS and uploads each one-folder bundle. CI results must
-be checked on the PR; configuring the workflow is not evidence it has passed.
+be checked on [PR #3](https://github.com/playa77/wrath/pull/3/checks); configuring
+the workflow is not evidence it has passed. An initial Windows run exposed Unix
+path-string assumptions and CRLF checkout drift. Native Path comparisons and
+`.gitattributes` now address both; the current CI run is the verification gate.
 
-Outstanding v1.0.0 sign-off: successful cross-OS CI replay/build/smoke, a human
-keyboard/window playthrough including the 60-second idle demo, and final reviewer
-acceptance. No v1.0.0 tag is created before those gates are evidenced.
+The v1.0.0 gate requires successful cross-OS CI replay/build/smoke (see live
+checks), a human keyboard/window playthrough including the 60-second idle demo,
+and final reviewer acceptance. Human playthrough and reviewer acceptance remain
+outstanding. No v1.0.0 tag is created before those gates are evidenced.
