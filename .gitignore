@@ -1,0 +1,11 @@
+# Version: 0.1.0 | 2026-11-02
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+userdata/
+.coverage
+htmlcov/

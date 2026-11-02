@@ -1,0 +1,10 @@
+# Version: 0.1.0 | 2026-11-02
+# C-8 lexemes, verbatim from technical specification §5.0.
+# Ignore blank lines and lines beginning with # when loading this file.
+# C-9 terms are unspecified upstream; see docs/implementation_status.md.
+magic
+spell
+god
+divine
+undead
+zombie

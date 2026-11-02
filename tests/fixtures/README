@@ -1,0 +1,12 @@
+# Version: 0.1.0 | 2026-11-02
+Fixture conventions
+
+lint_blocklist.txt is UTF-8, with one forbidden lexeme per non-comment line.
+Blank lines and lines beginning with # are ignored. Preserved-string exceptions
+are handled by the Phase 1 content loader, not by this fixture.
+The six C-8 terms are normative; the missing C-9 list is tracked in
+../../docs/implementation_status.md.
+
+conftest.py isolates CRADLE_HOME (saves/, backups/, logs/) per test and provides
+explicit seed and seeds fixtures. No fixture constructs game state. From WP-3.2,
+state setup must dispatch production commands through tests/harness.py.
