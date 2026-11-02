@@ -1,0 +1,8 @@
+# Version: 0.1.0 | 2026-11-02
+# C-8 lexemes verbatim. C-9 exact list is absent from all three documents.
+magic
+spell
+god
+divine
+undead
+zombie
