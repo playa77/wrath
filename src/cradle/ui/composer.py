@@ -5,9 +5,9 @@ import textwrap
 from .frame import blank_frame
 
 REGIONS = {
-    "member_panel": (0, 0, 120, 12),
-    "messages": (0, 12, 60, 12),
-    "menace_ranks": (60, 12, 60, 12),
+    "member_panel": (0, 0, 120, 11),
+    "messages": (0, 11, 60, 13),
+    "menace_ranks": (60, 11, 60, 13),
     "area_map": (0, 24, 56, 16),
     "menu": (56, 24, 32, 16),
     "figures": (88, 24, 32, 16),
@@ -161,12 +161,12 @@ class Composer:
                             self.messages.extend(textwrap.wrap(str(value), 56))
             elif event["kind"] == "COMBAT" and "outcome" in event["data"]:
                 self.messages.append(event["data"]["outcome"].title())
-        self.messages = self.messages[-11:]
+        self.messages = self.messages[-12:]
         for i, line in enumerate(self.messages):
-            text(1, 13 + i, line, 58)
+            text(1, 12 + i, line, 58)
         combat = proj["combat"]
         if combat:
-            for i, foe in enumerate(combat["foes"][:11]):
+            for i, foe in enumerate(combat["foes"][:12]):
                 status = {
                     "dead": "K",
                     "sleeping": "S",
@@ -175,7 +175,7 @@ class Composer:
                 }.get(foe["vital"], "")
                 text(
                     61,
-                    13 + i,
+                    12 + i,
                     f"{foe['rank']}: {foe['name']} {status} HP {foe['hp_cur']}",
                     58,
                 )
