@@ -1,0 +1,520 @@
+{
+  "registry": "runtime",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "runtime_command_must_be_an_object",
+      "text": "command must be an object"
+    },
+    {
+      "id": "runtime_unknown_verb",
+      "text": "unknown verb"
+    },
+    {
+      "id": "runtime_actor_must_be_a_column_index_in_1_6",
+      "text": "actor must be a column index in 1..6"
+    },
+    {
+      "id": "runtime_args_must_be_an_object",
+      "text": "args must be an object"
+    },
+    {
+      "id": "runtime_invalid_direction",
+      "text": "Invalid direction."
+    },
+    {
+      "id": "runtime_answer_the_current_prompt_first",
+      "text": "Answer the current prompt first."
+    },
+    {
+      "id": "runtime_no_listening_prompt",
+      "text": "No listening prompt."
+    },
+    {
+      "id": "runtime_no_adjacent_lock",
+      "text": "No adjacent lock."
+    },
+    {
+      "id": "runtime_the_lock_holds",
+      "text": "The lock holds."
+    },
+    {
+      "id": "runtime_no_detected_trap",
+      "text": "No detected trap."
+    },
+    {
+      "id": "runtime_missing_site_return_position",
+      "text": "Missing site return position."
+    },
+    {
+      "id": "runtime_the_lock_opens",
+      "text": "The lock opens."
+    },
+    {
+      "id": "runtime_trap_disarmed",
+      "text": "Trap disarmed."
+    },
+    {
+      "id": "runtime_pick_the_lock_to_proceed",
+      "text": "Pick the lock to proceed."
+    },
+    {
+      "id": "runtime_proceed",
+      "text": "Proceed"
+    },
+    {
+      "id": "runtime_turn_back",
+      "text": "Turn back"
+    },
+    {
+      "id": "runtime_feat_is_not_known",
+      "text": "Feat is not known."
+    },
+    {
+      "id": "runtime_wrong_feat_domain",
+      "text": "Wrong feat domain."
+    },
+    {
+      "id": "runtime_insufficient_mp",
+      "text": "Insufficient MP."
+    },
+    {
+      "id": "runtime_no_combat_targets",
+      "text": "No combat targets."
+    },
+    {
+      "id": "runtime_target_is_alive",
+      "text": "Target is alive."
+    },
+    {
+      "id": "runtime_designate_an_automaton_first",
+      "text": "Designate an automaton first."
+    },
+    {
+      "id": "runtime_not_in_expedition",
+      "text": "Not in expedition."
+    },
+    {
+      "id": "runtime_use_return_to_execute_or_redo",
+      "text": "Use RETURN to execute or Redo."
+    },
+    {
+      "id": "runtime_invalid_target_rank",
+      "text": "Invalid target rank."
+    },
+    {
+      "id": "runtime_assign_the_whole_column_first",
+      "text": "Assign the whole column first."
+    },
+    {
+      "id": "runtime_assign_all_living_members",
+      "text": "Assign all living members."
+    },
+    {
+      "id": "runtime_invalid_rank",
+      "text": "Invalid rank."
+    },
+    {
+      "id": "runtime_no_feats_in_the_wrestling_pit",
+      "text": "No feats in the wrestling pit."
+    },
+    {
+      "id": "runtime_lunge_reaches_only_rank_two",
+      "text": "Lunge reaches only rank two."
+    },
+    {
+      "id": "runtime_melee_cannot_reach_that_rank",
+      "text": "Melee cannot reach that rank."
+    },
+    {
+      "id": "runtime_bare_hands_only",
+      "text": "Bare hands only."
+    },
+    {
+      "id": "runtime_no_usable_fire_piece",
+      "text": "No usable fire piece."
+    },
+    {
+      "id": "runtime_redo",
+      "text": "Redo"
+    },
+    {
+      "id": "runtime_execute_round",
+      "text": "Execute round"
+    },
+    {
+      "id": "runtime_invalid_page",
+      "text": "Invalid page."
+    },
+    {
+      "id": "runtime_item_is_not_stocked",
+      "text": "Item is not stocked."
+    },
+    {
+      "id": "runtime_invalid_fire_skin",
+      "text": "Invalid fire skin."
+    },
+    {
+      "id": "runtime_item_is_not_carried",
+      "text": "Item is not carried."
+    },
+    {
+      "id": "runtime_invalid_pool_number",
+      "text": "Invalid pool number."
+    },
+    {
+      "id": "runtime_invalid_stock_number",
+      "text": "Invalid stock number."
+    },
+    {
+      "id": "runtime_invalid_kit_number",
+      "text": "Invalid kit number."
+    },
+    {
+      "id": "runtime_read_folios_at_a_post",
+      "text": "Read folios at a post."
+    },
+    {
+      "id": "runtime_target_is_not_in_expedition",
+      "text": "Target is not in expedition."
+    },
+    {
+      "id": "runtime_found_items_pool_full",
+      "text": "Found-items pool full."
+    },
+    {
+      "id": "runtime_stay_275",
+      "text": "Stay ($275)"
+    },
+    {
+      "id": "runtime_leave",
+      "text": "Leave"
+    },
+    {
+      "id": "runtime_enter_original_site",
+      "text": "Enter original site"
+    },
+    {
+      "id": "runtime_unknown_member",
+      "text": "Unknown member."
+    },
+    {
+      "id": "runtime_member_is_not_in_the_expedition",
+      "text": "Member is not in the expedition."
+    },
+    {
+      "id": "runtime_invalid_amount",
+      "text": "Invalid amount."
+    },
+    {
+      "id": "runtime_insufficient_credit",
+      "text": "Insufficient credit."
+    },
+    {
+      "id": "runtime_deposit_does_not_cover_fees",
+      "text": "Deposit does not cover fees."
+    },
+    {
+      "id": "runtime_no_deposit_shares",
+      "text": "No deposit shares."
+    },
+    {
+      "id": "runtime_credit_ceiling_exceeded",
+      "text": "Credit ceiling exceeded."
+    },
+    {
+      "id": "runtime_menu_choices_55",
+      "values": [
+        "Inspect",
+        "Destroy",
+        "Pray",
+        "Leave"
+      ]
+    },
+    {
+      "id": "runtime_no_pending_script_menu",
+      "text": "No pending script menu."
+    },
+    {
+      "id": "runtime_invalid_menu_option",
+      "text": "Invalid menu option."
+    },
+    {
+      "id": "runtime_no_broth_remains",
+      "text": "No broth remains."
+    },
+    {
+      "id": "runtime_no_noticeable_effect_at_this_distance",
+      "text": "No noticeable effect at this distance."
+    },
+    {
+      "id": "runtime_cold_and_silent",
+      "text": "Cold and silent."
+    },
+    {
+      "id": "runtime_menu_choices_61",
+      "values": [
+        "Snatch",
+        "Distract",
+        "Ask",
+        "Leave"
+      ]
+    },
+    {
+      "id": "runtime_talk_pay_the_price",
+      "text": "Talk: pay the price"
+    },
+    {
+      "id": "runtime_attack",
+      "text": "Attack"
+    },
+    {
+      "id": "runtime_muster_an_expedition_first",
+      "text": "Muster an expedition first."
+    },
+    {
+      "id": "runtime_silence",
+      "text": "Silence."
+    },
+    {
+      "id": "runtime_menu_choices_66",
+      "values": [
+        "Talk",
+        "Treat",
+        "Scratch",
+        "Leave"
+      ]
+    },
+    {
+      "id": "runtime_an_elder_shrine_intellect_waits_within_the_stone",
+      "text": "An elder shrine-intellect waits within the stone."
+    },
+    {
+      "id": "runtime_engage",
+      "text": "Engage"
+    },
+    {
+      "id": "runtime_menu_choices_69",
+      "values": [
+        "Leave",
+        "Knock",
+        "Try the lock"
+      ]
+    },
+    {
+      "id": "runtime_menu_choices_70",
+      "values": [
+        "Leave",
+        "Take",
+        "Break"
+      ]
+    },
+    {
+      "id": "runtime_menu_choices_71",
+      "values": [
+        "Leave",
+        "Place",
+        "Turn thrice and wave",
+        "Break",
+        "Throw",
+        "Wave and incant",
+        "Wait"
+      ]
+    },
+    {
+      "id": "runtime_a_concussion_hurls_the_column_back_to_the_gate",
+      "text": "A concussion hurls the column back to the gate."
+    },
+    {
+      "id": "runtime_menu_choices_73",
+      "values": [
+        "Fight",
+        "Talk",
+        "Perform a feat"
+      ]
+    },
+    {
+      "id": "runtime_the_resonator_is_required",
+      "text": "The Resonator is required."
+    },
+    {
+      "id": "runtime_fight_doctor_voss",
+      "text": "Fight Doctor Voss"
+    },
+    {
+      "id": "runtime_fight_lord_wood",
+      "text": "Fight Lord Wood"
+    },
+    {
+      "id": "runtime_sit",
+      "text": "Sit"
+    },
+    {
+      "id": "runtime_menu_choices_78",
+      "values": [
+        [
+          "str",
+          "Brawn"
+        ],
+        [
+          "int",
+          "Wit"
+        ],
+        [
+          "dex",
+          "Nerve"
+        ],
+        [
+          "con",
+          "Vigor"
+        ],
+        [
+          "cha",
+          "Charm"
+        ]
+      ]
+    },
+    {
+      "id": "runtime_another_bowl_of_the_same_broth",
+      "text": "Another bowl of the same broth"
+    },
+    {
+      "id": "runtime_later",
+      "text": "Later"
+    },
+    {
+      "id": "runtime_the_menaces_refuse_to_surrender",
+      "text": "The menaces refuse to surrender."
+    },
+    {
+      "id": "runtime_read_sink_unavailable",
+      "text": "Read sink unavailable."
+    },
+    {
+      "id": "runtime_manual_slots_are_1_4",
+      "text": "Manual slots are 1..4."
+    },
+    {
+      "id": "runtime_autosaves_require_a_post_snapshot",
+      "text": "Autosaves require a post snapshot."
+    },
+    {
+      "id": "runtime_finish_skill_training_first",
+      "text": "Finish skill training first."
+    },
+    {
+      "id": "runtime_backup_unavailable",
+      "text": "Backup unavailable."
+    },
+    {
+      "id": "runtime_restore_unavailable",
+      "text": "Restore unavailable."
+    },
+    {
+      "id": "runtime_roster_full",
+      "text": "Roster full."
+    },
+    {
+      "id": "runtime_erase_sink_unavailable",
+      "text": "Erase sink unavailable."
+    },
+    {
+      "id": "runtime_unknown_option",
+      "text": "Unknown option."
+    },
+    {
+      "id": "runtime_seed_must_be_an_integer",
+      "text": "Seed must be an integer."
+    },
+    {
+      "id": "runtime_invalid_time_lag",
+      "text": "Invalid time lag."
+    },
+    {
+      "id": "runtime_invalid_sound_flag",
+      "text": "Invalid sound flag."
+    },
+    {
+      "id": "runtime_leave_site_prompt_requires_a_site",
+      "text": "Leave-site prompt requires a site."
+    },
+    {
+      "id": "runtime_save_load_selection_requires_a_post_or_boot_menu",
+      "text": "Save/load selection requires a post or boot menu."
+    },
+    {
+      "id": "runtime_invalid_column_member",
+      "text": "Invalid column member."
+    },
+    {
+      "id": "runtime_save_site_state_and_leave",
+      "text": "Save site state and leave"
+    },
+    {
+      "id": "runtime_leave_without_saving",
+      "text": "Leave without saving"
+    },
+    {
+      "id": "runtime_stay_here",
+      "text": "Stay here"
+    },
+    {
+      "id": "runtime_unknown_ending",
+      "text": "Unknown ending."
+    },
+    {
+      "id": "runtime_level_cap",
+      "text": "Level cap."
+    },
+    {
+      "id": "runtime_finish_current_skill_training",
+      "text": "Finish current skill training."
+    },
+    {
+      "id": "runtime_no_training_session",
+      "text": "No training session."
+    },
+    {
+      "id": "runtime_unknown_skill",
+      "text": "Unknown skill."
+    },
+    {
+      "id": "runtime_already_in_expedition",
+      "text": "Already in expedition."
+    },
+    {
+      "id": "runtime_expedition_full",
+      "text": "Expedition full."
+    },
+    {
+      "id": "runtime_name_must_contain_1_40_characters",
+      "text": "Name must contain 1..40 characters."
+    },
+    {
+      "id": "runtime_confirm_permanent_purge",
+      "text": "Confirm permanent purge."
+    },
+    {
+      "id": "runtime_unknown_automaton",
+      "text": "Unknown automaton."
+    },
+    {
+      "id": "runtime_profession_unavailable_for_this_strain",
+      "text": "Profession unavailable for this strain."
+    },
+    {
+      "id": "runtime_begin_recruitment_first",
+      "text": "Begin recruitment first."
+    },
+    {
+      "id": "runtime_choose_a_strain_first",
+      "text": "Choose a strain first."
+    },
+    {
+      "id": "runtime_no_candidate",
+      "text": "No candidate."
+    }
+  ]
+}

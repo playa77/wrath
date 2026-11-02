@@ -1,5 +1,6 @@
-# Version: 0.1.0 | 2026-11-02
+# Version: 0.2.0 | 2026-11-02
 """Spec §4: local configuration and stdlib-only path resolution."""
+
 import json
 import os
 from dataclasses import asdict, dataclass, field
@@ -66,7 +67,12 @@ def load_config(path: Path, env: Mapping[str, str] | None = None) -> Config:
     if not isinstance(raw, dict):
         raw = {}
     values = {}
-    for key, default in (("window_scale", 1), ("time_lag", 4), ("sound", True), ("debug", False)):
+    for key, default in (
+        ("window_scale", 1),
+        ("time_lag", 4),
+        ("sound", True),
+        ("debug", False),
+    ):
         value = raw.get(key, default)
         valid = type(value) is type(default)
         if valid and key == "window_scale":
@@ -85,11 +91,16 @@ def save_config(cfg: Config) -> None:
     values = asdict(cfg)
     values.pop("path")
     # Re-use the read validator without file access to keep writes in the contract.
-    if (type(cfg.window_scale) is not int or not 1 <= cfg.window_scale <= 3
-            or type(cfg.time_lag) is not int or not 0 <= cfg.time_lag <= 9
-            or type(cfg.sound) is not bool or type(cfg.debug) is not bool):
+    if (
+        type(cfg.window_scale) is not int
+        or not 1 <= cfg.window_scale <= 3
+        or type(cfg.time_lag) is not int
+        or not 0 <= cfg.time_lag <= 9
+        or type(cfg.sound) is not bool
+        or type(cfg.debug) is not bool
+    ):
         raise ValueError("Invalid configuration")
     cfg.path.parent.mkdir(parents=True, exist_ok=True)
     temp = cfg.path.with_suffix(".json.tmp")
-    temp.write_text(json.dumps(values, indent=2) + "\n", encoding="utf-8")
+    temp.write_text(json.dumps(values, indent=2) + "\n", encoding="utf-8", newline="\n")
     temp.replace(cfg.path)

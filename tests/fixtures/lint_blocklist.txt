@@ -6,3 +6,7 @@ god
 divine
 undead
 zombie
+# C-9 terms selected under the authorized implementation decisions.
+uncivilized peoples
+inferior race
+subhuman race

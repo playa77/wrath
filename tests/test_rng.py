@@ -8,20 +8,25 @@ from cradle.engine.rng import SeededRng
 
 
 def draw(rng):
-    return [(rng.d100(), rng.dice(2, 6), rng.chance(25), rng.pick(['a', 'b', 'c']))
-            for _ in range(100)]
+    return [
+        (rng.d100(), rng.dice(2, 6), rng.chance(25), rng.pick(["a", "b", "c"]))
+        for _ in range(100)
+    ]
 
 
 def test_same_seed_and_log(seed):
     # C-3 / ADR-2 / WP-1.3.
     a, b = SeededRng(seed), SeededRng(seed)
     a.tick = b.tick = 23
-    a.caller = b.caller = 'combat'
+    a.caller = b.caller = "combat"
     assert draw(a) == draw(b)
     assert a.log == b.log
     assert len(a.log) == 400
-    assert all(row['tick'] == 23 and row['caller'] == 'combat' for row in a.log)
-    assert a.replay_hash() == hashlib.sha256(''.join(str(r['result']) for r in a.log).encode()).hexdigest()
+    assert all(row["tick"] == 23 and row["caller"] == "combat" for row in a.log)
+    assert (
+        a.replay_hash()
+        == hashlib.sha256("".join(str(r["result"]) for r in a.log).encode()).hexdigest()
+    )
 
 
 def test_restart_equivalence(seed):
@@ -34,7 +39,7 @@ def test_restart_equivalence(seed):
     assert draw(original) == draw(resumed)
     assert original.state() == resumed.state()
     assert original.replay_hash() == resumed.replay_hash()
-    snapshot['log'].clear()
+    snapshot["log"].clear()
     assert len(resumed.log) == 800
 
 
@@ -48,9 +53,18 @@ def test_boundary_draws_are_logged(seed):
     assert len(rng.log) == 4
 
 
-@pytest.mark.parametrize('call', [lambda r: r.dice(0, 6), lambda r: r.dice(1, 0),
-    lambda r: r.dice(True, 6), lambda r: r.chance(-1), lambda r: r.chance(101),
-    lambda r: r.chance(True), lambda r: r.pick([])])
+@pytest.mark.parametrize(
+    "call",
+    [
+        lambda r: r.dice(0, 6),
+        lambda r: r.dice(1, 0),
+        lambda r: r.dice(True, 6),
+        lambda r: r.chance(-1),
+        lambda r: r.chance(101),
+        lambda r: r.chance(True),
+        lambda r: r.pick([]),
+    ],
+)
 def test_bad_draw_does_not_advance(call, seed):
     # Spec §11: validate before mutation.
     rng = SeededRng(seed)
@@ -60,7 +74,7 @@ def test_bad_draw_does_not_advance(call, seed):
     assert rng.state() == before
 
 
-@pytest.mark.parametrize('bad', [None, {}, {'version': 1}, {'internal': []}])
+@pytest.mark.parametrize("bad", [None, {}, {"version": 1}, {"internal": []}])
 def test_corrupt_snapshot_is_atomic(bad, seed):
     # C-3 / WP-1.3 restart failure preserves live generator.
     rng = SeededRng(seed)
@@ -76,7 +90,7 @@ def test_corrupt_draw_record_is_atomic(seed):
     draw(rng)
     before = rng.state()
     bad = deepcopy(before)
-    bad['log'][0]['result'] = 'not an integer'
+    bad["log"][0]["result"] = "not an integer"
     with pytest.raises(ValueError):
         rng.restore(bad)
     assert rng.state() == before

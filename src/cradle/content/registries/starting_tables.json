@@ -1,0 +1,163 @@
+{
+  "registry": "starting_tables",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "rules",
+      "skills": [
+        "attack",
+        "parry",
+        "swim",
+        "listen",
+        "spot_trap",
+        "disarm_trap",
+        "find_item",
+        "pick_lock",
+        "marksman"
+      ],
+      "starting_skills": {
+        "white_hunter": {
+          "attack": 50,
+          "parry": 30,
+          "swim": 25,
+          "listen": 20,
+          "spot_trap": 10,
+          "disarm_trap": 5,
+          "find_item": 15,
+          "pick_lock": 5,
+          "marksman": 25
+        },
+        "pugilist": {
+          "attack": 45,
+          "parry": 35,
+          "swim": 20,
+          "listen": 15,
+          "spot_trap": 5,
+          "disarm_trap": 5,
+          "find_item": 10,
+          "pick_lock": 5,
+          "marksman": 10
+        },
+        "expedition_doctor": {
+          "attack": 25,
+          "parry": 15,
+          "swim": 20,
+          "listen": 25,
+          "spot_trap": 15,
+          "disarm_trap": 10,
+          "find_item": 20,
+          "pick_lock": 10,
+          "marksman": 15
+        },
+        "scout": {
+          "attack": 40,
+          "parry": 25,
+          "swim": 35,
+          "listen": 35,
+          "spot_trap": 25,
+          "disarm_trap": 20,
+          "find_item": 30,
+          "pick_lock": 15,
+          "marksman": 30
+        },
+        "cat_burglar": {
+          "attack": 35,
+          "parry": 25,
+          "swim": 20,
+          "listen": 30,
+          "spot_trap": 35,
+          "disarm_trap": 40,
+          "find_item": 35,
+          "pick_lock": 45,
+          "marksman": 15
+        },
+        "antiquarian_mesmerist": {
+          "attack": 20,
+          "parry": 10,
+          "swim": 15,
+          "listen": 25,
+          "spot_trap": 20,
+          "disarm_trap": 15,
+          "find_item": 25,
+          "pick_lock": 15,
+          "marksman": 15
+        }
+      },
+      "profession_skill_adds": {
+        "cat_burglar": {
+          "marksman": 30
+        }
+      },
+      "strain_skill_adds": {
+        "lake_folk": {
+          "marksman": 15
+        },
+        "crag_folk": {
+          "parry": 5
+        },
+        "mesa_folk": {
+          "marksman": 5
+        },
+        "scrub_folk": {
+          "spot_trap": 5,
+          "disarm_trap": 5
+        }
+      },
+      "credit_by_standing": {
+        "urchin": 250,
+        "stoker": 500,
+        "artisan": 1000,
+        "patrician": 2500
+      },
+      "share_by_standing": {
+        "urchin": 1,
+        "stoker": 2,
+        "artisan": 2,
+        "patrician": 3
+      },
+      "standings": [
+        "urchin",
+        "stoker",
+        "artisan",
+        "patrician"
+      ],
+      "strange_weights": [
+        30,
+        45,
+        20,
+        5
+      ],
+      "starter_strains": [
+        "club_stock",
+        "club_stock",
+        "lake_folk",
+        "crag_folk",
+        "mesa_folk",
+        "scrub_folk"
+      ],
+      "starter_professions": [
+        "white_hunter",
+        "expedition_doctor",
+        "antiquarian_mesmerist",
+        "scout",
+        "cat_burglar",
+        "pugilist"
+      ],
+      "starter_names": [
+        "Arden",
+        "Rowan",
+        "Vale",
+        "Kit",
+        "Morgan",
+        "Reed"
+      ],
+      "creation_dice": [
+        3,
+        6
+      ],
+      "age_lifespan_fraction": 0.25
+    }
+  ]
+}

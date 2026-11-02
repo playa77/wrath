@@ -1,0 +1,1290 @@
+{
+  "registry": "items",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "shield_1",
+      "name": "Hide Target",
+      "family": "shield",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "str": 1
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_2",
+      "name": "Wicker Shield",
+      "family": "shield",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "str": 2
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_3",
+      "name": "Rawhide Targe",
+      "family": "shield",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "str": 3
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_4",
+      "name": "Bark Shield",
+      "family": "shield",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "str": 4
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_5",
+      "name": "Hide Buckler",
+      "family": "shield",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "str": 5
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_6",
+      "name": "Copper-Rim Targe",
+      "family": "shield",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "str": 6
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_7",
+      "name": "Bronzed Hide Shield",
+      "family": "shield",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "str": 7
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_8",
+      "name": "Cane Pavise",
+      "family": "shield",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "str": 8
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_9",
+      "name": "Leather Pavise",
+      "family": "shield",
+      "value": 9,
+      "cost": 2250,
+      "prereq": {
+        "str": 9
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_10",
+      "name": "Studded Targe",
+      "family": "shield",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "str": 10
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_11",
+      "name": "Boiler-Plate Buckler",
+      "family": "shield",
+      "value": 11,
+      "cost": 3300,
+      "prereq": {
+        "str": 11
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_12",
+      "name": "Iron Targe",
+      "family": "shield",
+      "value": 12,
+      "cost": 3900,
+      "prereq": {
+        "str": 12
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_13",
+      "name": "Riveted Pavise",
+      "family": "shield",
+      "value": 13,
+      "cost": 4550,
+      "prereq": {
+        "str": 13
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_14",
+      "name": "Steel Buckler",
+      "family": "shield",
+      "value": 14,
+      "cost": 5250,
+      "prereq": {
+        "str": 14
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_15",
+      "name": "Boiler-Plate Pavise",
+      "family": "shield",
+      "value": 15,
+      "cost": 6000,
+      "prereq": {
+        "str": 15
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_16",
+      "name": "Chromed Targe",
+      "family": "shield",
+      "value": 16,
+      "cost": 6800,
+      "prereq": {
+        "str": 16
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_17",
+      "name": "Club-Issue Shield",
+      "family": "shield",
+      "value": 17,
+      "cost": 7650,
+      "prereq": {
+        "str": 17
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_18",
+      "name": "Expedition Pavise",
+      "family": "shield",
+      "value": 18,
+      "cost": 8550,
+      "prereq": {
+        "str": 18
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_19",
+      "name": "Sun-Metal Buckler",
+      "family": "shield",
+      "value": 19,
+      "cost": 9500,
+      "prereq": {
+        "str": 19
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "shield_20",
+      "name": "Elder Aegis",
+      "family": "shield",
+      "value": 20,
+      "cost": 10500,
+      "prereq": {
+        "str": 14
+      },
+      "flags": [
+        "elder"
+      ],
+      "unique": false
+    },
+    {
+      "id": "armor_1",
+      "name": "Canvas Jacket",
+      "family": "armor",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "str": 1
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_2",
+      "name": "Hide Jerkin",
+      "family": "armor",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "str": 1
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_3",
+      "name": "Padded Gambeson",
+      "family": "armor",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "str": 2
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_4",
+      "name": "Leather Coat",
+      "family": "armor",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "str": 2
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_5",
+      "name": "Studded Leather",
+      "family": "armor",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "str": 3
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_6",
+      "name": "Ring-Mail Vest",
+      "family": "armor",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "str": 3
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_7",
+      "name": "Scale Shirt",
+      "family": "armor",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "str": 4
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_8",
+      "name": "Chain Shirt",
+      "family": "armor",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "str": 4
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_9",
+      "name": "Bronzed Cuirass",
+      "family": "armor",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "str": 5
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_10",
+      "name": "Boiler-Plate Cuirass",
+      "family": "armor",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "str": 5
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_11",
+      "name": "Riveted Mail",
+      "family": "armor",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "str": 6
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_12",
+      "name": "Double Chain",
+      "family": "armor",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "str": 6
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_13",
+      "name": "Expedition Mail",
+      "family": "armor",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "str": 7
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_14",
+      "name": "Chrome Cuirass",
+      "family": "armor",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "str": 7
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_15",
+      "name": "Sun-Metal Scale",
+      "family": "armor",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "str": 8
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_16",
+      "name": "Club Plate",
+      "family": "armor",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "str": 8
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_17",
+      "name": "Masterwork Mail",
+      "family": "armor",
+      "value": 9,
+      "cost": 2250,
+      "prereq": {
+        "str": 9
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_18",
+      "name": "Meteoric Mail",
+      "family": "armor",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "str": 10
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_19",
+      "name": "Sun-Metal Cuirass",
+      "family": "armor",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "str": 10
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "armor_20",
+      "name": "Elder Lamellar",
+      "family": "armor",
+      "value": 11,
+      "cost": 3300,
+      "prereq": {
+        "str": 8
+      },
+      "flags": [
+        "elder"
+      ],
+      "unique": false
+    },
+    {
+      "id": "fire_1",
+      "name": "Self Bow",
+      "bow_name": "Self Bow",
+      "rifle_name": "Single-Shot .22",
+      "family": "fire",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "str": 5,
+        "dex": 5
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_2",
+      "name": "Short Bow",
+      "bow_name": "Short Bow",
+      "rifle_name": "Rimfire Carbine",
+      "family": "fire",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "str": 6,
+        "dex": 6
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_3",
+      "name": "Reed Bow",
+      "bow_name": "Reed Bow",
+      "rifle_name": "Farm Rifle",
+      "family": "fire",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "str": 7,
+        "dex": 7
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_4",
+      "name": "Hunting Bow",
+      "bow_name": "Hunting Bow",
+      "rifle_name": "Hunting Rifle",
+      "family": "fire",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "str": 8,
+        "dex": 8
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_5",
+      "name": "Recurve Bow",
+      "bow_name": "Recurve Bow",
+      "rifle_name": "Sporter Rifle",
+      "family": "fire",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "str": 8,
+        "dex": 8
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_6",
+      "name": "Longbow",
+      "bow_name": "Longbow",
+      "rifle_name": "Bolt-Action Express",
+      "family": "fire",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "str": 9,
+        "dex": 9
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_7",
+      "name": "Composite Bow",
+      "bow_name": "Composite Bow",
+      "rifle_name": "Express .303",
+      "family": "fire",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "str": 10,
+        "dex": 10
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_8",
+      "name": "Yew Longbow",
+      "bow_name": "Yew Longbow",
+      "rifle_name": "Safari Express",
+      "family": "fire",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "str": 11,
+        "dex": 11
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_9",
+      "name": "Flight Bow",
+      "bow_name": "Flight Bow",
+      "rifle_name": "Double Express",
+      "family": "fire",
+      "value": 9,
+      "cost": 2250,
+      "prereq": {
+        "str": 12,
+        "dex": 12
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_10",
+      "name": "Master Hunting Bow",
+      "bow_name": "Master Hunting Bow",
+      "rifle_name": "Master Express .350",
+      "family": "fire",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "str": 12,
+        "dex": 12
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_11",
+      "name": "Laminated Bow",
+      "bow_name": "Laminated Bow",
+      "rifle_name": "Nitro Express .400",
+      "family": "fire",
+      "value": 11,
+      "cost": 3300,
+      "prereq": {
+        "str": 13,
+        "dex": 13
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_12",
+      "name": "War Bow",
+      "bow_name": "War Bow",
+      "rifle_name": "Big-Bore .450",
+      "family": "fire",
+      "value": 12,
+      "cost": 3900,
+      "prereq": {
+        "str": 14,
+        "dex": 14
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_13",
+      "name": "Great Bow",
+      "bow_name": "Great Bow",
+      "rifle_name": "Elephant Gun .500",
+      "family": "fire",
+      "value": 13,
+      "cost": 4550,
+      "prereq": {
+        "str": 15,
+        "dex": 15
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_14",
+      "name": "Club Bow",
+      "bow_name": "Club Bow",
+      "rifle_name": "Club Express .505",
+      "family": "fire",
+      "value": 14,
+      "cost": 5250,
+      "prereq": {
+        "str": 16,
+        "dex": 16
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_15",
+      "name": "Master Longbow +1",
+      "bow_name": "Master Longbow +1",
+      "rifle_name": "Master Express +1",
+      "family": "fire",
+      "value": 15,
+      "cost": 6000,
+      "prereq": {
+        "str": 16,
+        "dex": 16
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_16",
+      "name": "Master Longbow +2",
+      "bow_name": "Master Longbow +2",
+      "rifle_name": "Master Express +2",
+      "family": "fire",
+      "value": 16,
+      "cost": 6800,
+      "prereq": {
+        "str": 17,
+        "dex": 17
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_17",
+      "name": "Master Longbow +3",
+      "bow_name": "Master Longbow +3",
+      "rifle_name": "Master Express +3",
+      "family": "fire",
+      "value": 17,
+      "cost": 7650,
+      "prereq": {
+        "str": 18,
+        "dex": 18
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_18",
+      "name": "Sun-Metal Bow",
+      "bow_name": "Sun-Metal Bow",
+      "rifle_name": "Sun-Metal Express",
+      "family": "fire",
+      "value": 18,
+      "cost": 8550,
+      "prereq": {
+        "str": 19,
+        "dex": 19
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_19",
+      "name": "Sun-Metal Greatbow",
+      "bow_name": "Sun-Metal Greatbow",
+      "rifle_name": "Sun-Metal Double Express",
+      "family": "fire",
+      "value": 19,
+      "cost": 9500,
+      "prereq": {
+        "str": 20,
+        "dex": 20
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_20",
+      "name": "Elder Bow",
+      "bow_name": "Elder Bow",
+      "rifle_name": "Elder Express `",
+      "family": "fire",
+      "value": 20,
+      "cost": 10500,
+      "prereq": {
+        "str": 14,
+        "dex": 14
+      },
+      "flags": [
+        "elder"
+      ],
+      "unique": false
+    },
+    {
+      "id": "melee_1",
+      "name": "Cosh",
+      "family": "weapon",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "twostr_plus_dex": 11
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_2",
+      "name": "Pocket Knife",
+      "family": "weapon",
+      "value": 1,
+      "cost": 50,
+      "prereq": {
+        "twostr_plus_dex": 11
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_3",
+      "name": "Work Hammer",
+      "family": "weapon",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "twostr_plus_dex": 12
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_4",
+      "name": "Machete",
+      "family": "weapon",
+      "value": 2,
+      "cost": 150,
+      "prereq": {
+        "twostr_plus_dex": 12
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_5",
+      "name": "Hatchet",
+      "family": "weapon",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "twostr_plus_dex": 13
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_6",
+      "name": "Club",
+      "family": "weapon",
+      "value": 3,
+      "cost": 300,
+      "prereq": {
+        "twostr_plus_dex": 13
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_7",
+      "name": "Hunting Knife",
+      "family": "weapon",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "twostr_plus_dex": 14
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_8",
+      "name": "Cudgel",
+      "family": "weapon",
+      "value": 4,
+      "cost": 500,
+      "prereq": {
+        "twostr_plus_dex": 14
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_9",
+      "name": "Short Sword",
+      "family": "weapon",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "twostr_plus_dex": 15
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_10",
+      "name": "Hand Axe",
+      "family": "weapon",
+      "value": 5,
+      "cost": 750,
+      "prereq": {
+        "twostr_plus_dex": 15
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_11",
+      "name": "Machete +1",
+      "family": "weapon",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "twostr_plus_dex": 16
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_12",
+      "name": "Spear",
+      "family": "weapon",
+      "value": 6,
+      "cost": 1050,
+      "prereq": {
+        "twostr_plus_dex": 16
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_13",
+      "name": "Cutlass",
+      "family": "weapon",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "twostr_plus_dex": 17
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_14",
+      "name": "War Hammer",
+      "family": "weapon",
+      "value": 7,
+      "cost": 1400,
+      "prereq": {
+        "twostr_plus_dex": 17
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_15",
+      "name": "Hunting Knife +1",
+      "family": "weapon",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "twostr_plus_dex": 18
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_16",
+      "name": "Cudgel +1",
+      "family": "weapon",
+      "value": 8,
+      "cost": 1800,
+      "prereq": {
+        "twostr_plus_dex": 18
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_17",
+      "name": "Flail",
+      "family": "weapon",
+      "value": 9,
+      "cost": 2250,
+      "prereq": {
+        "twostr_plus_dex": 19
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_18",
+      "name": "Broadsword",
+      "family": "weapon",
+      "value": 9,
+      "cost": 2250,
+      "prereq": {
+        "twostr_plus_dex": 19
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_19",
+      "name": "Hunting Spear",
+      "family": "weapon",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "twostr_plus_dex": 20
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_20",
+      "name": "Cavalry Sabre",
+      "family": "weapon",
+      "value": 10,
+      "cost": 2750,
+      "prereq": {
+        "twostr_plus_dex": 20
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_21",
+      "name": "Hunting Knife +2",
+      "family": "weapon",
+      "value": 11,
+      "cost": 3300,
+      "prereq": {
+        "twostr_plus_dex": 21
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_22",
+      "name": "Flail +1",
+      "family": "weapon",
+      "value": 11,
+      "cost": 3300,
+      "prereq": {
+        "twostr_plus_dex": 21
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_23",
+      "name": "Battle Axe",
+      "family": "weapon",
+      "value": 12,
+      "cost": 3900,
+      "prereq": {
+        "twostr_plus_dex": 22
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_24",
+      "name": "Hunting Spear +1",
+      "family": "weapon",
+      "value": 12,
+      "cost": 3900,
+      "prereq": {
+        "twostr_plus_dex": 22
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_25",
+      "name": "Cavalry Sabre +1",
+      "family": "weapon",
+      "value": 13,
+      "cost": 4550,
+      "prereq": {
+        "twostr_plus_dex": 23
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_26",
+      "name": "Pole-axe",
+      "family": "weapon",
+      "value": 13,
+      "cost": 4550,
+      "prereq": {
+        "twostr_plus_dex": 23
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_27",
+      "name": "Cudgel +2",
+      "family": "weapon",
+      "value": 14,
+      "cost": 5250,
+      "prereq": {
+        "twostr_plus_dex": 24
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_28",
+      "name": "Flail +2",
+      "family": "weapon",
+      "value": 14,
+      "cost": 5250,
+      "prereq": {
+        "twostr_plus_dex": 24
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_29",
+      "name": "Hunting Spear +2",
+      "family": "weapon",
+      "value": 15,
+      "cost": 6000,
+      "prereq": {
+        "twostr_plus_dex": 25
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_30",
+      "name": "Cavalry Sabre +2",
+      "family": "weapon",
+      "value": 15,
+      "cost": 6000,
+      "prereq": {
+        "twostr_plus_dex": 25
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_31",
+      "name": "Hunting Knife +3",
+      "family": "weapon",
+      "value": 16,
+      "cost": 6800,
+      "prereq": {
+        "twostr_plus_dex": 26
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_32",
+      "name": "Pole-axe +1",
+      "family": "weapon",
+      "value": 16,
+      "cost": 6800,
+      "prereq": {
+        "twostr_plus_dex": 26
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_33",
+      "name": "Great Axe",
+      "family": "weapon",
+      "value": 17,
+      "cost": 7650,
+      "prereq": {
+        "twostr_plus_dex": 27
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_34",
+      "name": "Flail +3",
+      "family": "weapon",
+      "value": 18,
+      "cost": 8550,
+      "prereq": {
+        "twostr_plus_dex": 28
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_35",
+      "name": "Pole-axe +2",
+      "family": "weapon",
+      "value": 19,
+      "cost": 9500,
+      "prereq": {
+        "twostr_plus_dex": 29
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_36",
+      "name": "Cavalry Sabre +3",
+      "family": "weapon",
+      "value": 20,
+      "cost": 10500,
+      "prereq": {
+        "twostr_plus_dex": 30
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_37",
+      "name": "Sun-Metal Knife",
+      "family": "weapon",
+      "value": 21,
+      "cost": 11550,
+      "prereq": {
+        "twostr_plus_dex": 31
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_38",
+      "name": "Sun-Metal Mace",
+      "family": "weapon",
+      "value": 22,
+      "cost": 12650,
+      "prereq": {
+        "twostr_plus_dex": 32
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_39",
+      "name": "Sun-Metal Sabre",
+      "family": "weapon",
+      "value": 23,
+      "cost": 13800,
+      "prereq": {
+        "twostr_plus_dex": 33
+      },
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "melee_40",
+      "name": "Elder Falchion",
+      "family": "weapon",
+      "value": 24,
+      "cost": 15000,
+      "prereq": {
+        "twostr_plus_dex": 23
+      },
+      "flags": [
+        "elder"
+      ],
+      "unique": false
+    },
+    {
+      "id": "melee_41",
+      "name": "Elder Warbrand",
+      "family": "weapon",
+      "value": 25,
+      "cost": 16250,
+      "prereq": {
+        "twostr_plus_dex": 24
+      },
+      "flags": [
+        "elder"
+      ],
+      "unique": false
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "registry": "valuables",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "sun_key",
+      "name": "Sun Key",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "drowned_key",
+      "name": "Drowned Key",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "sun_gem",
+      "name": "Sun Gem",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "obsidian_urn",
+      "name": "Obsidian Urn",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "crystal_resonator",
+      "name": "Crystal Resonator",
+      "family": "valuable",
+      "bound": true,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "foul_phial",
+      "name": "Foul Phial",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "sweet_phial",
+      "name": "Sweet Phial",
+      "family": "valuable",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 0,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "old_master_bow",
+      "name": "Old Master Bow",
+      "family": "fire",
+      "bound": false,
+      "unique": true,
+      "cost": 0,
+      "value": 19,
+      "prereq": {
+        "str": 20,
+        "dex": 20
+      },
+      "flags": []
+    },
+    {
+      "id": "smoky_gem",
+      "name": "Smoky Gem",
+      "family": "valuable",
+      "cost": 120,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fine_gem",
+      "name": "Fine Gem",
+      "family": "valuable",
+      "cost": 400,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "river_pearl",
+      "name": "River Pearl",
+      "family": "valuable",
+      "cost": 60,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "carved_idol",
+      "name": "Carved Idol",
+      "family": "valuable",
+      "cost": 250,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "silvered_compass",
+      "name": "Silvered Compass",
+      "family": "valuable",
+      "cost": 180,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "mammoth_tusk",
+      "name": "Mammoth Tusk",
+      "family": "valuable",
+      "cost": 300,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "opal",
+      "name": "Opal",
+      "family": "valuable",
+      "cost": 500,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "star_sapphire",
+      "name": "Star Sapphire",
+      "family": "valuable",
+      "cost": 900,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "topaz",
+      "name": "Topaz",
+      "family": "valuable",
+      "cost": 350,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "jade_scarab",
+      "name": "Jade Scarab",
+      "family": "valuable",
+      "cost": 275,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "brass_astrolabe",
+      "name": "Brass Astrolabe",
+      "family": "valuable",
+      "cost": 200,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "scrimshaw",
+      "name": "Scrimshaw",
+      "family": "valuable",
+      "cost": 90,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "amber_fist",
+      "name": "Amber Fist",
+      "family": "valuable",
+      "cost": 420,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "silver_cigarette_case",
+      "name": "Silver Cigarette Case",
+      "family": "valuable",
+      "cost": 150,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "ivory_chessman",
+      "name": "Ivory Chessman",
+      "family": "valuable",
+      "cost": 80,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "obsidian_lens",
+      "name": "Obsidian Lens",
+      "family": "valuable",
+      "cost": 600,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "ember_opal",
+      "name": "Ember Opal",
+      "family": "valuable",
+      "cost": 750,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "basalt_cameo",
+      "name": "Basalt Cameo",
+      "family": "valuable",
+      "cost": 320,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fossil_plaque",
+      "name": "Fossil Plaque",
+      "family": "valuable",
+      "cost": 140,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "sapphire",
+      "name": "Sapphire",
+      "family": "valuable",
+      "cost": 1200,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "black_pearl",
+      "name": "Black Pearl",
+      "family": "valuable",
+      "cost": 1500,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "family": "valuable",
+      "cost": 1800,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "family": "valuable",
+      "cost": 2200,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "family": "valuable",
+      "cost": 3000,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "elder_shard",
+      "name": "Elder Shard",
+      "family": "valuable",
+      "cost": 5000,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "tapestry_fragment",
+      "name": "Tapestry Fragment",
+      "family": "valuable",
+      "cost": 450,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "gold_pocketwatch",
+      "name": "Gold Pocketwatch",
+      "family": "valuable",
+      "cost": 260,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "signet_ring",
+      "name": "Signet Ring",
+      "family": "valuable",
+      "cost": 210,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "platinum_flask",
+      "name": "Platinum Flask",
+      "family": "valuable",
+      "cost": 550,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "moonstone",
+      "name": "Moonstone",
+      "family": "valuable",
+      "cost": 700,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "fire_agate",
+      "name": "Fire Agate",
+      "family": "valuable",
+      "cost": 640,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "ziggurat_tile",
+      "name": "Ziggurat Tile",
+      "family": "valuable",
+      "cost": 2600,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    },
+    {
+      "id": "elder_lens",
+      "name": "Elder Lens",
+      "family": "valuable",
+      "cost": 4400,
+      "value": 0,
+      "prereq": {},
+      "flags": [],
+      "unique": false
+    }
+  ]
+}

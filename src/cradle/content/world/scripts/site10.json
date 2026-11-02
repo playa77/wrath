@@ -1,0 +1,25 @@
+{
+  "registry": "site10",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site10_15_12_0",
+      "at": [
+        15,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "hermit",
+          "special": "hermit"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

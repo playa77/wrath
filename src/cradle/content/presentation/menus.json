@@ -1,0 +1,789 @@
+{
+  "registry": "menus",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "boot",
+      "title": "The Cradle Plateau",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Start at Terminus",
+          "verb": "session.new",
+          "args": {}
+        },
+        {
+          "key": "2",
+          "label": "Continue",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "save_slots"
+          }
+        },
+        {
+          "key": "3",
+          "label": "Demonstration",
+          "verb": "session.demo",
+          "args": {}
+        },
+        {
+          "key": "4",
+          "label": "Utilities",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "utilities"
+          }
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "Utilities",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Backup member",
+          "verb": "util.backup",
+          "args": {}
+        },
+        {
+          "key": "2",
+          "label": "Restore member",
+          "verb": "util.restore",
+          "args": {}
+        },
+        {
+          "key": "3",
+          "label": "New game (ERASES)",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "erase_confirm"
+          }
+        },
+        {
+          "key": "Q",
+          "label": "Leave",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "boot"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erase_confirm",
+      "title": "Erase active saves?",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "Y",
+          "label": "Yes",
+          "verb": "util.new_game_erase",
+          "args": {
+            "confirm": true
+          }
+        },
+        {
+          "key": "N",
+          "label": "No",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "boot"
+          }
+        }
+      ]
+    },
+    {
+      "id": "post",
+      "title": "Post services",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Explorers' Club chapter",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "chapter"
+          }
+        },
+        {
+          "key": "2",
+          "label": "Letter-of-credit",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "credit"
+          }
+        },
+        {
+          "key": "3",
+          "label": "Outfitter",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "outfitter"
+          }
+        },
+        {
+          "key": "4",
+          "label": "Debrief officer",
+          "verb": "post.debrief",
+          "args": {}
+        },
+        {
+          "key": "5",
+          "label": "Infirmary",
+          "verb": "post.infirmary",
+          "args": {}
+        },
+        {
+          "key": "6",
+          "label": "Perform a feat",
+          "verb": "post.use_feat",
+          "args": {}
+        },
+        {
+          "key": "7",
+          "label": "Use an item",
+          "verb": "post.use_item",
+          "args": {}
+        },
+        {
+          "key": "8",
+          "label": "Distribute & sell",
+          "verb": "post.distribute",
+          "args": {}
+        },
+        {
+          "key": "9",
+          "label": "Trade",
+          "verb": "post.trade",
+          "args": {}
+        },
+        {
+          "key": "I",
+          "label": "Inspect member",
+          "verb": "post.inspect",
+          "args": {}
+        },
+        {
+          "key": "S",
+          "label": "Save game",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "save_slots"
+          }
+        },
+        {
+          "key": "L",
+          "label": "Leave Post",
+          "verb": "post.leave",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": "chapter",
+      "title": "Explorers' Club",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "N",
+          "label": "New member",
+          "verb": "chr.begin_recruit",
+          "args": {}
+        },
+        {
+          "key": "L",
+          "label": "List",
+          "verb": "chr.list",
+          "args": {}
+        },
+        {
+          "key": "A",
+          "label": "Add",
+          "verb": "chr.add",
+          "args": {}
+        },
+        {
+          "key": "D",
+          "label": "Drop",
+          "verb": "chr.drop",
+          "args": {}
+        },
+        {
+          "key": "R",
+          "label": "Rename",
+          "verb": "chr.rename",
+          "args": {}
+        },
+        {
+          "key": "P",
+          "label": "Purge",
+          "verb": "chr.purge",
+          "args": {}
+        },
+        {
+          "key": "T",
+          "label": "Training",
+          "verb": "adv.train",
+          "args": {}
+        },
+        {
+          "key": "F",
+          "label": "Learn feats",
+          "verb": "adv.learn_feat",
+          "args": {}
+        },
+        {
+          "key": "Q",
+          "label": "Leave",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "post"
+          }
+        }
+      ]
+    },
+    {
+      "id": "credit",
+      "title": "Letter-of-credit",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "W",
+          "label": "Withdraw",
+          "verb": "credit.withdraw",
+          "args": {}
+        },
+        {
+          "key": "D",
+          "label": "Deposit",
+          "verb": "credit.deposit",
+          "args": {}
+        },
+        {
+          "key": "Q",
+          "label": "Leave",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "post"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outfitter",
+      "title": "Outfitter",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "L",
+          "label": "List",
+          "verb": "shop.list",
+          "args": {
+            "page": 0
+          }
+        },
+        {
+          "key": "C",
+          "label": "Continue",
+          "verb": "shop.list",
+          "args": {
+            "next": true
+          }
+        },
+        {
+          "key": "B",
+          "label": "Buy",
+          "verb": "shop.buy",
+          "args": {}
+        },
+        {
+          "key": "T",
+          "label": "Sell",
+          "verb": "shop.sell",
+          "args": {}
+        },
+        {
+          "key": "Q",
+          "label": "Leave",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "post"
+          }
+        }
+      ]
+    },
+    {
+      "id": "strain",
+      "title": "Strain",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Club Stock",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "club_stock"
+          }
+        },
+        {
+          "key": "2",
+          "label": "Crag Folk",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "crag_folk"
+          }
+        },
+        {
+          "key": "3",
+          "label": "Lake Folk",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "lake_folk"
+          }
+        },
+        {
+          "key": "4",
+          "label": "Mesa Folk",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "mesa_folk"
+          }
+        },
+        {
+          "key": "5",
+          "label": "Scrub Folk",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "scrub_folk"
+          }
+        },
+        {
+          "key": "6",
+          "label": "Strange",
+          "verb": "chr.pick_strain",
+          "args": {
+            "strain": "STRANGE"
+          }
+        }
+      ]
+    },
+    {
+      "id": "profession",
+      "title": "Profession",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "White Hunter",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "white_hunter"
+          }
+        },
+        {
+          "key": "2",
+          "label": "Pugilist",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "pugilist"
+          }
+        },
+        {
+          "key": "3",
+          "label": "Expedition Doctor",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "expedition_doctor"
+          }
+        },
+        {
+          "key": "4",
+          "label": "Scout",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "scout"
+          }
+        },
+        {
+          "key": "5",
+          "label": "Cat Burglar",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "cat_burglar"
+          }
+        },
+        {
+          "key": "6",
+          "label": "Antiquarian Mesmerist",
+          "verb": "chr.pick_profession",
+          "args": {
+            "prof": "antiquarian_mesmerist"
+          }
+        }
+      ]
+    },
+    {
+      "id": "accept",
+      "title": "Keep this recruit?",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "A",
+          "label": "Accept",
+          "verb": "chr.accept",
+          "args": {}
+        },
+        {
+          "key": "R",
+          "label": "Reject",
+          "verb": "chr.reject",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": "trail",
+      "title": "Trail",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "P",
+          "label": "Perform",
+          "verb": "trail.perform",
+          "args": {}
+        },
+        {
+          "key": "I",
+          "label": "Inspect",
+          "verb": "trail.inspect",
+          "args": {}
+        },
+        {
+          "key": "U",
+          "label": "Use tonic",
+          "verb": "trail.use_tonic",
+          "args": {}
+        },
+        {
+          "key": "R",
+          "label": "Rest/camp",
+          "verb": "trail.camp_rest",
+          "args": {}
+        },
+        {
+          "key": "G",
+          "label": "Time-lag & sound",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "site",
+      "title": "Site",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "L",
+          "label": "Look",
+          "verb": "site.look",
+          "args": {}
+        },
+        {
+          "key": "P",
+          "label": "Pick lock",
+          "verb": "site.pick_lock",
+          "args": {}
+        },
+        {
+          "key": "T",
+          "label": "Spot trap",
+          "verb": "site.spot_trap",
+          "args": {}
+        },
+        {
+          "key": "D",
+          "label": "Disarm",
+          "verb": "site.disarm",
+          "args": {}
+        },
+        {
+          "key": "U",
+          "label": "Use tonic",
+          "verb": "trail.use_tonic",
+          "args": {}
+        },
+        {
+          "key": "F",
+          "label": "Perform feat",
+          "verb": "trail.perform",
+          "args": {}
+        },
+        {
+          "key": "X",
+          "label": "Leave",
+          "verb": "menu.choose",
+          "args": {
+            "site_exit_prompt": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "encounter",
+      "title": "MENACE APPROACHES",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Fight",
+          "verb": "enc.fight",
+          "args": {}
+        },
+        {
+          "key": "2",
+          "label": "Accept Menace's Surrender",
+          "verb": "enc.accept_surrender",
+          "args": {}
+        },
+        {
+          "key": "3",
+          "label": "Parley",
+          "verb": "enc.parley",
+          "args": {}
+        },
+        {
+          "key": "4",
+          "label": "Beg for Mercy",
+          "verb": "enc.beg_mercy",
+          "args": {}
+        },
+        {
+          "key": "5",
+          "label": "Flee",
+          "verb": "enc.flee",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": "tactic",
+      "title": "Tactic",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "1",
+          "label": "Thrust",
+          "verb": "cmb.thrust",
+          "args": {}
+        },
+        {
+          "key": "2",
+          "label": "Attack",
+          "verb": "cmb.attack",
+          "args": {}
+        },
+        {
+          "key": "3",
+          "label": "Slash",
+          "verb": "cmb.slash",
+          "args": {}
+        },
+        {
+          "key": "4",
+          "label": "Lunge",
+          "verb": "cmb.lunge",
+          "args": {}
+        },
+        {
+          "key": "5",
+          "label": "Aim",
+          "verb": "cmb.aim",
+          "args": {}
+        },
+        {
+          "key": "6",
+          "label": "Feat",
+          "verb": "cmb.feat",
+          "args": {}
+        },
+        {
+          "key": "7",
+          "label": "Parry",
+          "verb": "cmb.parry",
+          "args": {}
+        },
+        {
+          "key": "8",
+          "label": "Fire",
+          "verb": "cmb.fire",
+          "args": {}
+        },
+        {
+          "key": "9",
+          "label": "Other",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "tactic_other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tactic_other",
+      "title": "Other",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "R",
+          "label": "Rank",
+          "verb": "cmb.rank",
+          "args": {}
+        },
+        {
+          "key": "T",
+          "label": "Time lag",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "config"
+          }
+        },
+        {
+          "key": "S",
+          "label": "Sound",
+          "verb": "menu.choose",
+          "args": {
+            "menu_id": "config"
+          }
+        },
+        {
+          "key": "D",
+          "label": "Redo",
+          "verb": "cmb.redo",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": "config",
+      "title": "Configuration",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "T",
+          "label": "Time lag",
+          "verb": "menu.choose",
+          "args": {
+            "configure": "time_lag"
+          }
+        },
+        {
+          "key": "S",
+          "label": "Sound",
+          "verb": "menu.choose",
+          "args": {
+            "configure": "sound"
+          }
+        },
+        {
+          "key": "Q",
+          "label": "Leave",
+          "verb": "menu.return",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": "save_slots",
+      "title": "Save slots",
+      "region": "bottom_center",
+      "options": [
+        {
+          "key": "0",
+          "label": "Autosave",
+          "verb": "menu.choose",
+          "args": {
+            "slot": 0
+          }
+        },
+        {
+          "key": "1",
+          "label": "Slot 1",
+          "verb": "menu.choose",
+          "args": {
+            "slot": 1
+          }
+        },
+        {
+          "key": "2",
+          "label": "Slot 2",
+          "verb": "menu.choose",
+          "args": {
+            "slot": 2
+          }
+        },
+        {
+          "key": "3",
+          "label": "Slot 3",
+          "verb": "menu.choose",
+          "args": {
+            "slot": 3
+          }
+        },
+        {
+          "key": "4",
+          "label": "Slot 4",
+          "verb": "menu.choose",
+          "args": {
+            "slot": 4
+          }
+        }
+      ]
+    }
+  ],
+  "regions": {
+    "member_panel": [
+      0,
+      0,
+      120,
+      12
+    ],
+    "messages": [
+      0,
+      12,
+      60,
+      12
+    ],
+    "menace_ranks": [
+      60,
+      12,
+      60,
+      12
+    ],
+    "area_map": [
+      0,
+      24,
+      56,
+      16
+    ],
+    "menu": [
+      56,
+      24,
+      32,
+      16
+    ],
+    "figures": [
+      88,
+      24,
+      32,
+      16
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "registry": "site11",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site11_15_6_0",
+      "at": [
+        15,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site11.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            10,
+            10,
+            10,
+            10
+          ],
+          "set_id": "site11.set1",
+          "on_win": []
+        }
+      ]
+    },
+    {
+      "id": "site11_15_7_1",
+      "at": [
+        15,
+        7
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site11.stash.15.7"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t1"
+        }
+      ]
+    },
+    {
+      "id": "site11_8_12_2",
+      "at": [
+        8,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site11.set2"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            21,
+            21,
+            21
+          ],
+          "set_id": "site11.set2",
+          "on_win": []
+        }
+      ]
+    },
+    {
+      "id": "site11_8_13_3",
+      "at": [
+        8,
+        13
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site11.stash.8.13"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t4"
+        }
+      ]
+    },
+    {
+      "id": "site11_22_12_4",
+      "at": [
+        22,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site11.set3"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            31,
+            31
+          ],
+          "set_id": "site11.set3",
+          "on_win": []
+        }
+      ]
+    },
+    {
+      "id": "site11_22_13_5",
+      "at": [
+        22,
+        13
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site11.stash.22.13"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t7"
+        }
+      ]
+    },
+    {
+      "id": "site11_15_17_6",
+      "at": [
+        15,
+        17
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site11.set4"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            61
+          ],
+          "set_id": "site11.set4",
+          "on_win": [
+            {
+              "verb": "set_flag",
+              "name": "drake_apex",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site11_15_18_7",
+      "at": [
+        15,
+        18
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site11.stash.15.18"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t8"
+        }
+      ]
+    },
+    {
+      "id": "site11_15_21_8",
+      "at": [
+        15,
+        21
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site11.set5"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            73
+          ],
+          "set_id": "site11.set5"
+        }
+      ]
+    },
+    {
+      "id": "site11_15_22_9",
+      "at": [
+        15,
+        22
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site11.stash.15.22"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "diamond"
+        },
+        {
+          "verb": "give_item",
+          "id": "elder_lens"
+        }
+      ]
+    },
+    {
+      "id": "site11_15_4_10",
+      "at": [
+        15,
+        4
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Sulfur hangs in the hollows."
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

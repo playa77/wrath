@@ -1,0 +1,218 @@
+{
+  "registry": "tonics",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "radium_tonic_1",
+      "name": "Radium Tonic 1",
+      "family": "tonic",
+      "hp": 1,
+      "cure_tier": 1,
+      "cost": 50,
+      "value": 1,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_1",
+      "name": "Nerve Tonic 1",
+      "family": "tonic",
+      "mp": 3,
+      "cost": 30,
+      "value": 1,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_2",
+      "name": "Radium Tonic 2",
+      "family": "tonic",
+      "hp": 4,
+      "cure_tier": 1,
+      "cost": 200,
+      "value": 2,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_2",
+      "name": "Nerve Tonic 2",
+      "family": "tonic",
+      "mp": 6,
+      "cost": 120,
+      "value": 2,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_3",
+      "name": "Radium Tonic 3",
+      "family": "tonic",
+      "hp": 9,
+      "cure_tier": 1,
+      "cost": 450,
+      "value": 3,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_3",
+      "name": "Nerve Tonic 3",
+      "family": "tonic",
+      "mp": 9,
+      "cost": 270,
+      "value": 3,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_4",
+      "name": "Radium Tonic 4",
+      "family": "tonic",
+      "hp": 16,
+      "cure_tier": 2,
+      "cost": 800,
+      "value": 4,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_4",
+      "name": "Nerve Tonic 4",
+      "family": "tonic",
+      "mp": 12,
+      "cost": 480,
+      "value": 4,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_5",
+      "name": "Radium Tonic 5",
+      "family": "tonic",
+      "hp": 25,
+      "cure_tier": 2,
+      "cost": 1250,
+      "value": 5,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_5",
+      "name": "Nerve Tonic 5",
+      "family": "tonic",
+      "mp": 15,
+      "cost": 750,
+      "value": 5,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_6",
+      "name": "Radium Tonic 6",
+      "family": "tonic",
+      "hp": 36,
+      "cure_tier": 2,
+      "cost": 1800,
+      "value": 6,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_6",
+      "name": "Nerve Tonic 6",
+      "family": "tonic",
+      "mp": 18,
+      "cost": 1080,
+      "value": 6,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_7",
+      "name": "Radium Tonic 7",
+      "family": "tonic",
+      "hp": 49,
+      "cure_tier": 3,
+      "cost": 2450,
+      "value": 7,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_7",
+      "name": "Nerve Tonic 7",
+      "family": "tonic",
+      "mp": 21,
+      "cost": 1470,
+      "value": 7,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_8",
+      "name": "Radium Tonic 8",
+      "family": "tonic",
+      "hp": 64,
+      "cure_tier": 3,
+      "cost": 3200,
+      "value": 8,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_8",
+      "name": "Nerve Tonic 8",
+      "family": "tonic",
+      "mp": 24,
+      "cost": 1920,
+      "value": 8,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_9",
+      "name": "Radium Tonic 9",
+      "family": "tonic",
+      "hp": 81,
+      "cure_tier": 3,
+      "cost": 4050,
+      "value": 9,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_9",
+      "name": "Nerve Tonic 9",
+      "family": "tonic",
+      "mp": 27,
+      "cost": 2430,
+      "value": 9,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "radium_tonic_10",
+      "name": "Radium Tonic 10",
+      "family": "tonic",
+      "hp": 100,
+      "cure_tier": 4,
+      "cost": 5000,
+      "value": 10,
+      "prereq": {},
+      "flags": []
+    },
+    {
+      "id": "nerve_tonic_10",
+      "name": "Nerve Tonic 10",
+      "family": "tonic",
+      "mp": 30,
+      "cost": 3000,
+      "value": 10,
+      "prereq": {},
+      "flags": []
+    }
+  ]
+}

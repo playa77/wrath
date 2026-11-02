@@ -1,0 +1,672 @@
+{
+  "registry": "feats",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": 1,
+      "name": "Suture 1",
+      "mp": 1,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Heal 1–9 / 1–27 / 1–57 / 1–99 HP + body cure BR-30 tiers I–IV `[REQ]`",
+        "dice": "1d9",
+        "cure_tier": 1
+      },
+      "vacant": false
+    },
+    {
+      "id": 2,
+      "name": "Suture 2",
+      "mp": 2,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Heal 1–9 / 1–27 / 1–57 / 1–99 HP + body cure BR-30 tiers I–IV `[REQ]`",
+        "dice": "1d27",
+        "cure_tier": 2
+      },
+      "vacant": false
+    },
+    {
+      "id": 3,
+      "name": "Suture 3",
+      "mp": 3,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Heal 1–9 / 1–27 / 1–57 / 1–99 HP + body cure BR-30 tiers I–IV `[REQ]`",
+        "dice": "1d57",
+        "cure_tier": 3
+      },
+      "vacant": false
+    },
+    {
+      "id": 4,
+      "name": "Suture 4",
+      "mp": 4,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Heal 1–9 / 1–27 / 1–57 / 1–99 HP + body cure BR-30 tiers I–IV `[REQ]`",
+        "dice": "1d99",
+        "cure_tier": 4
+      },
+      "vacant": false
+    },
+    {
+      "id": 5,
+      "name": "Thermal Lancet 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–10/1–30/1–60/1–100 to one menace body area `[REQ]`",
+        "dice": "1d10"
+      },
+      "vacant": false
+    },
+    {
+      "id": 6,
+      "name": "Thermal Lancet 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–10/1–30/1–60/1–100 to one menace body area `[REQ]`",
+        "dice": "1d30"
+      },
+      "vacant": false
+    },
+    {
+      "id": 7,
+      "name": "Thermal Lancet 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–10/1–30/1–60/1–100 to one menace body area `[REQ]`",
+        "dice": "1d60"
+      },
+      "vacant": false
+    },
+    {
+      "id": 8,
+      "name": "Thermal Lancet 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–10/1–30/1–60/1–100 to one menace body area `[REQ]`",
+        "dice": "1d100"
+      },
+      "vacant": false
+    },
+    {
+      "id": 9,
+      "name": "Thermal Sweep 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–7/1–15/1–31/1–66 to **every** menace, armor-mitigated `[REQ]`",
+        "dice": "1d7"
+      },
+      "vacant": false
+    },
+    {
+      "id": 10,
+      "name": "Thermal Sweep 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–7/1–15/1–31/1–66 to **every** menace, armor-mitigated `[REQ]`",
+        "dice": "1d15"
+      },
+      "vacant": false
+    },
+    {
+      "id": 11,
+      "name": "Thermal Sweep 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–7/1–15/1–31/1–66 to **every** menace, armor-mitigated `[REQ]`",
+        "dice": "1d31"
+      },
+      "vacant": false
+    },
+    {
+      "id": 12,
+      "name": "Thermal Sweep 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–7/1–15/1–31/1–66 to **every** menace, armor-mitigated `[REQ]`",
+        "dice": "1d66"
+      },
+      "vacant": false
+    },
+    {
+      "id": 13,
+      "name": "Incendiary Loads",
+      "mp": 1,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Self: +50% accuracy, +15 Fire point value `[REQ]`",
+        "accuracy_pct": 50,
+        "fire_value": 15
+      },
+      "vacant": false
+    },
+    {
+      "id": 14,
+      "name": "Party Incendiary",
+      "mp": 2,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Column-wide 13 `[REQ/P]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 15,
+      "name": "Express Loads",
+      "mp": 3,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Self: +100%, +25 `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 16,
+      "name": "Marksman's Trance",
+      "mp": 1,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Self Marksman → 250 `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 17,
+      "name": "Party Trance",
+      "mp": 3,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Column-wide 16 `[P]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 18,
+      "name": "Adrenal Surge 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+10/25/45/70% speed; counters Slow `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 19,
+      "name": "Adrenal Surge 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+10/25/45/70% speed; counters Slow `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 20,
+      "name": "Adrenal Surge 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+10/25/45/70% speed; counters Slow `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 21,
+      "name": "Adrenal Surge 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+10/25/45/70% speed; counters Slow `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 22,
+      "name": "Nerve-Hardening 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+1/3/6/10 armor each member `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 23,
+      "name": "Nerve-Hardening 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+1/3/6/10 armor each member `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 24,
+      "name": "Nerve-Hardening 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+1/3/6/10 armor each member `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 25,
+      "name": "Nerve-Hardening 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "+1/3/6/10 armor each member `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 26,
+      "name": "Mesmeric Charm",
+      "mp": 2,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Menaces friendly until attacked `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 27,
+      "name": "Mesmeric Sleep",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Sleep (no deepening) `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 28,
+      "name": "Mesmeric Dread",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Fear (stacks) `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 29,
+      "name": "Mesmeric Confusion 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Impedes enemy feat use; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 30,
+      "name": "Mesmeric Confusion 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Impedes enemy feat use; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 31,
+      "name": "Mesmeric Confusion 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Impedes enemy feat use; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 32,
+      "name": "Mesmeric Confusion 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Impedes enemy feat use; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 33,
+      "name": "Mesmeric Assault 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–5/1–11/1–41/1–81, HP only `[REQ]`",
+        "dice": "1d5"
+      },
+      "vacant": false
+    },
+    {
+      "id": 34,
+      "name": "Mesmeric Assault 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–5/1–11/1–41/1–81, HP only `[REQ]`",
+        "dice": "1d11"
+      },
+      "vacant": false
+    },
+    {
+      "id": 35,
+      "name": "Mesmeric Assault 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–5/1–11/1–41/1–81, HP only `[REQ]`",
+        "dice": "1d41"
+      },
+      "vacant": false
+    },
+    {
+      "id": 36,
+      "name": "Mesmeric Assault 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "1–5/1–11/1–41/1–81, HP only `[REQ]`",
+        "dice": "1d81"
+      },
+      "vacant": false
+    },
+    {
+      "id": 37,
+      "name": "Vitriol Projector 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Specific body area; dice `[P]`: 1–12/1–35/1–70/1–120",
+        "dice": "1d12"
+      },
+      "vacant": false
+    },
+    {
+      "id": 38,
+      "name": "Vitriol Projector 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Specific body area; dice `[P]`: 1–12/1–35/1–70/1–120",
+        "dice": "1d35"
+      },
+      "vacant": false
+    },
+    {
+      "id": 39,
+      "name": "Vitriol Projector 3",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Specific body area; dice `[P]`: 1–12/1–35/1–70/1–120",
+        "dice": "1d70"
+      },
+      "vacant": false
+    },
+    {
+      "id": 40,
+      "name": "Vitriol Projector 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Specific body area; dice `[P]`: 1–12/1–35/1–70/1–120",
+        "dice": "1d120"
+      },
+      "vacant": false
+    },
+    {
+      "id": 41,
+      "name": "Enervation 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Reduces menace damage; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 42,
+      "name": "Enervation 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "↑"
+      },
+      "vacant": false
+    },
+    {
+      "id": 43,
+      "name": "Egress",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Escape combat `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 44,
+      "name": "Revivification",
+      "mp": 4,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Revive dead; CON −1..2 `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 45,
+      "name": "Enervation 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "↑"
+      },
+      "vacant": false
+    },
+    {
+      "id": 46,
+      "name": "Paralysis 1",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Inhibits movement, easier to hit; progressive `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 47,
+      "name": "Paralysis 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "↑"
+      },
+      "vacant": false
+    },
+    {
+      "id": 48,
+      "name": "Hangar Dispatch",
+      "mp": 3,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Calls pre-designated automaton (FR-CHR-008) `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 49,
+      "name": "Counter-Talisman Rites",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Mummified flee or crumble `[REQ; OQ-17 MP=1]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 50,
+      "name": "Paralysis 4",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "↑"
+      },
+      "vacant": false
+    },
+    {
+      "id": 51,
+      "name": "Awaken",
+      "mp": 1,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "Rouse sleepers / neutralize Sleep `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 52,
+      "name": "Field Assessment",
+      "mp": 1,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Approximate menace level; occasionally wrong `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 53,
+      "name": "— vacant —",
+      "mp": 0,
+      "domain": "—",
+      "class": "—",
+      "effect": {
+        "notes": "Unlearnable [OQ-13]"
+      },
+      "vacant": true
+    },
+    {
+      "id": 54,
+      "name": "Supply-Line Recall",
+      "mp": 4,
+      "domain": "everywhere",
+      "class": "active",
+      "effect": {
+        "notes": "Post-to-post travel, cross-planar `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 55,
+      "name": "Pugilist's Trance 1",
+      "mp": 3,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "Superhuman attack/defense/damage `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 56,
+      "name": "Pugilist's Trance 2",
+      "mp": 2,
+      "domain": "combat",
+      "class": "passive",
+      "effect": {
+        "notes": "**Stronger than T1 at lower MP — quirk preserved** `[REQ]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 57,
+      "name": "The Calling",
+      "mp": 4,
+      "domain": "combat",
+      "class": "active",
+      "effect": {
+        "notes": "In Voss's presence: opens ether-gate; Lord Wood enters `[REQ; OQ-1 MP4 P]`"
+      },
+      "vacant": false
+    },
+    {
+      "id": 58,
+      "name": "Sun-Mind's Boon",
+      "mp": 4,
+      "domain": "site",
+      "class": "active",
+      "effect": {
+        "notes": "Full-party heal + infirmary-strength body cure; granted once (FR-QST-004) [OQ-1 P]"
+      },
+      "vacant": false
+    }
+  ]
+}

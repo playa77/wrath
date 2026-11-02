@@ -1,0 +1,83 @@
+{
+  "registry": "folios",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "I",
+      "title": "Kilmor's Testament",
+      "text": "Kilmor's defeat, capture, the Pens, mesmerist attempts to Hollow him, his refusal. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "II",
+      "title": "A History of the Cradle",
+      "text": "The Province, out islands (Geldern Reach, Ferrona Keys, Pogney Shoals), the northern host, Voss's landfall and conquest of the north. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "III",
+      "title": "The Tribunal of Voices",
+      "text": "The pattern's journey to the Séance Tribunal; recall by rite; judgement by the Bench; the Hollowed as patterns returned enthralled. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "IV",
+      "title": "The Crystal Resonator",
+      "text": "The resonator: wrought by elder drowned artificers; given to Voss; corruptive bond; useless in clean hands — he would always find it. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "V",
+      "title": "News of the Long War",
+      "text": "News from the Long War: Lord Wood holds a northern camp against Voss. His officers gather among supply tents and field surgeries. Folios and dispatches describe the struggle; the expedition must seek his audience while its reputation remains clean. A duel of wills may hold Voss long enough for others to strike."
+    },
+    {
+      "id": "VI",
+      "title": "The Master Bowyers",
+      "text": "The elder sun-cult's armorer-saint taught the mesa bowyers. Elder masters endow their works with true virtues, and give those works to the proven. Patience matters more than violence in the bowyer's challenge: carry an egg away without striking the viper or being struck. Learn which scent repels and which attracts."
+    },
+    {
+      "id": "VII",
+      "title": "The Twin Cities",
+      "text": "The five tiers are Province, Sun-Ziggurat, Drowned Ziggurat, Ember Deeps, and Séance Tribunal. Elder transit is the only door between them. The twin cities once shared mirrored splendor; exile divided their people. Their halls still reflect one another. A traveler who remembers the steps of one city may understand the other."
+    },
+    {
+      "id": "VIII",
+      "title": "The Map Room",
+      "text": "Mr. Filmon's domain; mad librarians; the sealed west vaults (so well guarded a small army would be needed). The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "IX",
+      "title": "The Halls of the Colossi",
+      "text": "The wrestling tribe (Colossi pens), the oubliette cells, visitors left to starve. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "X",
+      "title": "The Crag-Folk Vaults",
+      "text": "The honor of attendance at a crag-folk burial. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "XI",
+      "title": "The Mesa Enclave",
+      "text": "Rockfell and the peaceable hills; the meditation warrens of the bowyer-elders. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "XII",
+      "title": "The Funicular Station",
+      "text": "Old Chronos, older than any save the elder minds; his moving station; records in unreadable elder script; he aids worthy causes. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "XIII",
+      "title": "The Sun-Ziggurat",
+      "text": "The Great Lens; chosen pure-hearted wardens; the Sun-Ziggurat's treasures; the Sun Priestess. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "XIV",
+      "title": "The Basalt Fastness",
+      "text": "Voss's fastness in the Deeps' far tier, a gift of the Drowned Mind; officer-councils; the Hollowed garrison; Deeps level 3 flavor note (lore only). The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    },
+    {
+      "id": "XV",
+      "title": "The Man Who Heard the Drowned Mind",
+      "text": "Voss's origin: the drowning city's pooled will *made themselves an emperor*; the gate he opened; the exodus for vengeance. The account is kept for travelers of the Cradle Plateau. Read it before leaving the post, and weigh its warnings against the reports brought home by other expeditions. What is learned here may guide the next journey; it promises no safety beyond these walls."
+    }
+  ]
+}

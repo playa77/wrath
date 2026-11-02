@@ -1,0 +1,23 @@
+# Version: 0.2.0 | 2026-11-02
+name: Verify and package
+on: [push, pull_request]
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e ".[dev,release]"
+      - run: cradle-content-check
+      - run: python -m pytest --cov=cradle.engine --cov-report=term-missing --cov-fail-under=90
+      - run: pyinstaller --noconfirm deploy/pyinstaller.spec
+      - run: python tools/smoke_bundle.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cradle-${{ matrix.os }}
+          path: dist/cradle

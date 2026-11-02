@@ -1,0 +1,15 @@
+# Version: 0.2.0 | 2026-11-02
+# TRACE-11/12; AC-Campaign; seed=7
+{"verb":"session.new","actor":null,"args":{}}
+{"verb":"chr.add","actor":null,"args":{"member":1}}
+{"verb":"post.leave","actor":null,"args":{}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"post.leave","actor":null,"args":{}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"S"}}
+{"verb":"trail.move","actor":null,"args":{"dir":"W"}}

@@ -1,0 +1,193 @@
+{
+  "registry": "strings",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "menace",
+      "text": "MENACE APPROACHES"
+    },
+    {
+      "id": "afford",
+      "text": "You can't afford that"
+    },
+    {
+      "id": "no_feats",
+      "text": "can learn no new feats at this time"
+    },
+    {
+      "id": "bound",
+      "text": "It will not leave your hand."
+    },
+    {
+      "id": "absent",
+      "text": "There is no one here."
+    },
+    {
+      "id": "unpickable",
+      "text": "The lock will not yield to any pick."
+    },
+    {
+      "id": "unusable",
+      "text": "Unusable"
+    },
+    {
+      "id": "empty",
+      "text": "Nothing happens."
+    },
+    {
+      "id": "bad_args",
+      "text": "Invalid command arguments."
+    },
+    {
+      "id": "dead",
+      "text": "This member cannot act."
+    },
+    {
+      "id": "full",
+      "text": "Kit full."
+    },
+    {
+      "id": "overflow",
+      "text": "The treasury limit would be exceeded."
+    },
+    {
+      "id": "no_party",
+      "text": "Muster an expedition first."
+    },
+    {
+      "id": "saved",
+      "text": "Game saved."
+    },
+    {
+      "id": "welcome",
+      "text": "The Cradle Plateau: The Wrath of Doctor Voss"
+    },
+    {
+      "id": "blocked",
+      "text": "The way is blocked."
+    },
+    {
+      "id": "found",
+      "text": "You have found a drake's trove."
+    },
+    {
+      "id": "thrumming",
+      "text": "A far-off thrumming… nothing more."
+    },
+    {
+      "id": "sun_opposed",
+      "text": "The Sun-Mind is opposed by the Drowned Mind"
+    },
+    {
+      "id": "courage",
+      "text": "Have courage, mighty travelers"
+    },
+    {
+      "id": "sealed",
+      "text": "The ink has long since run to ruin."
+    },
+    {
+      "id": "nap",
+      "text": "Remember — Chronos takes long naps."
+    },
+    {
+      "id": "xp_needed",
+      "text": "XP still needed"
+    },
+    {
+      "id": "not_resident",
+      "text": "That member is not resident at this post."
+    },
+    {
+      "id": "cannot_fire",
+      "text": "An injured limb prevents firing."
+    },
+    {
+      "id": "parry_only",
+      "text": "The right arm permits only Parry."
+    },
+    {
+      "id": "cannot_learn",
+      "text": "This member cannot improve."
+    },
+    {
+      "id": "stock",
+      "text": "Outfitter stock"
+    },
+    {
+      "id": "treasury_lost",
+      "text": "Carried dollars are lost."
+    },
+    {
+      "id": "returned",
+      "text": "Returned"
+    },
+    {
+      "id": "hollowed",
+      "text": "Hollowed"
+    },
+    {
+      "id": "tax",
+      "text": "Rest-house stay: $250 plus $25 tax."
+    },
+    {
+      "id": "forfeit",
+      "text": "Overflow dollars are forfeited."
+    },
+    {
+      "id": "purr0",
+      "text": "The drake purrs like a small boiler."
+    },
+    {
+      "id": "purr1",
+      "text": "The drake rolls over and rumbles."
+    },
+    {
+      "id": "purr2",
+      "text": "The drake nudges your hand."
+    },
+    {
+      "id": "purr3",
+      "text": "The drake shuts one golden eye."
+    },
+    {
+      "id": "purr4",
+      "text": "The drake stretches and purrs."
+    },
+    {
+      "id": "purr5",
+      "text": "The drake sniffs for a biscuit."
+    },
+    {
+      "id": "STR-C1",
+      "words": [
+        "SHADOW",
+        "BRASS",
+        "EMBER",
+        "SALT",
+        "GLASS",
+        "WORM",
+        "LAMP",
+        "TIDE",
+        "CROWN",
+        "DUST",
+        "WIRE",
+        "MOTH",
+        "VEIL",
+        "ROOT",
+        "IRON",
+        "BELL",
+        "FOAM",
+        "GLOAM",
+        "SPAR",
+        "QUILL",
+        "ASH",
+        "REED",
+        "VAULT",
+        "HUM"
+      ]
+    }
+  ]
+}

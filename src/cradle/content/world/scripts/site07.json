@@ -1,0 +1,282 @@
+{
+  "registry": "site07",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site07_12_8_0",
+      "at": [
+        12,
+        8
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_18_8_1",
+      "at": [
+        18,
+        8
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_15_6_2",
+      "at": [
+        15,
+        6
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_15_18_3",
+      "at": [
+        15,
+        18
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_7_16_4",
+      "at": [
+        7,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_23_16_5",
+      "at": [
+        23,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            0,
+            80
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site07_15_22_6",
+      "at": [
+        15,
+        22
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "drowned_gate",
+          "special": "drowned_gate"
+        }
+      ]
+    },
+    {
+      "id": "site07_10_12_7",
+      "at": [
+        10,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "urn_10",
+          "special": "urn"
+        }
+      ]
+    },
+    {
+      "id": "site07_15_12_8",
+      "at": [
+        15,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "urn_15",
+          "special": "urn"
+        }
+      ]
+    },
+    {
+      "id": "site07_20_12_9",
+      "at": [
+        20,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "urn_20",
+          "special": "urn"
+        }
+      ]
+    },
+    {
+      "id": "site07_15_3_10",
+      "at": [
+        15,
+        3
+      ],
+      "on": "enter",
+      "if": {
+        "not_item": "crystal_resonator"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "black_statue",
+          "options": [
+            {
+              "label": "Take",
+              "then": [
+                {
+                  "verb": "combat",
+                  "foes": [
+                    54,
+                    55,
+                    55
+                  ],
+                  "on_win": [
+                    {
+                      "verb": "give_item",
+                      "id": "crystal_resonator"
+                    },
+                    {
+                      "verb": "msg",
+                      "text": "DLG-067"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Leave",
+              "then": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site07_15_9_11",
+      "at": [
+        15,
+        9
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "circle",
+          "special": "circle"
+        }
+      ]
+    },
+    {
+      "id": "site07_15_8_12",
+      "at": [
+        15,
+        8
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Voss is not here."
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

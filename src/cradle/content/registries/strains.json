@@ -1,0 +1,368 @@
+{
+  "registry": "strains",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "club_stock",
+      "name": "Club Stock",
+      "kind": "charter",
+      "caps": {
+        "str": 18,
+        "int": 18,
+        "dex": 18,
+        "con": 18,
+        "cha": 18
+      },
+      "lifespan_years": 80,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [],
+      "fee_multiplier": 1,
+      "impression_cha_delta": 0,
+      "lodging": "main"
+    },
+    {
+      "id": "ratling",
+      "name": "Ratling",
+      "kind": "strange",
+      "caps": {
+        "str": 17,
+        "int": 15,
+        "dex": 19,
+        "con": 19,
+        "cha": 13
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "crag_folk",
+      "name": "Crag-Folk",
+      "kind": "charter",
+      "caps": {
+        "str": 20,
+        "int": 17,
+        "dex": 17,
+        "con": 19,
+        "cha": 17
+      },
+      "lifespan_years": 200,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [],
+      "fee_multiplier": 1,
+      "impression_cha_delta": 0,
+      "lodging": "main"
+    },
+    {
+      "id": "sauroid",
+      "name": "Sauroid",
+      "kind": "strange",
+      "caps": {
+        "str": 19,
+        "int": 14,
+        "dex": 17,
+        "con": 18,
+        "cha": 13
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "lake_folk",
+      "name": "Lake-Folk",
+      "kind": "charter",
+      "caps": {
+        "str": 17,
+        "int": 19,
+        "dex": 19,
+        "con": 17,
+        "cha": 18
+      },
+      "lifespan_years": 3000,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [],
+      "fee_multiplier": 1,
+      "impression_cha_delta": 0,
+      "lodging": "main"
+    },
+    {
+      "id": "ape_man",
+      "name": "Ape-Man",
+      "kind": "strange",
+      "caps": {
+        "str": 20,
+        "int": 14,
+        "dex": 16,
+        "con": 19,
+        "cha": 12
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "mesa_folk",
+      "name": "Mesa-Folk",
+      "kind": "charter",
+      "caps": {
+        "str": 19,
+        "int": 17,
+        "dex": 18,
+        "con": 19,
+        "cha": 17
+      },
+      "lifespan_years": 200,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [],
+      "fee_multiplier": 1,
+      "impression_cha_delta": 0,
+      "lodging": "main"
+    },
+    {
+      "id": "basalt_brute",
+      "name": "Basalt Brute",
+      "kind": "strange",
+      "caps": {
+        "str": 21,
+        "int": 14,
+        "dex": 16,
+        "con": 19,
+        "cha": 13
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "scrub_folk",
+      "name": "Scrub-Folk",
+      "kind": "charter",
+      "caps": {
+        "str": 16,
+        "int": 18,
+        "dex": 20,
+        "con": 18,
+        "cha": 17
+      },
+      "lifespan_years": 80,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [],
+      "fee_multiplier": 1,
+      "impression_cha_delta": 0,
+      "lodging": "main"
+    },
+    {
+      "id": "fen_man",
+      "name": "Fen-Man",
+      "kind": "strange",
+      "caps": {
+        "str": 19,
+        "int": 16,
+        "dex": 17,
+        "con": 18,
+        "cha": 14
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "hyena_man",
+      "name": "Hyena-Man",
+      "kind": "strange",
+      "caps": {
+        "str": 20,
+        "int": 13,
+        "dex": 17,
+        "con": 21,
+        "cha": 11
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "glider_folk",
+      "name": "Glider-Folk",
+      "kind": "strange",
+      "caps": {
+        "str": 16,
+        "int": 18,
+        "dex": 21,
+        "con": 16,
+        "cha": 17
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "albino_tunnel_folk",
+      "name": "Albino Tunnel-Folk",
+      "kind": "strange",
+      "caps": {
+        "str": 17,
+        "int": 14,
+        "dex": 18,
+        "con": 17,
+        "cha": 11
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "wing_folk",
+      "name": "Wing-Folk",
+      "kind": "strange",
+      "caps": {
+        "str": 16,
+        "int": 18,
+        "dex": 22,
+        "con": 16,
+        "cha": 17
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    },
+    {
+      "id": "long_man",
+      "name": "Long-Man",
+      "kind": "strange",
+      "caps": {
+        "str": 22,
+        "int": 13,
+        "dex": 15,
+        "con": 20,
+        "cha": 12
+      },
+      "lifespan_years": 50,
+      "decline_marks": [
+        0.5,
+        0.7,
+        0.9
+      ],
+      "professions_allowed": [
+        "white_hunter",
+        "cat_burglar"
+      ],
+      "fee_multiplier": 1.5,
+      "impression_cha_delta": -2,
+      "lodging": "annex"
+    }
+  ]
+}

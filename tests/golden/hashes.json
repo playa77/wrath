@@ -1,0 +1,19 @@
+{
+  "_version": "0.2.0 | 2026-11-02",
+  "good": {
+    "rng": "53138680787888db61b7fce79183b7cb083120a2589c7bfe6483db04fe9310b3",
+    "events": "a549ed2b5a15fd25e68a427aba69d8359e57e52ae52ff4fed18070844ed62867"
+  },
+  "evil": {
+    "rng": "777ae0ee2a39e1f82c6e9663d5b8928311b7533926a608c219f210ae51c998ae",
+    "events": "bfb32cfa75f0b371523cb7a2b5237e9f3cec678db605410b910a224bf5344e36"
+  },
+  "tribunal": {
+    "rng": "eb4a18b96943bb191b3f58f64f93a7f415ea7fd7bdb198a0969f9c83467a89cc",
+    "events": "b5a6631fc4e247f913c0fb7c9fec6e99b26fd2316f9a10e7f509088524873cbd"
+  },
+  "site_reset": {
+    "rng": "1a1e1c6d500fd4c14ccb0e73d5798c6a3d67bcaf76fc0e71d87c773382de5ac9",
+    "events": "7f88f83ca2b9861110351d355c20a3a99553464d1637704478741f0636f66e92"
+  }
+}

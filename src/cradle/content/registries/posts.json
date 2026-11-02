@@ -1,0 +1,178 @@
+{
+  "registry": "posts",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": 1,
+      "name": "Terminus",
+      "pos": [
+        37,
+        24
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 2,
+      "name": "Xavier's Drift",
+      "pos": [
+        25,
+        45
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 3,
+      "name": "Salt Landing",
+      "pos": [
+        8,
+        40
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 4,
+      "name": "Flagler Station",
+      "pos": [
+        55,
+        8
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 5,
+      "name": "Pendry's Ferry",
+      "pos": [
+        20,
+        18
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 6,
+      "name": "Lansing Post",
+      "pos": [
+        65,
+        15
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 7,
+      "name": "Rockfell Camp",
+      "pos": [
+        10,
+        12
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 8,
+      "name": "Scandia Port",
+      "pos": [
+        30,
+        8
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 9,
+      "name": "Delta Post",
+      "pos": [
+        60,
+        45
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 10,
+      "name": "Schatika Post",
+      "pos": [
+        50,
+        30
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 11,
+      "name": "Tamarisk Mission",
+      "pos": [
+        52,
+        20
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 12,
+      "name": "Serein Mission",
+      "pos": [
+        45,
+        40
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 13,
+      "name": "Tiernan's Landing",
+      "pos": [
+        70,
+        35
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 14,
+      "name": "Anvil Camp",
+      "pos": [
+        15,
+        35
+      ],
+      "kind": "post",
+      "map_id": "province"
+    },
+    {
+      "id": 15,
+      "name": "Sun-Terrace Station",
+      "pos": [
+        9,
+        6
+      ],
+      "kind": "post",
+      "map_id": "ziggurat_sun"
+    },
+    {
+      "id": 16,
+      "name": "Lake-Bottom Post",
+      "pos": [
+        9,
+        6
+      ],
+      "kind": "post",
+      "map_id": "ziggurat_drowned"
+    },
+    {
+      "id": 17,
+      "name": "Fumarole Camp",
+      "pos": [
+        4,
+        7
+      ],
+      "kind": "post",
+      "map_id": "deeps"
+    }
+  ]
+}

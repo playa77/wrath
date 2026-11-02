@@ -1,0 +1,178 @@
+{
+  "registry": "site04",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site04_15_6_0",
+      "at": [
+        15,
+        6
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "DLG-042"
+        }
+      ]
+    },
+    {
+      "id": "site04_6_14_1",
+      "at": [
+        6,
+        14
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "brood",
+          "special": "brood"
+        }
+      ]
+    },
+    {
+      "id": "site04_25_14_2",
+      "at": [
+        25,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site04.stash.25.14"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "foul_phial"
+        }
+      ]
+    },
+    {
+      "id": "site04_25_16_3",
+      "at": [
+        25,
+        16
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site04.stash.25.16"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "sweet_phial"
+        }
+      ]
+    },
+    {
+      "id": "site04_20_14_4",
+      "at": [
+        20,
+        14
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Records of the master bowyers."
+        }
+      ]
+    },
+    {
+      "id": "site04_24_4_5",
+      "at": [
+        24,
+        4
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site04.stash.24.4"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "folio_VI"
+        }
+      ]
+    },
+    {
+      "id": "site04_26_5_6",
+      "at": [
+        26,
+        5
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "mesmerist",
+          "special": "mesmerist"
+        }
+      ]
+    },
+    {
+      "id": "site04_10_20_7",
+      "at": [
+        10,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "DLG-048"
+        }
+      ]
+    },
+    {
+      "id": "site04_6_20_8",
+      "at": [
+        6,
+        20
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site04.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            58
+          ],
+          "set_id": "site04.set1"
+        }
+      ]
+    },
+    {
+      "id": "site04_5_21_9",
+      "at": [
+        5,
+        21
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site04.stash.5.21"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "fire_18"
+        },
+        {
+          "verb": "give_item",
+          "treasure": "t5"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}
