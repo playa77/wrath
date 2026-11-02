@@ -1,0 +1,4 @@
+Version: 0.1.0 | 2026-11-02
+Pure platform tests may use synthetic config/content documents. Game state must
+be reached only via production Engine.dispatch commands (spec §12a).
+The C-9 period-rhetoric lexicon remains unspecified; see README spec issues.
