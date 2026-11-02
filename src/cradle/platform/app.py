@@ -1,6 +1,7 @@
 # Version: 0.2.0 | 2026-11-02
 """Normal input/dispatch/project/compose loop and data-driven attract reel."""
 
+from copy import deepcopy
 from dataclasses import replace
 import time
 from cradle.engine.state import project
@@ -25,6 +26,7 @@ class GameApp:
         self.pending = []
         self.demo = []
         self.demo_active = False
+        self.demo_sinks = None
 
     def dispatch(self, cmd):
         if cmd["verb"] == "session.new" and not self.demo_active:
@@ -41,9 +43,29 @@ class GameApp:
                 self.cfg, time_lag=config["time_lag"], sound=config["sound"]
             )
             save_config(self.cfg)
+        if self.demo_active and not self.demo and self.engine.s["phase"] == "boot":
+            self.stop_demo()
         return result
 
+    def stop_demo(self):
+        if self.demo_sinks is not None:
+            self.engine.save_sink, self.engine.read_sink = self.demo_sinks
+            self.demo_sinks = None
+        self.demo_active = False
+        self.demo = []
+
     def start_demo(self):
+        # Playback uses normal engine commands but cannot overwrite player slots.
+        self.stop_demo()
+        self.demo_sinks = self.engine.save_sink, self.engine.read_sink
+        slots = {}
+
+        def save_demo(slot, doc):
+            slots[slot] = deepcopy(doc)
+            return f"demo-slot-{slot}"
+
+        self.engine.save_sink = save_demo
+        self.engine.read_sink = lambda slot: deepcopy(slots[slot])
         self.demo = [
             dict(verb=row["verb"], actor=None, args=dict(row["args"]))
             for row in self.engine.data["demo_script"]
@@ -116,8 +138,7 @@ class GameApp:
                     if demo_key == "QUIT":
                         return 0
                     if demo_key is not None:
-                        self.demo_active = False
-                        self.demo = []
+                        self.stop_demo()
                         self.dispatch(
                             dict(verb="session.quit_to_menu", actor=None, args={})
                         )
@@ -127,8 +148,7 @@ class GameApp:
                     if any(ev["kind"] == "ERROR" for ev in result) or (
                         not self.demo and self.engine.s["phase"] == "boot"
                     ):
-                        self.demo_active = False
-                        self.demo = []
+                        self.stop_demo()
                         self.dispatch(
                             dict(verb="session.quit_to_menu", actor=None, args={})
                         )
@@ -162,4 +182,5 @@ class GameApp:
                     log.write(traceback.format_exc() + "\n")
             raise
         finally:
+            self.stop_demo()
             self.renderer.close()

@@ -75,3 +75,7 @@ and missing implementation details without discarding explicitly named content.
 - D21: Frozen Hollowed members cannot train or grow MP through rest. Once-ever
   scripted quest rewards still apply uniformly to the expedition, as those scenes
   explicitly promise whole-column rewards.
+
+- D22: The attract reel's save/continue commands use isolated in-memory slots.
+  Completing or interrupting playback restores the player's persistence callbacks;
+  neither manual saves nor autosaves can be overwritten by the idle demo.

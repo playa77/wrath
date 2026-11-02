@@ -174,6 +174,11 @@ def test_pacing_and_unattended_demo(tmp_path, monkeypatch):
         7, tmp_path
     )
     app = GameApp(e, None, None, cfg, paths)
+    app.dispatch(dict(verb="session.new", actor=None, args={}))
+    app.dispatch(dict(verb="session.save", actor=None, args={"slot": 1}))
+    saved = {p: p.read_bytes() for p in paths.home.rglob("*.json")}
+    original_sinks = e.save_sink, e.read_sink
+    app.dispatch(dict(verb="session.quit_to_menu", actor=None, args={}))
     app.dispatch(dict(verb="session.demo", actor=None, args={}))
     app.start_demo()
     for _ in range(500):
@@ -183,6 +188,13 @@ def test_pacing_and_unattended_demo(tmp_path, monkeypatch):
             break
     else:
         pytest.fail("Demo failed to return to boot")
+    assert (e.save_sink, e.read_sink) == original_sinks
+    assert {p: p.read_bytes() for p in paths.home.rglob("*.json")} == saved
+    app.start_demo()
+    app.dispatch(app.demo_next())
+    app.stop_demo()  # interruption restores the player's persistence too
+    assert (e.save_sink, e.read_sink) == original_sinks
+    assert {p: p.read_bytes() for p in paths.home.rglob("*.json")} == saved
 
 
 @pytest.mark.parametrize("character", ["0", "1", "3", "9", "a", "-", "="])
