@@ -99,3 +99,42 @@ def test_anchor_corruption_is_rejected(tmp_path):
     file.write_text(json.dumps(doc), encoding="utf-8", newline="\n")
     with pytest.raises(ContentError, match="78"):
         load_all(root)
+
+
+def test_removed_transfer_and_functional_silent_audio_contract():
+    # AC-FR / D-1 / D-2: retained content has one canonical greeting; no audio API.
+    import ast
+    from cradle.engine.commands import VERBS
+
+    assert not any("transfer" in verb for verb in VERBS)
+    regs = load_all(ROOT / "src/cradle/content")
+    texts = [r["text"] for r in regs["text/dialogue.json"]["rows"]]
+    assert texts.count("I choose you because Doctor Voss would never suspect you.") == 1
+    assert not any("veteran" in text.lower() for text in texts)
+    forbidden = {
+        "pygame",
+        "sounddevice",
+        "pyaudio",
+        "winsound",
+        "audioop",
+        "tcod.audio",
+        "tcod.sdl.audio",
+    }
+    for path in (ROOT / "src/cradle").rglob("*.py"):
+        tree = ast.parse(path.read_text(encoding="utf-8"))
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                modules = [alias.name for alias in node.names]
+            elif isinstance(node, ast.ImportFrom):
+                modules = [node.module or ""]
+            else:
+                continue
+            assert not any(
+                m == banned or m.startswith(banned + ".")
+                for m in modules
+                for banned in forbidden
+            ), path
+        assert not any(
+            isinstance(node, ast.Attribute) and node.attr == "open_audio_device"
+            for node in ast.walk(tree)
+        ), path

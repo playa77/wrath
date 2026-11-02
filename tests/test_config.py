@@ -1,5 +1,6 @@
 # Version: 0.2.0 | 2026-11-02
 from dataclasses import replace
+from pathlib import Path
 import json
 
 import pytest
@@ -37,7 +38,7 @@ def test_paths_precedence(cradle_home, monkeypatch):
 def test_os_paths(platform, env, suffix, monkeypatch):
     # Spec §4: stdlib-only cross-platform path decisions.
     monkeypatch.setattr("cradle.platform.config.sys.platform", platform)
-    assert str(resolve_paths(env).home) == suffix
+    assert resolve_paths(env).home == Path(suffix).resolve()
 
 
 def test_no_user_directory_falls_back(tmp_path, monkeypatch):
