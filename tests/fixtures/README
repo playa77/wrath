@@ -1,4 +1,15 @@
-Version: 0.1.0 | 2026-11-02
-Pure platform tests may use synthetic config/content documents. Game state must
-be reached only via production Engine.dispatch commands (spec §12a).
-The C-9 period-rhetoric lexicon remains unspecified; see README spec issues.
+# Version: 0.2.0 | 2026-11-02
+Fixture conventions
+
+lint_blocklist.txt: UTF-8; ignore blank lines and # comments. C-8 terms are
+verbatim. The three C-9 phrases were selected under the user's authorization
+recorded in docs/implementation_decisions.md.
+
+Playable state is created only by Engine.dispatch. tests/harness.py and recorded
+command journeys establish it without debug/state-setting verbs. Synthetic
+primitive envelopes in platform unit tests are not playable game fixtures.
+
+The four primary golden scripts have fixed RNG and event-stream hashes and run
+three times each. advanced_training.txt starts fresh, completes the campaign,
+recruits new members, earns additional combat XP, pays for level/skill training,
+and learns every ordinary feat. It is a command recording, not a saved snapshot.

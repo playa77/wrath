@@ -1,5 +1,6 @@
 # Version: 0.1.0 | 2026-11-02
 """Spec §11: observable domain, content, save, and development faults."""
+
 from pathlib import Path
 
 

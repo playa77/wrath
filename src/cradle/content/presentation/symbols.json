@@ -1,0 +1,1042 @@
+{
+  "registry": "symbols",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": 256,
+      "name": "white_hunter",
+      "glyph": "@",
+      "fg": "trail",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 257,
+      "name": "pugilist",
+      "glyph": "@",
+      "fg": "brass",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "name": "exp_doctor",
+      "glyph": "@",
+      "fg": "ok",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 259,
+      "name": "scout",
+      "glyph": "@",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 260,
+      "name": "cat_burglar",
+      "glyph": "@",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 261,
+      "name": "antiquarian",
+      "glyph": "@",
+      "fg": "rare",
+      "bg": "ink",
+      "states": {
+        "sleeping": {
+          "fg": "sleep"
+        },
+        "down": {
+          "fg": "warn"
+        },
+        "unconscious": {
+          "fg": "bad"
+        },
+        "dead": {
+          "glyph": "%",
+          "fg": "gore"
+        },
+        "hollowed": {
+          "fg": "hollow"
+        }
+      }
+    },
+    {
+      "id": 262,
+      "name": "mud",
+      "glyph": "Ω",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 263,
+      "name": "mist",
+      "glyph": "≈",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 264,
+      "name": "air",
+      "glyph": "π",
+      "fg": "stone",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 300,
+      "name": "trail",
+      "glyph": ".",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 301,
+      "name": "badlands",
+      "glyph": ":",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 302,
+      "name": "swamp",
+      "glyph": "≈",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 303,
+      "name": "escarpment",
+      "glyph": "▲",
+      "fg": "stone_dark",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 304,
+      "name": "river",
+      "glyph": "≈",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 305,
+      "name": "water",
+      "glyph": "≈",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 306,
+      "name": "lava",
+      "glyph": "≈",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 307,
+      "name": "floor",
+      "glyph": ".",
+      "fg": "stone",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 308,
+      "name": "wall",
+      "glyph": "█",
+      "fg": "stone_dark",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 309,
+      "name": "door",
+      "glyph": "+",
+      "fg": "brass",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 310,
+      "name": "panel",
+      "glyph": "█",
+      "fg": "stone_dark",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 311,
+      "name": "stairs/funicular",
+      "glyph": ">",
+      "fg": "sun_gold",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 312,
+      "name": "altar/shrine",
+      "glyph": "_",
+      "fg": "lens_glow",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 313,
+      "name": "plinth",
+      "glyph": "_",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 314,
+      "name": "lever",
+      "glyph": "/",
+      "fg": "gunmetal",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 315,
+      "name": "statue",
+      "glyph": "&",
+      "fg": "lens_glow",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 316,
+      "name": "chest/cache",
+      "glyph": "=",
+      "fg": "brass",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 317,
+      "name": "sign",
+      "glyph": "!",
+      "fg": "parchment",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 318,
+      "name": "trap",
+      "glyph": "^",
+      "fg": "bad",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 319,
+      "name": "corpse",
+      "glyph": "%",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 320,
+      "name": "item_drop",
+      "glyph": "]",
+      "fg": "parchment",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 321,
+      "name": "post",
+      "glyph": "£",
+      "fg": "trail",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 322,
+      "name": "resthouse",
+      "glyph": "≡",
+      "fg": "brass",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 323,
+      "name": "site_entrance",
+      "glyph": "⌂",
+      "fg": "gunmetal",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 324,
+      "name": "glyph_circle",
+      "glyph": "○",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 325,
+      "name": "scuttler",
+      "glyph": "s",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 326,
+      "name": "viper",
+      "glyph": "s",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 327,
+      "name": "leech_swarm",
+      "glyph": "s",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 328,
+      "name": "slime",
+      "glyph": "b",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 329,
+      "name": "scorpion",
+      "glyph": "s",
+      "fg": "badlands",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 330,
+      "name": "ratling",
+      "glyph": "r",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 331,
+      "name": "hyena_man",
+      "glyph": "h",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 332,
+      "name": "ape_feral",
+      "glyph": "a",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 333,
+      "name": "cutthroat",
+      "glyph": "c",
+      "fg": "gunmetal",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 334,
+      "name": "drake_pup",
+      "glyph": "d",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 335,
+      "name": "jackal",
+      "glyph": "j",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 336,
+      "name": "kite",
+      "glyph": "k",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 337,
+      "name": "tunnel_folk",
+      "glyph": "t",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 338,
+      "name": "fen_man",
+      "glyph": "f",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 339,
+      "name": "sauroid",
+      "glyph": "S",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 340,
+      "name": "glider",
+      "glyph": "g",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 341,
+      "name": "wing_folk",
+      "glyph": "w",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 342,
+      "name": "long_man",
+      "glyph": "l",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 343,
+      "name": "basalt_brute",
+      "glyph": "B",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 344,
+      "name": "bull_ape",
+      "glyph": "A",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 345,
+      "name": "yearling",
+      "glyph": "D",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 346,
+      "name": "vipermoth",
+      "glyph": "m",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 347,
+      "name": "lurker",
+      "glyph": "L",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 348,
+      "name": "croc",
+      "glyph": "C",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 349,
+      "name": "sentinel",
+      "glyph": "Z",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 350,
+      "name": "acolyte_m",
+      "glyph": "z",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 351,
+      "name": "medium",
+      "glyph": "e",
+      "fg": "rare",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 352,
+      "name": "constrictor",
+      "glyph": "s",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 353,
+      "name": "bloatfly",
+      "glyph": "x",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 354,
+      "name": "crayfish",
+      "glyph": "c",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 355,
+      "name": "bull_drake",
+      "glyph": "D",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 356,
+      "name": "storm_brute",
+      "glyph": "B",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 357,
+      "name": "colossus",
+      "glyph": "G",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 358,
+      "name": "mesmerist",
+      "glyph": "e",
+      "fg": "rare",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 359,
+      "name": "hierophant",
+      "glyph": "E",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 360,
+      "name": "fanatic",
+      "glyph": "c",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 361,
+      "name": "prelate",
+      "glyph": "p",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 362,
+      "name": "illusionist",
+      "glyph": "i",
+      "fg": "rare",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 363,
+      "name": "ether_wraith",
+      "glyph": "W",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 364,
+      "name": "frostwolf",
+      "glyph": "w",
+      "fg": "stone",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 365,
+      "name": "deep_one",
+      "glyph": "D",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 366,
+      "name": "pit_ape",
+      "glyph": "A",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 367,
+      "name": "bull_saurian",
+      "glyph": "S",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 368,
+      "name": "ripper",
+      "glyph": "R",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 369,
+      "name": "mauler",
+      "glyph": "M",
+      "fg": "hide",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 370,
+      "name": "stonehorn",
+      "glyph": "H",
+      "fg": "basalt",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 371,
+      "name": "sloth",
+      "glyph": "H",
+      "fg": "jungle",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 372,
+      "name": "terrorbird",
+      "glyph": "T",
+      "fg": "trail",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 393,
+      "name": "sabretooth",
+      "glyph": "c",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 373,
+      "name": "raptor",
+      "glyph": "r",
+      "fg": "stone",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 374,
+      "name": "tyrant_drake",
+      "glyph": "D",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 375,
+      "name": "high_fiend",
+      "glyph": "&",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 376,
+      "name": "deeps_fiend",
+      "glyph": "&",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 377,
+      "name": "blood_wraith",
+      "glyph": "W",
+      "fg": "blood",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 378,
+      "name": "high_warden",
+      "glyph": "W",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 379,
+      "name": "hadal_cultist",
+      "glyph": "h",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 380,
+      "name": "cult_warden",
+      "glyph": "H",
+      "fg": "water",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 381,
+      "name": "great_beast",
+      "glyph": "B",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 382,
+      "name": "ancient_ape",
+      "glyph": "A",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 383,
+      "name": "great_ape",
+      "glyph": "A",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 384,
+      "name": "tyrant_king",
+      "glyph": "K",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 385,
+      "name": "magma_newt",
+      "glyph": "n",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 386,
+      "name": "ember_bat",
+      "glyph": "b",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 387,
+      "name": "soot_serpent",
+      "glyph": "s",
+      "fg": "lava",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 388,
+      "name": "ash_crawler",
+      "glyph": "x",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 389,
+      "name": "obsidian_crawler",
+      "glyph": "x",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 390,
+      "name": "grotto_crab",
+      "glyph": "c",
+      "fg": "gloom",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 391,
+      "name": "titan_toad",
+      "glyph": "T",
+      "fg": "fen",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 392,
+      "name": "viper_swarm",
+      "glyph": "s",
+      "fg": "bad",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 394,
+      "name": "glass_scorpion",
+      "glyph": "s",
+      "fg": "lens_glow",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 395,
+      "name": "wisp",
+      "glyph": "o",
+      "fg": "ember",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 396,
+      "name": "sun_priestess",
+      "glyph": "P",
+      "fg": "sun_gold",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 397,
+      "name": "boo_boo_kitty",
+      "glyph": "c",
+      "fg": "sun_gold",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 398,
+      "name": "lord_wood",
+      "glyph": "L",
+      "fg": "trail",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 399,
+      "name": "voss",
+      "glyph": "V",
+      "fg": "gunmetal",
+      "bg": "ink",
+      "states": {}
+    },
+    {
+      "id": 400,
+      "name": "voss_hollowed",
+      "glyph": "V",
+      "fg": "hollow",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 401,
+      "name": "warden_librarian",
+      "glyph": "l",
+      "fg": "ash",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    },
+    {
+      "id": 402,
+      "name": "mad_librarian",
+      "glyph": "l",
+      "fg": "gore",
+      "bg": "ink",
+      "states": {
+        "mummified": {
+          "fg": "ash"
+        }
+      }
+    }
+  ]
+}

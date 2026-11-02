@@ -1,0 +1,258 @@
+{
+  "registry": "dialogue",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "DLG-001",
+      "text": "I choose you because Doctor Voss would never suspect you.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-002",
+      "text": "Listen to Mr. Filmon of Terminus Post.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-010",
+      "text": "Rescue Kilmor. Search the Halls of the Colossi and bring back his journal.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-011",
+      "text": "Attend Kilmor's funeral in the Crag-Folk Burial Vaults.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-012",
+      "text": "Find the Sun Priestess in the Sun-Ziggurat. Old Chronos knows the way.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-013",
+      "text": "Find the Drowned citadel. Its gate answers to the Drowned Key or great infamy.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-014",
+      "text": "Meet Lord Wood at his War-Camp. His plan is our best hope.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-015",
+      "text": "Stand before Voss in the Basalt Fastness and perform the Calling. Lord Wood will come.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-020",
+      "text": "The Resonator is bound to you now. You cannot put it down.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-021",
+      "text": "The shrine-intellect grants the Sun-Mind's Boon. Use it in the enclosed places of the Plateau.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-030",
+      "text": "Welcome to Kilmor's burial. You may greet the guests; the rite begins when you take your seat.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-031",
+      "text": "A black-robed phantasm appears above the casket: Doctor Voss, projected by mesmerism.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-032",
+      "text": "Thermal rays from emplaced devices sweep the guest rows. Chairs blacken; the guests fall.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-033",
+      "text": "I am Doctor Voss. What I have done today is small work. Only those who take my cause will thrive in the world I am making. I will burn out every last spark of decency on this plateau — but those who join me will be rewarded.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-034",
+      "text": "A hideous laugh rolls through the vaults.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-035",
+      "text": "The broadcast fades. Charred bodies and empty chairs surround the casket.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-040",
+      "text": "Welcome below, friends of the crag-folk and mesa-folk.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-041",
+      "text": "Only crag-folk and mesa-folk are welcome below.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-042",
+      "text": "Take an egg from my great viper without striking her — and without being struck.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-043",
+      "text": "You have proven your patience. Take the Old Master-Bow.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-044",
+      "text": "The air is bad. Come back later.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-045",
+      "text": "The sweet scent draws the viper closer. It is an attractant.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-046",
+      "text": "For all the dollars you carry, and a measure of your memories of blood and victory, I will teach you the fifty-seventh rite — the Calling.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-047",
+      "text": "You hold the Calling. You will know its hour.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-048",
+      "text": "Beware the Great Beast. The foul bottle keeps the viper away; sweetness draws her close.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-050",
+      "text": "Monday — Time-Space Reclamation. Tuesday — Matter-Energy Transference. Wednesday — the Sun-Ziggurat.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-051",
+      "text": "Old Chronos studies the party, murmurs about his moving station, and falls asleep.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-052",
+      "text": "Set C2+ for the Sun-Ziggurat. Take the glowing key from the cracked ceiling-lens chamber.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-053",
+      "text": "The Drowned Ziggurat mirrors its twin. Set C2− and remember your steps.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-054",
+      "text": "I cannot do anything else for you",
+      "preserved": false
+    },
+    {
+      "id": "DLG-060",
+      "text": "The crystalline sun-gate will open only to the Sun-Key.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-061",
+      "text": "Old Chronos said you would come… go to the Drowned Ziggurat, the mirror of this one, beneath the crater lake. Its gate answers only to great infamy — or to the Drowned Key, which lies in the Halls of the Colossi. Do the opposite of all you did here, and remember your steps.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-062",
+      "text": "You haven't done enough infamy to enter here.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-063",
+      "text": "Your conduct is doubtful. You have not yet earned entry.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-064",
+      "text": "Enter, infamous ones.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-065",
+      "text": "The Drowned Key turns. Voss is not in.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-066",
+      "text": "WELCOME PILGRIMS TO MY CITY. TAKE MY CAUSE AND SLAY LORD WOOD, AND GREAT SHALL BE YOUR REWARD. TO FIND ME, BREAK THE RESONATOR UPON THE GLYPH-CIRCLE IN MY SANCTUM.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-067",
+      "text": "The Resonator binds itself to your hand; you cannot get rid of it.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-070",
+      "text": "…We must find Voss in the Ember Deeps and destroy him there. If I lock him in a duel of wills while you strike, we may prevail. Go to his fastness; when you stand before him, perform the fifty-seventh rite. It will open a path through which I will come.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-071",
+      "text": "Go to the Hidden Enclave. The Old Mesmerist holds the fifty-seventh rite.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-072",
+      "text": "I will repeat the plan. Find Voss in the Ember Deeps; perform the Calling before him, and I will come.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-080",
+      "text": "You are too pure and good for my purposes. Prepare to die, fools.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-081",
+      "text": "You have shown some appetite for the dark. Prove yourselves truly mine — destroy Lord Wood.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-082",
+      "text": "You have proven your nature utterly. One test remains: destroy Lord Wood, and kneel to me.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-083",
+      "text": "You do not hold that rite, fool.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-084",
+      "text": "There is no noticeable effect at this distance.",
+      "preserved": false
+    },
+    {
+      "id": "DLG-085",
+      "text": "A black ether-gate opens. Lord Wood steps through. \"Strike now! Strike at Doctor Voss!\" Voss cries: \"No — destroy Lord Wood, and I will raise you beside me.\" A blue arc joins the two men. Smoke rises; their coats char as the duel of wills holds them motionless.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-086",
+      "text": "You kept faith with the Light. The Plateau remembers its friends.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-087",
+      "text": "You have the makings of an apostle of the Deep. Go out, and teach others your ways.",
+      "preserved": true
+    },
+    {
+      "id": "DLG-090",
+      "text": "I am Doctor Voss. You would not like to see what it costs. Join me — and you never will.",
+      "preserved": true
+    }
+  ]
+}

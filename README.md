@@ -1,86 +1,73 @@
-<!-- Version: 0.1.0 | 2026-11-02 -->
+<!-- Version: 0.2.0 | 2026-11-02 -->
 # The Cradle Plateau: The Wrath of Doctor Voss
 
-A deterministic, keyboard-driven expedition CRPG. The authoritative design,
-technical specification, and implementation roadmap are in `docs/`.
+A deterministic, keyboard-driven expedition CRPG for Python 3.12 and tcod.
+Explore the Plateau, recruit a six-member expedition, manage credit and equipment,
+visit eleven sites, and follow Filmon's investigation to either ending. Play
+continues after the ending rewards.
 
-This is the first implementation increment, **not yet a playable game**.
-
-## Development
-
-Requires Python **3.12.x**. Runtime dependency: `tcod>=16,<17`; no additional
-runtime dependencies are introduced by the game.
+## Install and play
 
 ```sh
-python -m venv .venv
+python3.12 -m venv .venv
 . .venv/bin/activate
 python -m pip install -e '.[dev]'
-python -m pytest -q
-cradle --version
-cradle-content-check
+cradle --seed 7
 ```
 
-`cradle-content-check [directory]` validates JSON registry envelopes and lint.
-The bundled content directory is currently empty, so checking it correctly exits
-nonzero. Phase 2 adds content and anchor checks; passing a synthetic pack today
-only verifies the loader, **not** the Phase 2 content gate. `cradle` reports the
-pending application loop and exits nonzero; `--version` and `--help` work.
+On Windows, activate `.venv\Scripts\activate` instead. The only direct runtime
+dependency is `tcod>=16,<17`; the licensed bitmap font and content are bundled.
 
-Configuration: `CRADLE_HOME` overrides OS user-data paths, with `./userdata` as
-the final fallback. Files live under `saves/`, `backups/`, and `logs/`; config is
-`config.json`. `CRADLE_DEBUG=1` overrides the stored debug setting. Sound is a
-persisted boolean with no audio output (D-2).
+Start at Terminus, open the Explorers' Club chapter, and add members 1–6 to your
+expedition. The starter roster is supplied; it is not automatically mustered.
+Withdraw member credit at the counter before shopping. Equip carried gear through
+Use Item. Read folios at posts, and distribute found items before using them.
 
-## Work-package status
+Arrows or numpad 8/6/2/4 move. The alternate diamond is 3/E/S/W. Menus use the
+shown digit or bracket letter. ENTER accepts a form or continues; ESC leaves where
+Leave is offered. TAB/PgUp/PgDn page long menus. In combat, assign every living
+member, then ENTER executes the round; Redo clears the assignments first.
 
-All three documents were read before implementation. This increment follows
-Phase 0 → Phase 1, without entering gameplay ahead of the Phase 2 content gate.
+Manual saves are post-only (slots 1–4); slot 0 is the autosave. Continue resumes at
+the recorded post. Utilities export/import members and erase active slots only
+with explicit confirmation. Set `CRADLE_HOME` to choose local storage. Configuration
+and the functional silent sound toggle persist separately; `CRADLE_DEBUG=1`
+enables invariant checks and exception logging.
 
-| Package | Status / evidence |
-| --- | --- |
-| WP-0.1 scaffold | Package directories, Python metadata, entry points, install verified; PyInstaller spec is the explicitly permitted scaffold, pending WP-8.1. |
-| WP-0.2 test infrastructure | Temp home and seed fixtures; C-8 list implemented; C-9 lexicon unspecified upstream (see below). |
-| WP-1.1 errors/types/config/paths | Implemented; `tests/test_config.py`, DTO/import checks in `tests/test_contracts.py`. |
-| WP-1.2 events/frame | Implemented; pure constructors and dispatch-owned tick stamping; frame independence tests in `tests/test_contracts.py`. Engine tick integration awaits WP-3.2. |
-| WP-1.3 RNG | Implemented; all four draws logged, JSON restart equivalence, replay hash and rejected-input atomicity in `tests/test_rng.py`. |
-| WP-1.4 command registry | Entire §6.1 vocabulary registered and phase-tested; envelope validation; menu/handler integration awaits their owning WPs. |
-| WP-1.5 loader | Implemented immutable registries, ordered loading, envelope/id validation, string lint and CLI. Synthetic failure tests in `tests/test_contentload.py`; Phase 2 owns content-specific anchor hooks. |
-| WP-1.6 save I/O | Structural file boundary implemented and tested in `tests/test_saveio.py`; semantic validation injection is ready for WP-3.1. Production member round-trip acceptance awaits dispatch-produced members in WP-3.2. |
-| Phase 2 onward | Not started. |
+## Verify
 
-Pure primitive tests use synthetic config, content and file envelopes. They never
-construct playable GameState or members. Gameplay tests must establish all state
-via production `Engine.dispatch` commands (technical specification §12a).
-No SDL smoke test, playable campaign, release bundle, or release acceptance is
-claimed. The scaffold release spec deliberately refuses to package an unfinished
-application.
+```sh
+cradle-content-check
+python -m pytest --cov=cradle.engine --cov-report=term-missing --cov-fail-under=90
+python -m cradle.simcli tests/golden/golden_good.txt --seed 7 --hash
+python -m cradle.simcli tests/golden/golden_evil.txt --seed 7 --hash
+cradle --smoke
+```
 
-## Specification issues to resolve before affected packages
+`--smoke` renders boot/new/save/continue and exits. Add `--screenshot frame.png` to
+export the final logical frame. On a Linux host without a display, the smoke
+command supports `SDL_VIDEODRIVER=dummy SDL_RENDER_DRIVER=software`.
 
-The roadmap forbids inventing missing game values. The following are recorded
-without changing the authoritative documents or silently selecting new values:
+The four primary golden command scripts replay three times each and compare both
+RNG and event-stream hashes. A further command-only journey earns XP, pays for
+training, and learns every ordinary feat for the effect-router tests. Tests never
+inject levels, inventory, or quest flags into playable state.
 
-- **WP-0.2 / C-9 lexicon:** the docs require an exact period-rhetoric blocklist
-  in the fixture but supply no entries. Only the six explicit C-8 lexemes are
-  currently enforced. A reviewed C-9 list is needed for that acceptance gate.
-- **WP-2.3 item count:** §5.3 says 32 sellables but enumerates **33**, in addition
-  to eight quest/bow identities. This gives 181 total items rather than 180.
-- **WP-2.6 geography:** several displayed sector/band labels disagree with their
-  coordinates and the explicit sector/band formula. The feature table also calls
-  the province site anchors nine while listing only eight province sites (D1–5,
-  D8, D10–11); D6/D7/D9 are on other planes.
-- **WP-2.7/2.8 site geometry:** the mirror-maze wall rectangle list is referenced
-  but absent. Several other site corridor connections are not specified, so
-  authored connectivity cannot be transcribed exactly without a design decision.
-- **WP-2.10 symbols:** the explicit table assigns sabre-tooth id 393 and shifts
-  subsequent ids, contradicting the stated row-order mapping. Some foreground
-  tokens are blank; `badlands` is used as a color token but absent in §5.10.1.
-- **WP-3.1 save shape:** §6.4 SaveDoc and §8.1 GameState differ in world fields,
-  automata, expedition optionality, and duplicate treasury locations. A canonical
-  lossless snapshot mapping is needed before full semantic validation.
-- **WP-4.3 score:** the §8.6 SCORE_W entries sum to **112**, not the asserted 100.
-- **WP-6.1 demo:** the script references Folio II at the outfitter although its
-  location is D1, and its encounter/victory assumptions need seeded verification.
+## Build a desktop bundle
 
-Next: resolve the missing C-9 list and data contradictions, then transcribe the
-Phase 2 registries and install their exact anchor/referential integrity audits.
+```sh
+python -m pip install -e '.[dev,release]'
+pyinstaller --noconfirm deploy/pyinstaller.spec
+dist/cradle/cradle --smoke
+```
+
+The one-folder bundle includes content JSON, CP437 font, license notices, and
+package version metadata. Build independently on each target OS. The verification
+workflow runs on Linux, Windows and macOS and uploads each bundle.
+
+The source documents and work packages are in `docs/`. Deliberate resolutions of
+source contradictions, including the corrected 182-item count, are recorded in
+[implementation decisions](docs/implementation_decisions.md). Read the
+[verification audit](docs/verification_audit.md) for measured results and the
+remaining release sign-off checks. Version 0.2.0 is an implementation candidate;
+no unverified v1.0.0 release tag is claimed.

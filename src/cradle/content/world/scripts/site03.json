@@ -1,0 +1,428 @@
+{
+  "registry": "site03",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site03_15_2_0",
+      "at": [
+        15,
+        2
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "kilmor_found"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "DLG-030"
+        }
+      ]
+    },
+    {
+      "id": "site03_9_5_1",
+      "at": [
+        9,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Lord Wood and Lady Katherine"
+        }
+      ]
+    },
+    {
+      "id": "site03_9_5_2",
+      "at": [
+        9,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_11_5_3",
+      "at": [
+        11,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Prelate Turak"
+        }
+      ]
+    },
+    {
+      "id": "site03_11_5_4",
+      "at": [
+        11,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_13_5_5",
+      "at": [
+        13,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Princess Charista and Prince Lefrod"
+        }
+      ]
+    },
+    {
+      "id": "site03_13_5_6",
+      "at": [
+        13,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_17_5_7",
+      "at": [
+        17,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "High Chief Argon"
+        }
+      ]
+    },
+    {
+      "id": "site03_17_5_8",
+      "at": [
+        17,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_19_5_9",
+      "at": [
+        19,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Pelzer the master bowyer"
+        }
+      ]
+    },
+    {
+      "id": "site03_19_5_10",
+      "at": [
+        19,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_21_5_11",
+      "at": [
+        21,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Scrub-Folk envoys"
+        }
+      ]
+    },
+    {
+      "id": "site03_21_5_12",
+      "at": [
+        21,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_9_6_13",
+      "at": [
+        9,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Kilmor's family"
+        }
+      ]
+    },
+    {
+      "id": "site03_9_6_14",
+      "at": [
+        9,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_21_6_15",
+      "at": [
+        21,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "His comrades"
+        }
+      ]
+    },
+    {
+      "id": "site03_21_6_16",
+      "at": [
+        21,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Charred bodies and empty chairs."
+        }
+      ]
+    },
+    {
+      "id": "site03_15_6_17",
+      "at": [
+        15,
+        6
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "kilmor_found",
+        "once": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "DLG-031"
+        },
+        {
+          "verb": "msg",
+          "text": "DLG-032"
+        },
+        {
+          "verb": "msg",
+          "text": "DLG-033"
+        },
+        {
+          "verb": "msg",
+          "text": "DLG-034"
+        },
+        {
+          "verb": "msg",
+          "text": "DLG-035"
+        },
+        {
+          "verb": "set_flag",
+          "name": "funeral_done",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "site03_15_4_18",
+      "at": [
+        15,
+        4
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "funeral_done"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Ashes."
+        }
+      ]
+    },
+    {
+      "id": "site03_20_18_19",
+      "at": [
+        20,
+        18
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "The sarcophagus is empty. The lock will not yield to any pick."
+        }
+      ]
+    },
+    {
+      "id": "site03_4_14_20",
+      "at": [
+        4,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site03.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            36,
+            36
+          ],
+          "set_id": "site03.set1"
+        }
+      ]
+    },
+    {
+      "id": "site03_24_14_21",
+      "at": [
+        24,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site03.set2"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            37,
+            36
+          ],
+          "set_id": "site03.set2"
+        }
+      ]
+    },
+    {
+      "id": "site03_12_18_22",
+      "at": [
+        12,
+        18
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site03.stash.12.18"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t3"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

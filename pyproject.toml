@@ -1,18 +1,19 @@
-# Version: 0.1.0 | 2026-11-02
+# Version: 0.2.0 | 2026-11-02
 [build-system]
 requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cradle-wrath"
-version = "0.1.0"
+version = "0.2.0"
 description = "The Cradle Plateau: The Wrath of Doctor Voss"
 requires-python = ">=3.12,<3.13"
 dependencies = ["tcod>=16,<17"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "pytest-cov>=6"]
 release = ["pyinstaller>=6"]
+asset-tools = ["Pillow>=10"]
 
 [project.scripts]
 cradle = "cradle.main:main"
@@ -22,7 +23,7 @@ cradle-content-check = "cradle.platform.contentload:check_main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-cradle = ["content/**/*.json", "content/*.txt"]
+cradle = ["content/**/*.json", "content/*.txt", "assets/*.png", "assets/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

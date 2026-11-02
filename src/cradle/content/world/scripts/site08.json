@@ -1,0 +1,219 @@
+{
+  "registry": "site08",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site08_15_18_0",
+      "at": [
+        15,
+        18
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            22,
+            22,
+            48,
+            48
+          ],
+          "set_id": "site08.set1"
+        }
+      ]
+    },
+    {
+      "id": "site08_15_14_1",
+      "at": [
+        15,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set2"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            48,
+            48,
+            48
+          ],
+          "set_id": "site08.set2"
+        }
+      ]
+    },
+    {
+      "id": "site08_15_10_2",
+      "at": [
+        15,
+        10
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set3"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            22,
+            22,
+            22,
+            52
+          ],
+          "set_id": "site08.set3"
+        }
+      ]
+    },
+    {
+      "id": "site08_15_7_3",
+      "at": [
+        15,
+        7
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set4"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            52,
+            52
+          ],
+          "set_id": "site08.set4"
+        }
+      ]
+    },
+    {
+      "id": "site08_15_20_4",
+      "at": [
+        15,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Battle-noise rolls through the camp."
+        }
+      ]
+    },
+    {
+      "id": "site08_15_16_5",
+      "at": [
+        15,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Battle-noise rolls through the camp."
+        }
+      ]
+    },
+    {
+      "id": "site08_15_3_6",
+      "at": [
+        15,
+        3
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "wood",
+          "special": "wood"
+        }
+      ]
+    },
+    {
+      "id": "site08_24_20_7",
+      "at": [
+        24,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "quartermaster",
+          "special": "vendor"
+        }
+      ]
+    },
+    {
+      "id": "site08_12_14_8",
+      "at": [
+        12,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set5"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            20
+          ],
+          "set_id": "site08.set5",
+          "refill": true
+        }
+      ]
+    },
+    {
+      "id": "site08_18_14_9",
+      "at": [
+        18,
+        14
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site08.set6"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            49
+          ],
+          "set_id": "site08.set6",
+          "refill": true
+        }
+      ]
+    },
+    {
+      "id": "site08_6_20_10",
+      "at": [
+        6,
+        20
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site08.stash.6.20"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t8"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

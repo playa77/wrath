@@ -1,0 +1,299 @@
+{
+  "registry": "site01",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site01_6_19_0",
+      "at": [
+        6,
+        19
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Warning — Danger lies beyond."
+        }
+      ]
+    },
+    {
+      "id": "site01_24_6_1",
+      "at": [
+        24,
+        6
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Port and cheese wait on the curator's table."
+        }
+      ]
+    },
+    {
+      "id": "site01_17_13_2",
+      "at": [
+        17,
+        13
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A waste-paper pit."
+        }
+      ]
+    },
+    {
+      "id": "site01_17_7_3",
+      "at": [
+        17,
+        7
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A weapon cupboard."
+        }
+      ]
+    },
+    {
+      "id": "site01_17_8_4",
+      "at": [
+        17,
+        8
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site01.stash.17.8"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "melee_7"
+        },
+        {
+          "verb": "give_item",
+          "id": "melee_11"
+        }
+      ]
+    },
+    {
+      "id": "site01_10_16_5",
+      "at": [
+        10,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "filmon",
+          "special": "filmon"
+        }
+      ]
+    },
+    {
+      "id": "site01_15_15_6",
+      "at": [
+        15,
+        15
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "shrine",
+          "special": "shrine"
+        }
+      ]
+    },
+    {
+      "id": "site01_2_2_7",
+      "at": [
+        2,
+        2
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site01.resonator"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "resonator",
+          "options": [
+            {
+              "label": "Take",
+              "then": [
+                {
+                  "verb": "give_item",
+                  "id": "crystal_resonator"
+                },
+                {
+                  "verb": "msg",
+                  "text": "DLG-020"
+                }
+              ]
+            },
+            {
+              "label": "Leave",
+              "then": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site01_5_18_8",
+      "at": [
+        5,
+        18
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site01.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            6,
+            6
+          ],
+          "set_id": "site01.set1"
+        }
+      ]
+    },
+    {
+      "id": "site01_4_12_9",
+      "at": [
+        4,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site01.set2"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            26,
+            78,
+            78
+          ],
+          "set_id": "site01.set2"
+        }
+      ]
+    },
+    {
+      "id": "site01_4_7_10",
+      "at": [
+        4,
+        7
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site01.set3"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            77,
+            77,
+            27
+          ],
+          "set_id": "site01.set3"
+        }
+      ]
+    },
+    {
+      "id": "site01_3_4_11",
+      "at": [
+        3,
+        4
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site01.set4"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            32,
+            33
+          ],
+          "set_id": "site01.set4"
+        }
+      ]
+    },
+    {
+      "id": "site01_21_3_12",
+      "at": [
+        21,
+        3
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site01.stash.21.3"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "diamond"
+        },
+        {
+          "verb": "give_item",
+          "treasure": "t4"
+        }
+      ]
+    },
+    {
+      "id": "site01_26_18_13",
+      "at": [
+        26,
+        18
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site01.stash.26.18"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "folio_II"
+        }
+      ]
+    },
+    {
+      "id": "site01_25_12_14",
+      "at": [
+        25,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site01.stash.25.12"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "folio_III"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

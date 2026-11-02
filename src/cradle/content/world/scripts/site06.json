@@ -1,0 +1,353 @@
+{
+  "registry": "site06",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site06_12_8_0",
+      "at": [
+        12,
+        8
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_18_8_1",
+      "at": [
+        18,
+        8
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_15_6_2",
+      "at": [
+        15,
+        6
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_15_18_3",
+      "at": [
+        15,
+        18
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_7_16_4",
+      "at": [
+        7,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_23_16_5",
+      "at": [
+        23,
+        16
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "dice": [
+            2,
+            8
+          ]
+        },
+        {
+          "verb": "msg",
+          "text": "A lens-ray scorches the column."
+        }
+      ]
+    },
+    {
+      "id": "site06_10_10_6",
+      "at": [
+        10,
+        10
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "heal": 1
+        },
+        {
+          "verb": "msg",
+          "text": "The arch is warm."
+        }
+      ]
+    },
+    {
+      "id": "site06_20_10_7",
+      "at": [
+        20,
+        10
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "damage",
+          "heal": 1
+        },
+        {
+          "verb": "msg",
+          "text": "The arch is warm."
+        }
+      ]
+    },
+    {
+      "id": "site06_8_12_8",
+      "at": [
+        8,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "once": "statue_8"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "statue",
+          "options": [
+            {
+              "label": "Leave",
+              "then": []
+            },
+            {
+              "label": "Break",
+              "then": [
+                {
+                  "verb": "infamy",
+                  "amount": 1
+                },
+                {
+                  "verb": "set_flag",
+                  "name": "statue_8",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site06_15_12_9",
+      "at": [
+        15,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "once": "statue_15"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "statue",
+          "options": [
+            {
+              "label": "Leave",
+              "then": []
+            },
+            {
+              "label": "Break",
+              "then": [
+                {
+                  "verb": "infamy",
+                  "amount": 1
+                },
+                {
+                  "verb": "set_flag",
+                  "name": "statue_15",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site06_22_12_10",
+      "at": [
+        22,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "once": "statue_22"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "statue",
+          "options": [
+            {
+              "label": "Leave",
+              "then": []
+            },
+            {
+              "label": "Break",
+              "then": [
+                {
+                  "verb": "infamy",
+                  "amount": 1
+                },
+                {
+                  "verb": "set_flag",
+                  "name": "statue_22",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site06_15_3_11",
+      "at": [
+        15,
+        3
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "priestess",
+          "options": [
+            {
+              "label": "Leave",
+              "then": []
+            },
+            {
+              "label": "Attack",
+              "then": [
+                {
+                  "verb": "combat",
+                  "foes": [
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Talk",
+              "then": [
+                {
+                  "verb": "msg",
+                  "text": "DLG-061"
+                },
+                {
+                  "verb": "set_flag",
+                  "name": "met_priestess",
+                  "value": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site06_15_5_12",
+      "at": [
+        15,
+        5
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site06.stash.15.5"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "sun_gem"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

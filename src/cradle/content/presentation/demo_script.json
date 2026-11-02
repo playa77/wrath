@@ -1,0 +1,151 @@
+{
+  "registry": "demo_script",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "0",
+      "verb": "session.new",
+      "args": {}
+    },
+    {
+      "id": "1",
+      "verb": "chr.add",
+      "args": {
+        "member": 1
+      }
+    },
+    {
+      "id": "2",
+      "verb": "chr.add",
+      "args": {
+        "member": 2
+      }
+    },
+    {
+      "id": "3",
+      "verb": "chr.add",
+      "args": {
+        "member": 3
+      }
+    },
+    {
+      "id": "4",
+      "verb": "chr.add",
+      "args": {
+        "member": 4
+      }
+    },
+    {
+      "id": "5",
+      "verb": "chr.add",
+      "args": {
+        "member": 5
+      }
+    },
+    {
+      "id": "6",
+      "verb": "chr.add",
+      "args": {
+        "member": 6
+      }
+    },
+    {
+      "id": "7",
+      "verb": "credit.withdraw",
+      "args": {
+        "member": 1,
+        "amount": 100
+      }
+    },
+    {
+      "id": "8",
+      "verb": "shop.buy",
+      "args": {
+        "item_id": "folio_IV",
+        "member": 1
+      }
+    },
+    {
+      "id": "9",
+      "verb": "post.use_item",
+      "args": {
+        "member": 1,
+        "item": "folio_IV"
+      }
+    },
+    {
+      "id": "10",
+      "verb": "session.save",
+      "args": {
+        "slot": 1
+      }
+    },
+    {
+      "id": "11",
+      "verb": "post.leave",
+      "args": {}
+    },
+    {
+      "id": "12",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "13",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "14",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "15",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "16",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "17",
+      "verb": "trail.move",
+      "args": {
+        "dir": "S"
+      }
+    },
+    {
+      "id": "18",
+      "verb": "session.quit_to_menu",
+      "args": {}
+    },
+    {
+      "id": "19",
+      "verb": "session.continue",
+      "args": {
+        "slot": 1
+      }
+    },
+    {
+      "id": "20",
+      "verb": "session.quit_to_menu",
+      "args": {}
+    }
+  ],
+  "seed": 7
+}

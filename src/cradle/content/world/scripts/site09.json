@@ -1,0 +1,175 @@
+{
+  "registry": "site09",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site09_16_12_0",
+      "at": [
+        16,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site09.set1"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            22,
+            22,
+            22,
+            22
+          ],
+          "set_id": "site09.set1"
+        }
+      ]
+    },
+    {
+      "id": "site09_18_10_1",
+      "at": [
+        18,
+        10
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site09.set2"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            39,
+            39
+          ],
+          "set_id": "site09.set2"
+        }
+      ]
+    },
+    {
+      "id": "site09_20_12_2",
+      "at": [
+        20,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site09.set3"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            33
+          ],
+          "set_id": "site09.set3"
+        }
+      ]
+    },
+    {
+      "id": "site09_22_10_3",
+      "at": [
+        22,
+        10
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site09.set4"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            51
+          ],
+          "set_id": "site09.set4"
+        }
+      ]
+    },
+    {
+      "id": "site09_24_12_4",
+      "at": [
+        24,
+        12
+      ],
+      "on": "enter",
+      "if": {
+        "dead_set": "site09.set5"
+      },
+      "then": [
+        {
+          "verb": "combat",
+          "foes": [
+            52,
+            52
+          ],
+          "set_id": "site09.set5"
+        }
+      ]
+    },
+    {
+      "id": "site09_17_12_5",
+      "at": [
+        17,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A lifeless chill."
+        }
+      ]
+    },
+    {
+      "id": "site09_19_12_6",
+      "at": [
+        19,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A lifeless chill."
+        }
+      ]
+    },
+    {
+      "id": "site09_21_10_7",
+      "at": [
+        21,
+        10
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A hideous laugh."
+        }
+      ]
+    },
+    {
+      "id": "site09_27_12_8",
+      "at": [
+        27,
+        12
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "voss",
+          "special": "voss"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

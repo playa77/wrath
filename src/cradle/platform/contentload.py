@@ -1,5 +1,6 @@
-# Version: 0.1.0 | 2026-11-02
+# Version: 0.2.0 | 2026-11-02
 """Spec §5.0 / WP-1.5: fail-fast immutable registry loading and string lint."""
+
 import argparse
 import json
 import re
@@ -13,7 +14,17 @@ from typing import Callable
 from cradle.engine.errors import ContentError
 
 ORDER = ("registries", "world", "scripts", "text", "presentation")
-C8_BLOCKLIST = ("magic", "spell", "god", "divine", "undead", "zombie")
+C8_BLOCKLIST = (
+    "magic",
+    "spell",
+    "god",
+    "divine",
+    "undead",
+    "zombie",
+    "uncivilized peoples",
+    "inferior race",
+    "subhuman race",
+)
 
 
 def _freeze(value):
@@ -32,8 +43,13 @@ class Registries:
         return self.files[name]
 
     def group(self, name: str) -> Mapping:
-        return MappingProxyType({path: value for path, value in self.files.items()
-                                 if path.split("/")[0] == name})
+        return MappingProxyType(
+            {
+                path: value
+                for path, value in self.files.items()
+                if path.split("/")[0] == name
+            }
+        )
 
     @property
     def presentation(self) -> Mapping:
@@ -92,11 +108,17 @@ def load_all(root: Path) -> Registries:
         loaded[rel] = _freeze(doc)
     regs = Registries(MappingProxyType(loaded))
     validate_anchors(regs)
+    if "registries/rules.json" in loaded:
+        from .contentaudit import audit
+
+        audit(regs)
     return regs
 
 
 def lint_strings(regs: Registries, blocklist: tuple[str, ...] = C8_BLOCKLIST) -> None:
-    pattern = re.compile(r"\b(?:" + "|".join(re.escape(s) for s in blocklist) + r")\b", re.I)
+    pattern = re.compile(
+        r"\b(?:" + "|".join(re.escape(s) for s in blocklist) + r")\b", re.I
+    )
 
     def visit(value, file: str, row: str) -> None:
         if isinstance(value, Mapping):
@@ -117,8 +139,12 @@ def lint_strings(regs: Registries, blocklist: tuple[str, ...] = C8_BLOCKLIST) ->
 
 def check_main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Validate Cradle content registries")
-    parser.add_argument("root", nargs="?", type=Path,
-                        default=Path(__file__).resolve().parents[1] / "content")
+    parser.add_argument(
+        "root",
+        nargs="?",
+        type=Path,
+        default=Path(__file__).resolve().parents[1] / "content",
+    )
     args = parser.parse_args(argv)
     try:
         regs = load_all(args.root)
@@ -126,7 +152,9 @@ def check_main(argv: list[str] | None = None) -> int:
     except ContentError as exc:
         print(str(exc), file=sys.stderr)
         return 1
-    print(f"Validated {len(regs.files)} registry files; {len(ANCHOR_CHECKS)} anchor suites.")
+    print(
+        f"Validated {len(regs.files)} registry files; {len(ANCHOR_CHECKS) + int('registries/rules.json' in regs.files)} anchor suites."
+    )
     return 0
 
 

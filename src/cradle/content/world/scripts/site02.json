@@ -1,0 +1,448 @@
+{
+  "registry": "site02",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "site02_15_4_0",
+      "at": [
+        15,
+        4
+      ],
+      "on": "enter",
+      "if": {
+        "once": "chute_fallen"
+      },
+      "then": [
+        {
+          "verb": "transport",
+          "map_id": "site02",
+          "pos": [
+            15,
+            20
+          ]
+        },
+        {
+          "verb": "set_flag",
+          "name": "chute_fallen",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "site02_25_20_1",
+      "at": [
+        25,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "KILMOR WAS HERE."
+        }
+      ]
+    },
+    {
+      "id": "site02_25_21_2",
+      "at": [
+        25,
+        21
+      ],
+      "on": "enter",
+      "if": {
+        "once": "kilmor_found"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Kilmor's starved body lies beside a blood-written journal."
+        },
+        {
+          "verb": "give_item",
+          "id": "folio_I"
+        },
+        {
+          "verb": "set_flag",
+          "name": "kilmor_found",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "site02_25_21_3",
+      "at": [
+        25,
+        21
+      ],
+      "on": "enter",
+      "if": {
+        "flag": "kilmor_found"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Only a bloodstain."
+        }
+      ]
+    },
+    {
+      "id": "site02_5_20_4",
+      "at": [
+        5,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Only bones remain."
+        }
+      ]
+    },
+    {
+      "id": "site02_13_20_5",
+      "at": [
+        13,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Only bones remain."
+        }
+      ]
+    },
+    {
+      "id": "site02_9_20_6",
+      "at": [
+        9,
+        20
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "A starved prisoner is freed. Search for Kilmor in the pens."
+        },
+        {
+          "verb": "set_flag",
+          "name": "journal_hint",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "site02_26_5_7",
+      "at": [
+        26,
+        5
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "menu",
+          "id": "levers",
+          "options": [
+            {
+              "label": "1",
+              "then": [
+                {
+                  "verb": "msg",
+                  "text": "Nothing moves."
+                }
+              ]
+            },
+            {
+              "label": "2",
+              "then": [
+                {
+                  "verb": "msg",
+                  "text": "Nothing moves."
+                }
+              ]
+            },
+            {
+              "label": "3",
+              "then": [
+                {
+                  "verb": "combat",
+                  "foes": [
+                    44
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "4",
+              "then": [
+                {
+                  "verb": "set_flag",
+                  "name": "beasts_dead",
+                  "value": true
+                },
+                {
+                  "verb": "msg",
+                  "text": "Both penned horrors die."
+                }
+              ]
+            },
+            {
+              "label": "5",
+              "then": [
+                {
+                  "verb": "msg",
+                  "text": "Nothing moves."
+                }
+              ]
+            },
+            {
+              "label": "6",
+              "then": [
+                {
+                  "verb": "msg",
+                  "text": "Nothing moves."
+                }
+              ]
+            },
+            {
+              "label": "Leave",
+              "then": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site02_13_8_8",
+      "at": [
+        13,
+        8
+      ],
+      "on": "enter",
+      "if": {
+        "not_flag": "wrestled"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "wrestle",
+          "options": [
+            {
+              "label": "Accept",
+              "then": [
+                {
+                  "verb": "mp_zero"
+                },
+                {
+                  "verb": "combat",
+                  "foes": [
+                    59
+                  ],
+                  "wrestle": true,
+                  "on_win": [
+                    {
+                      "verb": "award_con",
+                      "amount": 1
+                    },
+                    {
+                      "verb": "set_flag",
+                      "name": "wrestled",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "Refuse",
+              "then": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site02_15_9_9",
+      "at": [
+        15,
+        9
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "…no devices, no draughts, no mesmerism — bare hands."
+        }
+      ]
+    },
+    {
+      "id": "site02_3_19_10",
+      "at": [
+        3,
+        19
+      ],
+      "on": "enter",
+      "if": {
+        "item": "sun_key"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "The Sun-Key glows; the dark force yields."
+        }
+      ]
+    },
+    {
+      "id": "site02_3_19_11",
+      "at": [
+        3,
+        19
+      ],
+      "on": "enter",
+      "if": {
+        "not_item": "sun_key"
+      },
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Dark force snuffs the lights."
+        },
+        {
+          "verb": "transport",
+          "map_id": "site02",
+          "pos": [
+            4,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site02_3_21_12",
+      "at": [
+        3,
+        21
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site02.stash.3.21",
+        "item": "sun_key"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "id": "drowned_key"
+        }
+      ]
+    },
+    {
+      "id": "site02_25_11_13",
+      "at": [
+        25,
+        11
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site02.cache"
+      },
+      "then": [
+        {
+          "verb": "menu",
+          "id": "cache",
+          "options": [
+            {
+              "label": "Blast",
+              "then": [
+                {
+                  "verb": "give_item",
+                  "id": "smoky_gem"
+                },
+                {
+                  "verb": "give_item",
+                  "id": "smoky_gem"
+                }
+              ]
+            },
+            {
+              "label": "Ease",
+              "then": [
+                {
+                  "verb": "damage",
+                  "dice": [
+                    1,
+                    12
+                  ]
+                },
+                {
+                  "verb": "give_item",
+                  "id": "fine_gem"
+                },
+                {
+                  "verb": "give_item",
+                  "id": "fine_gem"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site02_7_3_14",
+      "at": [
+        7,
+        3
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Avoid the Colossi pens until you are strong enough."
+        }
+      ]
+    },
+    {
+      "id": "site02_17_3_15",
+      "at": [
+        17,
+        3
+      ],
+      "on": "enter",
+      "if": {},
+      "then": [
+        {
+          "verb": "msg",
+          "text": "Find the prison block — something powerful hangs in the air there."
+        }
+      ]
+    },
+    {
+      "id": "site02_15_2_16",
+      "at": [
+        15,
+        2
+      ],
+      "on": "enter",
+      "if": {
+        "once": "site02.stash.15.2"
+      },
+      "then": [
+        {
+          "verb": "give_item",
+          "treasure": "t5"
+        }
+      ]
+    }
+  ],
+  "kind": "scripts"
+}

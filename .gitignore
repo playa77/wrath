@@ -1,4 +1,4 @@
-# Version: 0.1.0 | 2026-11-02
+# Version: 0.2.0 | 2026-11-02
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -8,3 +8,5 @@ build/
 dist/
 userdata/
 .coverage
+htmlcov/
+coverage.json

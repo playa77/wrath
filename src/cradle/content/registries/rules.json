@@ -1,0 +1,453 @@
+{
+  "registry": "rules",
+  "schema_version": 1,
+  "version": "0.2.0",
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "id": "rules",
+      "treasury_cap": 65000,
+      "credit_cap": 65000,
+      "party_cap": 6,
+      "roster_cap": 27,
+      "kit_cap": 9,
+      "found_cap": 90,
+      "level_cap": 20,
+      "skill_cap": 250,
+      "body_areas": [
+        "head",
+        "torso",
+        "arm_l",
+        "arm_r",
+        "leg_l",
+        "leg_r"
+      ],
+      "cure_order": [
+        "head",
+        "torso",
+        "arm_r",
+        "arm_l",
+        "leg_r",
+        "leg_l"
+      ],
+      "severities": [
+        "ok",
+        "injured",
+        "broken",
+        "gone"
+      ],
+      "ranks": [
+        "front",
+        "middle",
+        "back"
+      ],
+      "initial_post": 1,
+      "initial_map": "province",
+      "initial_pos": [
+        37,
+        24
+      ],
+      "rest_cost": 275,
+      "rest_days": 7,
+      "camp_days": 1,
+      "camp_interval": 10,
+      "camp_ambush": [
+        1,
+        3
+      ],
+      "site_rate": [
+        1,
+        12
+      ],
+      "site_day_moves": 10,
+      "los_radius": 3,
+      "travel_days": {
+        "trail": 1,
+        "badlands": 1,
+        "swamp": 2,
+        "escarpment": 3,
+        "river": 2,
+        "floor": 1,
+        "lava": 1
+      },
+      "drowning": [
+        2,
+        10
+      ],
+      "lava_burn": [
+        2,
+        10
+      ],
+      "armor": {
+        "33": 4,
+        "66": 6,
+        "51": 3,
+        "61": 5,
+        "52": 2,
+        "53": 2
+      },
+      "ballistics": {
+        "fire": [
+          15,
+          35,
+          12.5,
+          12.5,
+          12.5,
+          12.5
+        ],
+        "feat": [
+          16.666666666666668,
+          16.666666666666668,
+          16.666666666666668,
+          16.666666666666668,
+          16.666666666666668,
+          16.666666666666668
+        ],
+        "hand": [
+          5,
+          20,
+          15,
+          15,
+          22.5,
+          22.5
+        ],
+        "tall": [
+          2,
+          15,
+          12,
+          12,
+          29.5,
+          29.5
+        ],
+        "aim": [
+          25,
+          30,
+          10,
+          10,
+          12.5,
+          12.5
+        ]
+      },
+      "tactics": {
+        "thrust": {
+          "acc": 15,
+          "damage": 1,
+          "swings": 1
+        },
+        "attack": {
+          "acc": 0,
+          "damage": 0,
+          "swings": 2,
+          "min_skill": 30
+        },
+        "slash": {
+          "acc": -15,
+          "damage": -1,
+          "swings": 3,
+          "min_skill": 60
+        },
+        "aim": {
+          "acc": -10,
+          "damage": 0,
+          "swings": 1,
+          "min_skill": 40
+        },
+        "lunge": {
+          "acc": 0,
+          "damage": 0,
+          "swings": 1
+        },
+        "fire": {
+          "acc": 0,
+          "damage": 0,
+          "swings": 1
+        },
+        "parry": {
+          "acc": 0,
+          "damage": 0,
+          "swings": 0
+        }
+      },
+      "traps": {
+        "dart": {
+          "dice": [
+            2,
+            6
+          ],
+          "targets": 2,
+          "area": "arm_l"
+        },
+        "pitch": {
+          "dice": [
+            2,
+            10
+          ],
+          "targets": 6,
+          "area": "torso"
+        },
+        "slab": {
+          "dice": [
+            3,
+            10
+          ],
+          "targets": 1,
+          "area": "torso",
+          "rear": true
+        },
+        "spear": {
+          "dice": [
+            2,
+            8
+          ],
+          "targets": 1,
+          "area": "leg_l"
+        },
+        "fume": {
+          "dice": [
+            1,
+            12
+          ],
+          "targets": 6,
+          "area": null
+        },
+        "deadfall": {
+          "dice": [
+            3,
+            8
+          ],
+          "targets": 2,
+          "area": "head"
+        }
+      },
+      "body_thresholds": [
+        0.25,
+        0.5
+      ],
+      "down_threshold": 0.25,
+      "unconscious_threshold": 0.05,
+      "rank_mod": 15,
+      "parry_mod": -15,
+      "deposit_fee": 1,
+      "sell_fraction": 0.5,
+      "training_base": 200,
+      "training_cha_base": 21,
+      "training_cha_divisor": 10,
+      "training_repeat": 0.05,
+      "training_award": 100,
+      "training_skills": 3,
+      "skill_increments": [
+        8,
+        4,
+        2
+      ],
+      "feat_cost": 150,
+      "mp_growth_pct": 25,
+      "defeat_return": {
+        "base": 0.5,
+        "luck_center": 10,
+        "luck_factor": 0.02,
+        "score_factor": 0.002,
+        "min": 0.1,
+        "max": 0.9,
+        "hp_fraction": 0.5
+      },
+      "surrender": 0.5,
+      "morale_losses": 0.6,
+      "morale_chance": 40,
+      "morale_savage": 10,
+      "parley": {
+        "P": 50,
+        "W": 25,
+        "S": 0
+      },
+      "mercy_weak": 60,
+      "mercy_strong": 25,
+      "flee": 50,
+      "mercy_items": 3,
+      "score_weights": {
+        "kilmor_found": 8,
+        "funeral_done": 8,
+        "met_priestess": 8,
+        "drowned_gate_entered": 8,
+        "wood_met": 8,
+        "fastness_reached": 8,
+        "ending": 20,
+        "shrine_boon": 2,
+        "resonator_held": 4,
+        "sun_key": 4,
+        "drowned_key": 4,
+        "sun_gem": 4,
+        "sun_seen": 4,
+        "hermit_done": 6,
+        "drake_apex": 6,
+        "rite57_held": 6,
+        "wrestled": 4
+      },
+      "ratings": [
+        [
+          19,
+          "raw volunteers"
+        ],
+        [
+          39,
+          "promising column"
+        ],
+        [
+          59,
+          "average — an adequate column, so far"
+        ],
+        [
+          79,
+          "seasoned explorers"
+        ],
+        [
+          99,
+          "plateau-famous"
+        ],
+        [
+          100,
+          "legend of the Cradle"
+        ]
+      ],
+      "ending_dollars": 20000,
+      "ending_xp": 50000,
+      "evil_armor": "armor_20",
+      "hermit_bowls": 2,
+      "mesmerist_xp_tithe": 0.1,
+      "automata": [
+        {
+          "id": 28,
+          "name": "Mud",
+          "hp": 80,
+          "dmg": [
+            3,
+            10
+          ],
+          "armor": 10,
+          "evasion": 0
+        },
+        {
+          "id": 29,
+          "name": "Mist",
+          "hp": 50,
+          "dmg": [
+            2,
+            10
+          ],
+          "armor": 0,
+          "evasion": 25
+        },
+        {
+          "id": 30,
+          "name": "Air",
+          "hp": 60,
+          "dmg": [
+            2,
+            12
+          ],
+          "armor": 0,
+          "evasion": 0
+        }
+      ],
+      "feat_fx": {
+        "suture": [
+          9,
+          27,
+          57,
+          99
+        ],
+        "lancet": [
+          10,
+          30,
+          60,
+          100
+        ],
+        "sweep": [
+          7,
+          15,
+          31,
+          66
+        ],
+        "assault": [
+          5,
+          11,
+          41,
+          81
+        ],
+        "vitriol": [
+          12,
+          35,
+          70,
+          120
+        ],
+        "surge": [
+          10,
+          25,
+          45,
+          70
+        ],
+        "hardening": [
+          1,
+          3,
+          6,
+          10
+        ],
+        "confusion": [
+          25,
+          50,
+          75,
+          95
+        ],
+        "enervation": [
+          2,
+          4,
+          8
+        ],
+        "paralysis": [
+          15,
+          25,
+          40
+        ],
+        "revive_pct": 75,
+        "counter_flee": 60,
+        "sleep_pct": 80,
+        "assessment_wrong": 15,
+        "loads_acc": [
+          50,
+          50,
+          100
+        ],
+        "loads_value": [
+          15,
+          15,
+          25
+        ],
+        "trance_marksman": 250,
+        "pugilist_acc": [
+          80,
+          120
+        ],
+        "pugilist_damage": [
+          8,
+          12
+        ],
+        "pugilist_defense": [
+          30,
+          50
+        ]
+      },
+      "tier_order": [
+        "L",
+        "M",
+        "H",
+        "VH"
+      ],
+      "decline_physical": [
+        1,
+        2,
+        3
+      ],
+      "year_days": 360
+    }
+  ]
+}
